@@ -1,9 +1,11 @@
 // =============== Funcion Obtener Codigo ===============
 function activarWindowsCodigo() 
 {
+    // Conecto Elementos
     let version = document.getElementById("versionWindows").value;
     const codigo = document.getElementById("codigoCMD");
 
+    // Proceso Opcion
     switch(version)
     {
         case "1":

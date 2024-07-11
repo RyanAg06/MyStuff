@@ -5,10 +5,13 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
-        <link rel="stylesheet" href="./css/activarWindows.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
     </head>
     <body>
+    
+        <!-- Scroll Horizontal -->
+        <div class="scroll-h"></div>
 
         <!-- Header -->
         <script src="./js/header.js"></script>
@@ -27,16 +30,17 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos__titulo">Activar Windows 10 y 11</h1>
-                <h3 class="titulos__subtitulo">Codigos para Activar Windows</h3>
+                <h1 class="titulos__titulo">Activar Windows</h1>
+                <h3 class="titulos__subtitulo">Codigos de Activación</h3>
             </div>
 
-            <article class="publicaciones vertical">
+            <!-- Codigos de Windows -->
+            <article class="tarjetas vertical">
 
                 <section class="tarjeta">
-
+                    
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Escoge tu version de Windows</h4>
+                        <h4 class="tarjeta__titulo">Instrucciones</h4>
                         <p class="tarjeta__descripcion">
                             Para activar Windows elige tu version y se generara el codigo que debes pegar en el CMD. <br><br>
                             Recuerda iniciar CMD como ADMINISTRADOR.
@@ -60,6 +64,7 @@
                         <a class="boton descargar" onclick="activarWindowsCodigo()">Generar Codigo</a>
                         <button class="copiar" onclick="copiarPortapapeles('codigoCMD')">Copiar</button>
                         <span class="codigo" id="codigoCMD">Elige tu version</span>
+
                     </div>
 
                 </section>
@@ -68,7 +73,7 @@
 
         </main>
 
-        <!-- Codigo extra de JS -->
+        <!-- Codigo JS -->
         <script src="./js/activarWindows.js"></script>
 
         <!-- Footer -->
