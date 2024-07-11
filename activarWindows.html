@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MyStuff</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./imagenes/bola.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/activarWindows.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <script src="./js/header.js"></script>
+
+        <!-- Contenido -->
+        <main>
+
+            <!-- 
+
+                Para desactivar Windows:
+
+                slmgr /cpky
+                slmgr /upk
+                
+            -->
+
+            <!-- Titulos -->
+            <div class="titulos centro">
+                <h1 class="titulos__titulo">Activar Windows 10 y 11</h1>
+                <h3 class="titulos__subtitulo">Codigos para Activar Windows</h3>
+            </div>
+
+            <article class="publicaciones vertical">
+
+                <section class="tarjeta">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Escoge tu version de Windows</h4>
+                        <p class="tarjeta__descripcion">
+                            Para activar Windows elige tu version y se generara el codigo que debes pegar en el CMD. <br><br>
+                            Recuerda iniciar CMD como ADMINISTRADOR.
+                        </p>
+
+                        <select id="versionWindows" class="tarjeta__select">
+                            <option value="1">Windows Home</option>
+                            <option value="2">Windows Home N</option>
+                            <option value="3">Windows Home Single Language</option>
+                            <option value="4">Windows Home Country Specific</option>
+                            <option value="5" selected>Windows Proffesional</option>
+                            <option value="6">Windows Proffesional N</option>
+                            <option value="7">Windows Enterprise</option>
+                            <option value="8">Windows Enterprise N</option>
+                            <option value="9">Windows Education</option>
+                            <option value="10">Windows Education N</option>
+                            <option value="11">Windows Enterprise 2015 LTSB</option>
+                            <option value="12">Windows Enterprise 2015 LTSB N</option>
+                        </select>
+
+                        <a class="boton descargar" onclick="activarWindowsCodigo()">Generar Codigo</a>
+                        <button class="copiar" onclick="copiarPortapapeles('codigoCMD')">Copiar</button>
+                        <span class="codigo" id="codigoCMD">Elige tu version</span>
+                    </div>
+
+                </section>
+
+            </article>
+
+        </main>
+
+        <!-- Codigo extra de JS -->
+        <script src="./js/activarWindows.js"></script>
+
+        <!-- Footer -->
+        <script src="./js/footer.js"></script>
+
+        <!-- 
+
+			\       /\
+			 \_____/
+			 /     \
+
+        -->
+        
+    </body>
+</html>

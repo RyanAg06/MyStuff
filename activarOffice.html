@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MyStuff</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./imagenes/bola.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./css/estiloGeneral.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <script src="./js/header.js"></script>
+
+        <!-- Contenido -->
+        <main>
+
+            <!-- Titulos -->
+            <div class="titulos centro">
+                <h1 class="titulos__titulo">Guia de Activacion</h1>
+                <h3 class="titulos__subtitulo">Como activar Office</h3>
+            </div>
+
+            <!-- Tarjetas -->
+            <article class="publicaciones vertical">
+
+                <!-- Paso 1 -->
+                <section class="tarjeta">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 1</h4>
+                        <p class="tarjeta__descripcion">
+							Antes de comenzar, deberas <b>borrar</b> todas las aplicaciones relacionas a Office.
+						</p>
+
+                        <ul class="tarjeta__lista">
+                            <li>Word</li>
+                            <li>Power Point</li>
+                            <li>Excel</li>
+                            <li>Access</li>
+                            <li>Project</li>
+                            <li>OneNote</li>
+                            <li>Outlook</li>
+                            <li>Publisher</li>
+                            <li>Etc..</li>
+                        </ul>
+						
+                    </div>
+
+                </section>
+
+                <!-- Paso 2 -->
+                <section class="tarjeta">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 2</h4>
+                        <p class="tarjeta__descripcion">
+                            Una vez eliminado debes descargar los archivos necesarios para descargar Office 365.
+                        </p>
+                        <a href="https://mega.nz/folder/06hByKaS#-mdIWn-nhr1krj0MIiPYtw" target="_blank" class="boton descargar">Descargar Archivos</a>
+                    </div>
+
+                </section>
+
+                <!-- Paso 3 -->
+                <section class="tarjeta">
+
+                    <div class="tarjeta__slider">
+                        <img src="./imagenes/activarOffice/paso3.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso3-1.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso3-2.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 3</h4>
+                        <p class="tarjeta__descripcion">
+                            Abrir la carpeta, dar CLICK en la ruta de la carpeta y escribir "cmd" y dar ENTER.
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- Paso 4 -->
+                <section class="tarjeta">
+
+                    <div class="tarjeta__slider">
+                        <img src="./imagenes/activarOffice/paso4.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso4-1.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso4-2.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 4</h4>
+                        <p class="tarjeta__descripcion">
+                            Escribir la siguiente linea en el CMD y esperar a que se instale Microsoft 365:
+                        </p>
+                        <button class="copiar" onclick="copiarPortapapeles('codigo4')">Copiar</button>
+                        <span class="codigo" id="codigo4"><p>setup /configure configuration.xml</p></span>
+                    </div>
+
+                </section>
+
+                <!-- Paso 5 -->
+                <section class="tarjeta">
+                    <img src="./imagenes/activarOffice/paso5.png" alt="imagen" class="tarjeta__imagen">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 5</h4>
+                        <p class="tarjeta__descripcion">
+                            Ahora para activarlo, debes poner en el buscador de Windows: "cmd" y <b>ejecutar como administrador</b>.
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- Paso 6 -->
+                <section class="tarjeta">
+                    <img src="./imagenes/activarOffice/paso6.png" alt="imagen" class="tarjeta__imagen">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 6</h4>
+                        <p class="tarjeta__descripcion">
+                            Colocar el siguiente codigo <b>dependiendo</b> si tu sistema es de 32 o 64 bits.
+                        </p>
+                        <button class="copiar" onclick="copiarPortapapeles('codigo6-32')">Copiar: <b>32 Bits</b></button>
+                        <span class="codigo" id="codigo6-32"><p>cd C:\Program Files (x86)\\Microsoft Office\Office16</p></span>
+                        <br>
+                        <button class="copiar" onclick="copiarPortapapeles('codigo6-64')">Copiar: <b>64 Bits</b></button>
+                        <span class="codigo" id="codigo6-64"><p>cd C:\Program Files\Microsoft Office\Office16</p></span>
+                    </div>
+
+                </section>
+
+                <!-- Paso 7 -->
+                <section class="tarjeta">
+                    <img src="./imagenes/activarOffice/paso7.png" alt="imagen" class="tarjeta__imagen">
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 7</h4>
+                        <p class="tarjeta__descripcion">
+                            Despues poner lo siguiente, dar ENTER y esperar a que termine.
+                        </p>
+                        <button class="copiar" onclick="copiarPortapapeles('codigo7')">Copiar</button>
+                        <span class="codigo" id="codigo7">
+                            <p>for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"</p>
+                        </span>
+                    </div>
+
+                </section>
+
+                <!-- Paso 8 -->
+                <section class="tarjeta">
+                    
+                    <div class="tarjeta__slider">
+                        <img src="./imagenes/activarOffice/paso8.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso8-1.png" alt="imagen" class="tarjeta__imagen">
+                        <img src="./imagenes/activarOffice/paso8-2.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 8</h4>
+                        <p class="tarjeta__descripcion">
+                            Por ultimo colocar el ultimo codigo y esperar a que salga como en la imagen, despues dar ENTER y esperar a que termine.
+                        </p>
+                        <br>
+
+                        <button class="copiar" onclick="copiarPortapapeles('codigo8')">Copiar</button>
+                        <span class="codigo" id="codigo8">
+                            <p>cscript ospp.vbs /setprt:1688</p>
+                            <p>cscript ospp.vbs /unpkey:6MWKP >nul</p>
+                            <p>cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP</p>
+                            <p>cscript ospp.vbs /sethst:e8.us.to</p>
+                            <p>cscript ospp.vbs /act</p>
+                        </span>
+                        
+                    </div>
+
+                </section>
+
+            </article>
+
+            <a href="#" class="boton regresar">Regresar</a>
+
+        </main>
+
+        <!-- Footer -->
+        <script src="./js/footer.js"></script>
+
+        <!-- 
+
+			\       /\
+			 \_____/
+			 /     \
+
+        -->
+        
+    </body>
+</html>
