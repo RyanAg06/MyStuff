@@ -45,8 +45,8 @@ body {
 }
 
 /* ========================== BORDE INFERIOR ========================= */
-.div__borde{
-    .borde__inferior {
+.div-borde{
+    .borde-inferior {
         background-color: var(--rosa);
         height: 2px;
         /* clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); */
@@ -55,7 +55,7 @@ body {
     }
 
     &:hover {
-        .borde__inferior {
+        .borde-inferior {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
@@ -71,7 +71,7 @@ body {
     align-items: center;
 
     /* Titulo MyStuff */
-    .bienvenida__titulo {
+    .bienvenida-titulo {
         font-family: "Oswald";
         font-weight: 400;
         color: var(--rosa);
@@ -113,12 +113,12 @@ body {
         height: 25vh;
         
         /* Titulo MyStuff */
-        .bienvenida__titulo {
+        .bienvenida-titulo {
             font-size: 6vh;
         }
 
         /* BOTONES MENU LATERAL */
-        .bienvenida__btns-menu {
+        .bienvenida-btns-menu {
             display: none;
         }
     }
@@ -129,7 +129,7 @@ body {
         justify-content: space-around;
         
         /* Centrar Textos Menu 1 */
-        & > li > .div__borde {
+        & > li > .div-borde {
             text-align: center;
         }
 
@@ -202,13 +202,13 @@ body {
             height: 12vh;
 
             /* Titulo MyStuff */
-            .bienvenida__titulo {
+            .bienvenida-titulo {
                 font-size: 8vh;
                 margin-left: 0.5em;
             }
 
             /* BOTONES MENU LATERAL */
-            .bienvenida__btns-menu {
+            .bienvenida-btns-menu {
                 position: relative;
                 width: 4em;
                 height: 4em;
@@ -226,7 +226,7 @@ body {
                 }
 
                 /* Boton Cerrar */
-                .bienvenida__btn-cerrar {
+                .bienvenida-btn-cerrar {
                     opacity: 0;
                 }
 
@@ -234,13 +234,13 @@ body {
                 &.cambiar-icono {
 
                     /* Boton Abrir */
-                    .bienvenida__btn-abrir {
+                    .bienvenida-btn-abrir {
                         opacity: 0;
                         transform: rotate(90deg);
                     }
 
                     /* Boton Cerrar */
-                    .bienvenida__btn-cerrar {
+                    .bienvenida-btn-cerrar {
                         opacity: 1;
                         transform: rotate(90deg);
                     }
