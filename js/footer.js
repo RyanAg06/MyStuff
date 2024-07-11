@@ -3,7 +3,7 @@ document.write(`
     <footer>
        
         <!-- Enlaces Redes Sociales -->
-        <ul class="footer__encales">
+        <ul class="footer-encales">
 
             <!-- Facebook -->
             <li>
@@ -20,7 +20,7 @@ document.write(`
         </ul>
 			
         <!-- Creditos -->
-		<div class="footer__creditos">
+		<div class="footer-creditos">
             <b>Hecho por RyanAg ©</b>
 		</div>
 

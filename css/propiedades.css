@@ -10,13 +10,13 @@
     margin: auto;
 
     /* Textos */
-    .titulos__titulo {
+    .titulos-titulo {
         background-color: var(--grisClaro);
         border-bottom: 3px var(--rosa) solid;
         color: #fff;
         padding: 0.4em;
     }
-    .titulos__subtitulo {
+    .titulos-subtitulo {
         color: var(--rosa);
         margin-top: 0.7em;
     }
@@ -49,7 +49,7 @@
         overflow: hidden;
         transition: box-shadow 0.3s, transform 0.3s;
 
-        .tarjeta__imagen {
+        .tarjeta-imagen {
             width: 100%;
 
             &.imagen-cuadrada {
@@ -59,23 +59,23 @@
        
 
         /* INFORMACION TARJETA */
-        .tarjeta__informacion {
+        .tarjeta-informacion {
             display: flex;
             flex-direction: column;
             padding: 0.5em;
     
             /* Titulo */
-            .tarjeta__titulo {
+            .tarjeta-titulo {
                 border-bottom: 3px var(--rosa) solid;
                 font-size: 1.5em;
             }
 
             /* Fecha */
-            .tarjeta__fecha {
+            .tarjeta-fecha {
                 color: var(--rosa);
             }
 
-            .tarjeta__descripcion {
+            .tarjeta-descripcion {
                 min-height: 50px;
                 
                 /* TODO : hay que investigar para que funciona esto */
@@ -87,7 +87,7 @@
             }
 
             /* Select e Inputs */
-            .tarjeta__select {
+            .tarjeta-select {
                 background-color: var(--grisClaro);
                 border: none;
                 color: white;
@@ -112,7 +112,7 @@
             width: 450px;
 
             /* Imagen */
-            .tarjeta__imagen {
+            .tarjeta-imagen {
                 aspect-ratio: initial;
                 max-height: auto;
             }
@@ -134,7 +134,7 @@
     margin: 1em auto;
     transition: 0.3s;
 
-    & .borde__inferior {
+    & .borde-inferior {
         margin-top: 0.5em;
         padding: 1.3px;
     }
@@ -187,7 +187,7 @@ footer {
     background-color: var(--grisOscuro);
     margin-top: auto;
 
-    .footer__encales {
+    .footer-encales {
         display: flex;
         gap: 1em;
         padding: 0.8em;
@@ -197,7 +197,7 @@ footer {
             color: var(--rosa);
         }
     }
-    .footer__creditos {
+    .footer-creditos {
         font-size: 1.4em;
         color: white;
         padding: 0 0.8em 0.8em;
@@ -237,7 +237,7 @@ footer {
             display: flex;
             place-content: center;
             /* Imagen */
-            .tarjeta__imagen {
+            .tarjeta-imagen {
                 aspect-ratio: 16/9;
                 height: 100%;
                 width: auto;
@@ -246,7 +246,7 @@ footer {
                 position: relative;
                 z-index:20;
             }
-            .tarjeta__imagen-fondo{
+            .tarjeta-imagen-fondo{
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -281,7 +281,7 @@ footer {
             margin: 1.5em auto;
     
             /* Imagen */
-            .tarjeta__imagen {
+            .tarjeta-imagen {
                 aspect-ratio: initial;
                 min-height: auto;
             }

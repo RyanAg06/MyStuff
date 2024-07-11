@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
 }
-.bienvenida__titulo {
+.bienvenida-titulo {
     font-family: "Oswald";
     font-weight: 400;
     font-size: 3rem;
@@ -76,13 +76,13 @@ body {
 .titulos.centro {
     text-align: center;
 }
-.titulos__titulo {
+.titulos-titulo {
     background-color: var(--grisClaro);
     border-bottom: var(--rosa) 2px solid;
     color: white;
     padding: 0.7rem;
 }
-.titulos__subtitulo {
+.titulos-subtitulo {
     color: var(--rosa);
     padding-top: 0.7rem;
 }
@@ -103,7 +103,7 @@ body {
 .publicaciones.vertical .tarjeta {
     max-width: 450px;
 }
-.publicaciones.vertical .tarjeta__imagen{
+.publicaciones.vertical .tarjeta-imagen{
     height: auto;
 }
 .tarjeta {
@@ -117,58 +117,58 @@ body {
     max-width: 360px;
     margin-bottom: 1.5rem;
 }
-.tarjeta__informacion {
+.tarjeta-informacion {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
 }
-.tarjeta__imagen {
+.tarjeta-imagen {
     width: 100%;
 }
-.tarjeta__imagen-preview{
+.tarjeta-imagen-preview{
     margin-top: 1rem;
 }
 .imagen-cuadrada {
     object-fit: contain;
     width: 100%;
 }
-.tarjeta__titulo {
+.tarjeta-titulo {
     border-bottom: var(--rosa) 2px solid;
     font-size: 1.5rem;
     color: white;
     display: inline-block;
 }
-.tarjeta__fecha {
+.tarjeta-fecha {
     color: var(--rosa);
 }
-.tarjeta__descripcion {
+.tarjeta-descripcion {
     color: white;
     margin-top: 1rem;
     flex-grow: 1;
 }
-.tarjeta__lista {
+.tarjeta-lista {
     font-size: 1.1em;
     color: white;
 	margin: 1.5rem;
 }
-.tarjeta__lista li {
+.tarjeta-lista li {
     list-style: disc;
 }
-.tarjeta__link {
+.tarjeta-link {
     color: var(--rosa);
     text-decoration: underline;
 }
-.tarjeta__slider {
+.tarjeta-slider {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 }
-.tarjeta__slider img {
+.tarjeta-slider img {
     object-fit: scale-down;
     scroll-snap-align: start;
 }
-.tarjeta__select {
+.tarjeta-select {
     background-color: var(--grisClaro);
     color: white;
     padding: 0.3rem;
@@ -229,13 +229,13 @@ body {
 footer {
     background-color: var(--grisOscuro);
 }
-.footer__encales {
+.footer-encales {
     display: flex;
     gap: 1rem;
     padding: 0.8rem;
 }
-.footer__encales li,
-.footer__encales a {
+.footer-encales li,
+.footer-encales a {
     color: var(--rosa);
 }
 .footer__informacion {
@@ -328,7 +328,7 @@ footer {
     .tarjeta {
         margin: 1.5rem;
     }
-    .tarjeta__imagen {
+    .tarjeta-imagen {
         height: 220px;
     }
 
@@ -379,7 +379,7 @@ footer {
         width: 100%;
         height: 15vh;
     }
-    .bienvenida__titulo {
+    .bienvenida-titulo {
         font-size: 2rem;
         margin-left: 1rem;
     }
@@ -445,10 +445,10 @@ footer {
     }
 
     /* Titulos */
-    .titulos__titulo {
+    .titulos-titulo {
         font-size: 1.5rem;
     }
-    .titulos__subtitulo {
+    .titulos-subtitulo {
         font-size: 1rem;
         margin-top: 0.5rem;
     }

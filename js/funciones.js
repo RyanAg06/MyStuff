@@ -20,7 +20,7 @@ window.addEventListener("resize", ()=>
 function abrirMenuLateral()
 {
     // Variables
-    const btnsMenu = document.querySelector(".bienvenida__btns-menu");
+    const btnsMenu = document.querySelector(".bienvenida-btns-menu");
     const nav = document.querySelector("nav");
 
     btnsMenu.addEventListener("click", ()=>                     // Evento Cambiar Icono y Mostrar Menu
@@ -45,7 +45,7 @@ function abrirSubMenus()
 {
     if(window.innerWidth < 1081)                                            // Compruebo si la Ventana es Menor a 1081px
     {
-        const items = document.querySelectorAll(".item__abrirSubMenu");     // Selecciono Todos los Elementos
+        const items = document.querySelectorAll(".item-abrir-sub-menu");     // Selecciono Todos los Elementos
 
         items.forEach(item =>                                               // Itero los Elementos
         {
@@ -70,7 +70,7 @@ function abrirSubMenus()
 // Funcion Cerrar Submenus
 function cerrarSubmenus()
 {
-    const flechas = document.querySelectorAll(".icono__menu-desplegar");
+    const flechas = document.querySelectorAll(".icono-menu-desplegar");
     const submenu2 = document.querySelectorAll(".menu-2");
     const submenu3 = document.querySelectorAll(".menu-3");
 
