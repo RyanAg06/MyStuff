@@ -1,0 +1,290 @@
+/* ========================== EXTRAS ========================= */
+:root {
+    --maxWidth: 1200px;
+}
+
+/* ========================== TITULOS ========================= */
+.titulos {
+    max-width: var(--maxWidth);
+    padding: 1.5em 0.7em 0;
+    margin: auto;
+
+    /* Textos */
+    .titulos__titulo {
+        background-color: var(--grisClaro);
+        border-bottom: 3px var(--rosa) solid;
+        color: #fff;
+        padding: 0.4em;
+    }
+    .titulos__subtitulo {
+        color: var(--rosa);
+        margin-top: 0.7em;
+    }
+
+    /* Textos Centrados */
+    &.centro {
+        text-align: center;
+    }
+}
+
+/* ========================== TARJETAS ========================= */
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: var(--maxWidth);
+    margin: auto;
+
+    /* TARJETA */
+    .tarjeta {
+        box-shadow: 3px 2px 10px black;
+        background-color: var(--grisOscuro);
+        color: #fff;
+        border-radius: 0.8em;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin: 1em;
+        overflow: hidden;
+        transition: box-shadow 0.3s, transform 0.3s;
+
+        .tarjeta__imagen {
+            width: 100%;
+
+            &.imagen-cuadrada {
+                object-fit: contain;
+            }
+        }
+       
+
+        /* INFORMACION TARJETA */
+        .tarjeta__informacion {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em;
+    
+            /* Titulo */
+            .tarjeta__titulo {
+                border-bottom: 3px var(--rosa) solid;
+                font-size: 1.5em;
+            }
+
+            /* Fecha */
+            .tarjeta__fecha {
+                color: var(--rosa);
+            }
+
+            .tarjeta__descripcion {
+                min-height: 50px;
+                
+                /* TODO : hay que investigar para que funciona esto */
+                display: -webkit-box;
+                -webkit-line-clamp: 2; 
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            /* Select e Inputs */
+            .tarjeta__select {
+                background-color: var(--grisClaro);
+                border: none;
+                color: white;
+                padding: 0.3rem;
+                margin-top: 0.4rem;
+            }
+        }
+
+        &:hover {
+            box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    /* Modo Vertical */
+    &.vertical {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        /* TARJETA */
+        .tarjeta {
+            width: 450px;
+
+            /* Imagen */
+            .tarjeta__imagen {
+                aspect-ratio: initial;
+                max-height: auto;
+            }
+        }
+    }
+}
+
+/* ========================== BOTONES ========================= */
+
+/* Boton Normal */
+.boton {
+    box-shadow: 3px 2px 10px black;
+    background-color: var(--grisOscuro);
+    color: white;
+    text-align: center;
+    display: block;
+    min-width: 140px;
+    padding: 0.7em 0 0;
+    margin: 1em auto;
+    transition: 0.3s;
+
+    & .borde__inferior {
+        margin-top: 0.5em;
+        padding: 1.3px;
+    }
+
+    &:hover {
+        background-color: var(--grisClaro);
+        color: var(--rosa);
+    }
+}
+
+/* Boton Descargar */
+.descargar {
+    background-color: var(--verde);
+    border-radius: 4px;
+    padding: 0.7em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--verde);
+        border: none;
+        color: white;
+        scale: 1.1;
+    }
+}
+
+/* ========================== CODIGO ========================= */
+.copiar {
+    background-color: var(--grisClaro);
+	color: white;
+	border: none;
+    max-width: 70px;
+    padding: 0.5rem;
+	margin-top: 0.7rem;
+	transition: 0.3s;
+
+    &:hover {
+        background-color: var(--rosa);
+    }
+}
+
+.codigo {
+    background-color: var(--grisClaro);
+	color: white;
+	display: block;
+	padding: 0.7rem;
+}
+
+/* ========================== FOOTER ========================= */
+footer {
+    background-color: var(--grisOscuro);
+    margin-top: auto;
+
+    .footer__encales {
+        display: flex;
+        gap: 1em;
+        padding: 0.8em;
+
+        li,
+        a {
+            color: var(--rosa);
+        }
+    }
+    .footer__creditos {
+        font-size: 1.4em;
+        color: white;
+        padding: 0 0.8em 0.8em;
+    }
+}
+
+/* ========================== Computadora ========================= */
+@media (width > 1080px) {
+
+    /* ========================== TARJETAS ========================= */
+
+    /* TARJETA */
+    .tarjeta {
+
+        /* Tarjeta Hover (SOLO PARA PC) */
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+/* ========================== Computadora y Tablet ========================= */
+@media (width > 700px) {
+
+    /* ========================== TARJETAS ========================= */
+
+    /* TARJETA */
+    .tarjeta {
+        position: relative;
+
+        
+        .tajeta-imagen-contenedor{
+            height: 220px;
+            max-height: 220px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            place-content: center;
+            /* Imagen */
+            .tarjeta__imagen {
+                aspect-ratio: 16/9;
+                height: 100%;
+                width: auto;
+                max-height: 100%;
+                object-fit: contain;
+                position: relative;
+                z-index:20;
+            }
+            .tarjeta__imagen-fondo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index:10;
+                width: 100%;
+                height: 100%;
+                filter:blur(5px) ;
+                
+            }
+        }
+    }
+
+}
+
+/* ========================== Tablet ========================= */
+@media (width > 700px) and (width < 1081px) {}
+
+/* ========================== Tablet y Celular ========================= */
+@media (width < 1081px) {}
+
+/* ========================== Celular ========================= */
+@media (width < 701px) {
+    
+    /* ========================== TARJETAS ========================= */
+    .tarjetas {
+        width: 100%;
+        padding: 0.7em;
+
+        /* TARJETA */
+        .tarjeta {
+            min-width: 100%;
+            margin: 1.5em auto;
+    
+            /* Imagen */
+            .tarjeta__imagen {
+                aspect-ratio: initial;
+                min-height: auto;
+            }
+        }
+    }
+}

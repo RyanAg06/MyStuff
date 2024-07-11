@@ -1,0 +1,304 @@
+/* ========================== EXTRAS ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* Fuente Oswald */
+
+* {
+    text-decoration: none;
+    font-family: "arial";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --verde: #008849;
+    --rosa: rgb(229, 77, 148);
+    --grisOscuro: rgb(56, 65, 67);
+    --grisClaro: rgb(73, 82, 85);
+    --modoOscuro: rgb(60, 70, 75);
+}
+body {
+    background-color: var(--modoOscuro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ========================== SCROLL HORIZONTAL ========================= */
+.scroll-h {
+    background-color: var(--rosa);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: progreso-scroll-h;
+    animation-timeline: scroll();
+}
+
+/* Oculto el Scroll */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ========================== BORDE INFERIOR ========================= */
+.div__borde{
+    .borde__inferior {
+        background-color: var(--rosa);
+        height: 2px;
+        /* clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); */
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+        transition: clip-path 0.3s;
+    }
+
+    &:hover {
+        .borde__inferior {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+/* ========================== HEADER SUPERIOR ========================= */
+.bienvenida {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    background-color: var(--grisOscuro);
+    background-image: url("../imagenes/bola.png");
+    background-repeat: round;
+    display: flex;
+    align-items: center;
+
+    /* Titulo MyStuff */
+    .bienvenida__titulo {
+        font-family: "Oswald";
+        font-weight: 400;
+        color: var(--rosa);
+    }
+}
+
+/* ========================== ESTILOS MENUS ========================= */
+.menu-1 ul {
+    box-shadow: 2px 2px 10px #000;
+    z-index: 100;
+}
+.menu-1 li {
+    background-color: var(--grisOscuro);
+}
+.menu-1 a,
+.menu-1 label {
+    position: relative;
+    text-wrap: nowrap;
+    color: #fff;
+    display: block;
+    padding: 0.8vh;
+    cursor: pointer;
+    transition: 0.3s;
+
+    /* Hover o Click a un Elemento */
+    &:hover {
+        background-color: var(--grisClaro);
+        color: var(--rosa);
+    }
+}
+
+/* ========================== Computadora ========================= */
+@media (width > 1080px) {
+
+    /* ========================== HEADER SUPERIOR ========================= */
+    .bienvenida {
+        background-size: 1.7em;
+        justify-content: space-around;
+        height: 25vh;
+        
+        /* Titulo MyStuff */
+        .bienvenida__titulo {
+            font-size: 6vh;
+        }
+
+        /* BOTONES MENU LATERAL */
+        .bienvenida__btns-menu {
+            display: none;
+        }
+    }
+
+    /* ========================== MENU NAVEGACION ========================= */
+    .menu-1 {
+        display: flex;
+        justify-content: space-around;
+        
+        /* Centrar Textos Menu 1 */
+        & > li > .div__borde {
+            text-align: center;
+        }
+
+        /* Submenus */
+        ion-icon {
+            display: none;
+        }
+        ul {
+            position: absolute;
+            min-width: 9em;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.2s;
+        }
+        li {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Mostrar Menu 2 */
+        li:hover .menu-2 {
+            top: 100%;
+            opacity: 1;
+            pointer-events: initial;
+        }
+
+        /* MENU 2 */
+        .menu-2 {
+            top: 200%;
+
+            /* Mostrar Menu 3 */
+            li:hover .menu-3 {
+                top: 0;
+                left: 100%;
+                opacity: 1;
+                pointer-events: initial;
+            }
+            
+            /* MENU 3 */
+            .menu-3 {
+                top: 100%;
+                left: 100%;
+            }
+        }
+    }
+}
+
+/* ========================== Computadora y Tablet ========================= */
+@media (width > 700px) {}
+
+/* ========================== Tablet ========================= */
+@media (width > 700px) and (width < 1081px) {}
+
+/* ========================== Tablet y Celular ========================= */
+@media (width < 1081px) {
+
+    /* ========================== HEADER ========================= */
+    header {
+        position: sticky;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+
+        /* ========================== HEADER SUPERIOR ========================= */
+        .bienvenida {
+            background-size: 1.5em;
+            justify-content: space-between;
+            position: relative;
+            z-index: 100;
+            height: 12vh;
+
+            /* Titulo MyStuff */
+            .bienvenida__titulo {
+                font-size: 8vh;
+                margin-left: 0.5em;
+            }
+
+            /* BOTONES MENU LATERAL */
+            .bienvenida__btns-menu {
+                position: relative;
+                width: 4em;
+                height: 4em;
+                margin-right: 0.5em;
+
+                /* Iconos Abrir y Cerrar Menu */
+                ion-icon {
+                    font-size: 3em;
+                    color: #fff;
+                    position: absolute;
+                    inset: 0;
+                    width: 100%;
+                    margin: auto;
+                    transition: opacity 0.1s ,transform 0.4s;
+                }
+
+                /* Boton Cerrar */
+                .bienvenida__btn-cerrar {
+                    opacity: 0;
+                }
+
+                /* Menu Lateral Activo */
+                &.cambiar-icono {
+
+                    /* Boton Abrir */
+                    .bienvenida__btn-abrir {
+                        opacity: 0;
+                        transform: rotate(90deg);
+                    }
+
+                    /* Boton Cerrar */
+                    .bienvenida__btn-cerrar {
+                        opacity: 1;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        /* ========================== MENU NAVEGACION ========================= */
+        nav {
+            background-color: var(--grisOscuro);
+            position: fixed;
+            top: 12vh;
+            right: 0;
+            bottom: 0;
+            overflow-y: scroll;
+            transform: translateX(100%);
+            transition: box-shadow 0.5s, transform 0.3s;
+
+            /* Mostrar Menu Lateral */
+            &.activo {
+                box-shadow: 0 0 0 100dvw rgba(0, 0, 0, .5);
+                transform: translateX(0);
+            }
+
+            /* Submenus */
+            .menu-1 ul{
+                position: relative;
+                max-height: 0px;
+                margin-left: 1em;
+                overflow: hidden;
+                transition: max-height 0.4s;
+
+                &.activo {
+                    max-height: 100vh;
+                }
+            }
+
+            /* Iconos Flechas */
+            .menu-1 ion-icon {
+                float: right;
+                transition: transform 0.3s;
+
+                &.activo {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+}
+
+/* ========================== Celular ========================= */
+@media (width < 701px) {}
+
+/* ========================== Animaciones ========================= */
+
+/* Animacion Scroll Horiontal */
+@keyframes progreso-scroll-h {
+    100% {
+        transform: scaleX(1);
+    }
+}
