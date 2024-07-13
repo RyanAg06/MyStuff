@@ -1,3 +1,8 @@
+/* 
+Este es un componente que se reutiliza en cada pagina del sitio web
+el componente es un footer el cual tiene la información del sitio 
+asi como la información de los desarrolladores.
+*/
 document.write(`
 
     <footer>
