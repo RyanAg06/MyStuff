@@ -46,35 +46,47 @@
         display: flex;
         flex-direction: column;
         width: 45vh;
-        margin: 1.7vh;
+        margin: 2vh;
         overflow: hidden;
         transition: box-shadow 0.3s, transform 0.3s;
        
-        /* Imagen Principal */
-        .tarjeta__imagen {
-            border-radius: 1.5vh;
-            width: 100%;
+        /* Imagenes */
+        .tarjeta__imagenes {
+            position: relative;
+            max-height: 30vh;
+
+            /* Imagen Fondo */
+            .tarjeta__imagen-fondo {
+                aspect-ratio: 16/9;
+                filter: blur(1vh);
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Imagen Principal */
+            .tarjeta__imagen{
+                object-fit: contain;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
 
+        /* Slider */
         .tarjeta__slider {
-            position: relative;
-            /* scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;
             position: relative;
             display: flex;
             overflow: scroll;            
 
+            /* Imagenes Slider */
             .tarjeta__imagen-slider {
                 scroll-snap-align: center;
                 position: sticky;
+                top: 0;
                 left: 0;
                 width: 100%;
-            } */
-
-            button {
-                position: absolute;
-                top: 0%;
-                width: 10vh;
-                height: 10vh;
             }
         }
 
@@ -95,6 +107,7 @@
                 color: var(--rosa);
             }
 
+            /* Descripcion */
             .tarjeta__descripcion {
                 min-height: 6.5vh;
             }
@@ -109,6 +122,7 @@
             }
         }
 
+        /* Hover a la Tarjeta */
         &:hover {
             box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.5);
         }
@@ -116,14 +130,20 @@
 
     /* Modo Vertical */
     &.vertical {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding: 2vh;
 
         /* TARJETA */
         .tarjeta {
             width: 75vh;
+
+            /* Imagenes */
+            .tarjeta__imagenes {
+                max-height: none;
+
+                /* Imagen Fondo */
+                .tarjeta__imagen-fondo {
+                    aspect-ratio: 0;
+                }
+            }
         }
     }
 }
@@ -144,12 +164,14 @@
     margin: 1vh auto;
     transition: 0.3s;
 
+    /* Boton Subir */
     &.subir {
         max-width: 20vh;
         padding: 2vh;
         margin: 5vh auto;
     }
 
+    /* Hover al Boton */
     &:hover {
         box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
         background-color: var(--grisClaro);
@@ -164,6 +186,7 @@
     padding: 1.5vh;
     cursor: pointer;
 
+    /* Hover al Boton Descargar */
     &:hover {
         background-color: var(--verde);
         border: none;
@@ -173,6 +196,8 @@
 }
 
 /* ========================== CODIGO ========================= */
+
+/* Boton Copiar Codigo */
 .copiar {
     background-color: var(--grisClaro);
 	color: white;
@@ -182,11 +207,13 @@
 	margin-top: 0.7vh;
 	transition: 0.3s;
 
+    /* Hover al Boton Copiar */
     &:hover {
         background-color: var(--rosa);
     }
 }
 
+/* Bloque de Codigo */
 .codigo {
     background-color: var(--grisClaro);
 	color: white;
@@ -220,74 +247,31 @@ footer {
 /* ========================== Computadora ========================= */
 @media (width > 1080px) {
 
-    /* ========================== TARJETAS ========================= */
-
-    /* TARJETA */
-    .tarjeta {
-
-        /* Tarjeta Hover (SOLO PARA PC) */
-        &:hover {
-            transform: translateY(-0.3vh);
-        }
+    /* Hover a la Tarjeta (SOLO PARA PC) */
+    .tarjeta:hover {
+        transform: translateY(-0.3vh);
     }
-}
-
-/* ========================== Computadora y Tablet ========================= */
-@media (width > 700px) {
-
-    /* ========================== TARJETAS ========================= */
-
-    /* Imagen */
-    .tarjeta__imagenes {
-        position: relative;
-        width: 100%;
-        min-height: 30vh;
-        max-height: 30vh;
-        
-        /* Imagen de Fondo */
-        .tarjeta__imagen-fondo {
-            aspect-ratio: 16/9;
-            filter: blur(1vh);
-            width: 100%;
-            min-height: 30vh;
-            max-height: 30vh;
-        }
-
-        /* Imagen Principal */
-        .tarjeta__imagen {
-            object-fit: contain;
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 30vh;
-            max-height: 30vh;
-        }
-    }
-
 }
 
 /* ========================== Celular ========================= */
-@media (width < 701px) {
-    
-    /* ========================== TARJETAS ========================= */
-    .tarjetas {
+@media (width < 701px ) or (height < 501px) {
 
+    /* ========================== Tarjetas ========================= */
+    .tarjetas,
+    .tarjetas.vertical {
+        
         /* Tarjeta */
         .tarjeta {
             width: 100%;
 
-            /* Imagen de Fondo */
-            .tarjeta__imagen-fondo {
-                display: none;
-            }
-        }
+            /* Imagenes */
+            .tarjeta__imagenes {
+                max-height: none;
 
-        /* Modo Vertical */
-        &.vertical {
-            
-            /* Hago las Tarjeas al 100% */
-            .tarjeta {
-                width: 100%;
+                /* Imagen Fondo */
+                .tarjeta__imagen-fondo {
+                    aspect-ratio: 0;
+                }
             }
         }
     }

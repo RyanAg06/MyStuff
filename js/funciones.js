@@ -103,8 +103,8 @@ function copiarPortapapeles(ruta)                           // Funcion que recib
 // Obtener Color Dominante
 function colorDominante(imagen)
 {
-    var colorThief = new ColorThief();
-    var img = document.getElementById(`${imagen}`);
-    var dominantColor = colorThief.getColor(img);
-    console.log(`El color dominante es: rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`);
+    let colorThief = new ColorThief();
+    let img = document.getElementById(`${imagen}`);
+    let color = colorThief.getColor(img);
+    console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);
 }
