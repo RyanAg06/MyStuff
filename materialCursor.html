@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,19 +19,20 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos-titulo">Material Cursor Dark</h1>
-                <h3 class="titulos-subtitulo">Un cursor diferente y sencillo</h3>
+                <h1 class="titulos__titulo">Material Cursor Dark</h1>
+                <h3 class="titulos__subtitulo">Un cursor diferente y sencillo</h3>
             </div>
 
             <!-- Publicaciones -->
-            <article class="publicaciones vertical">
+            <article class="tarjetas vertical">
 
                 <!-- Descripcion -->
                 <section class="tarjeta">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Información</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Información</h4>
+                        <p class="tarjeta__descripcion">
                             Un nuevo cursor elegante y sencillo para salir del viejo mouse predeterminado de Windows, si te interesa aqui estan 
                             los pasos para tenerlo en solo 3 simples pasos:
                         </p>
@@ -39,11 +42,17 @@
 
                 <!-- Paso 1 -->
                 <section class="tarjeta">
-                    <img src="./imagenes/materialCursor/paso1.png" alt="imagen" class="tarjeta-imagen">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 1</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/materialCursor/paso1.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/materialCursor/paso1.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 1</h4>
+                        <p class="tarjeta__descripcion">
                             Primero descarga los archivos, y extrae, luego busca el archivo llamado "install.inf"
                         </p>
                         <a href="https://mega.nz/file/AnwgCDDB#JHdtieF6MDJE6rSUXiS70_KGPAJZ-CU59bd946ipiaM" target="_blank" class="boton descargar">Descargar Mouse</a>
@@ -53,11 +62,17 @@
 
                 <!-- Paso 2 -->
                 <section class="tarjeta">
-                    <img src="./imagenes/materialCursor/paso2.png" alt="imagen" class="tarjeta-imagen">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 2</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/materialCursor/paso2.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/materialCursor/paso2.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 2</h4>
+                        <p class="tarjeta__descripcion">
                             Dale <b>Click Derecho</b> al archivo llamado "Install.inf" luego dale a "Instalar".
                         </p>
                     </div>
@@ -65,18 +80,24 @@
 
                 <!-- Paso 3 -->
                 <section class="tarjeta">
-                    <img src="./imagenes/materialCursor/paso3.png" alt="imagen" class="tarjeta-imagen">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 3</h4>
-                        <p class="tarjeta-descripcion">Ahora solo ve a "Panel de Control > Mouse > Punteros" y lo seleccionas.</p>
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/materialCursor/paso3.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/materialCursor/paso3.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">Paso 3</h4>
+                        <p class="tarjeta__descripcion">Ahora solo ve a "Panel de Control > Mouse > Punteros" y lo seleccionas.</p>
                     </div>
 
                 </section>
 
             </article>
 
-            <a href="#" class="boton regresar">Regresar</a>
+            <!-- Boton Subir -->
+            <a href="#" class="boton subir">Regresar</a>
 
         </main>
 

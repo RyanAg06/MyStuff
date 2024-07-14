@@ -252,6 +252,14 @@ document.write(`
                             </div>
                         </li>
 
+                        <!-- Material Dark Cursor -->
+                        <li>
+                            <div class="div__borde">
+                                <a href="materialCursor.html">Material Dark Cursor</a>
+                                <div class="borde__inferior"></div>
+                            </div>
+                        </li>
+
                     </ul>
 
                 </li>
