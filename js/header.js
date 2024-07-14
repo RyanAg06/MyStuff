@@ -107,7 +107,7 @@ document.write(`
                         <!-- Enlace Texturas -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Texturas</a>
+                                <a href="texturas.html">Texturas</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>

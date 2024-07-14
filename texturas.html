@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,20 +19,26 @@
 
             <!-- Titulos -->
             <div class="titulos">
-                <h1 class="titulos-titulo">Texturas para Minecraft Bedrock</h1>
-                <h3 class="titulos-subtitulo">Texturas hechas por mi</h3>
+                <h1 class="titulos__titulo">Texturas para Minecraft Java y Bedrock</h1>
+                <h3 class="titulos__subtitulo">Texturas Creadas por Mi</h3>
             </div>
 
             <!-- Tarjetas -->
-            <article class="publicaciones">
+            <article class="tarjetas">
 
                 <!-- MiawClient -->
                 <section class="tarjeta">
-                    <img src="./imagenes/noticias/noticia5.png" alt="imagen" class="tarjeta-imagen imagen-cuadrada">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">MiawClient</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/noticias/noticia5.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/noticias/noticia5.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h4 class="tarjeta__titulo">MiawClient <b>(Edicion: Bedrock)</b></h4>
+                        <p class="tarjeta__descripcion">
                             Un cliente sencillo pero muy util para jugar en Supervivencia o PvP.
                         </p>
                         <a href="miawClient.html" class="boton">Visitar</a>
