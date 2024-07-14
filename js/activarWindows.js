@@ -1,11 +1,6 @@
 // =============== Funcion Obtener Codigo ===============
 function activarWindowsCodigo() 
 {
-    /*
-    A partir de una serie de códigos se coloca uno de estos en la pantalla en base a la opción que seleccione el usuario
-    en la etiqueta con el ID #versionWindows
-    ? porque no cambiamos esto a un array o diccionario ??
-    */
     // Conecto Elementos
     let version = document.getElementById("versionWindows").value;
     const codigo = document.getElementById("codigoCMD");

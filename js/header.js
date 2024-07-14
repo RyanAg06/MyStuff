@@ -6,12 +6,12 @@ document.write(`
         <div class="bienvenida">
 
             <!-- Titulo MyStuff -->
-            <a href="index.html" class="bienvenida-titulo">🎲MyStuff</a>
+            <a href="index.html" class="bienvenida__titulo">🎲MyStuff</a>
 
             <!-- Botones Menu Lateral -->
-            <div class="bienvenida-btns-menu">
-                <ion-icon name="reorder-three-outline" class="bienvenida-btn-abrir"></ion-icon>
-                <ion-icon name="close-outline" class="bienvenida-btn-cerrar"></ion-icon>
+            <div class="bienvenida__btns-menu">
+                <ion-icon name="reorder-three-outline" class="bienvenida__btn-abrir"></ion-icon>
+                <ion-icon name="close-outline" class="bienvenida__btn-cerrar"></ion-icon>
             </div>
 
         </div>
@@ -24,9 +24,9 @@ document.write(`
 
                 <!-- Enlace Noticias -->
                 <li>
-                    <div class="div-borde">
+                    <div class="div__borde">
                         <a href="./index.html">Noticias</a>
-                        <div class="borde-inferior"></div>
+                        <div class="borde__inferior"></div>
                     </div>
                 </li>
 
@@ -34,12 +34,12 @@ document.write(`
                 <li>
 
                     <!-- Submenu Proyectos -->
-                    <div class="div-borde item-abrir-sub-menu">
+                    <div class="div__borde item__abrirSubMenu">
                         <label>
                             Proyectos
-                            <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
-                        <div class="borde-inferior"></div>
+                        <div class="borde__inferior"></div>
                     </div>
 
                     <!-- Menu 2 -->
@@ -47,33 +47,33 @@ document.write(`
 
                         <!-- Encale Juego dados -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Juego de Dados</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Virtual Fishing -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Virtual Fishing</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Proyecto Enfermeria -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Proyecto Enfermeria</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Gan-Man -->
                         <li class="ultimo">
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Gan-Man</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
@@ -85,12 +85,12 @@ document.write(`
                 <li>
 
                     <!-- Submenu Minceraft -->
-                    <div class="div-borde item-abrir-sub-menu">
+                    <div class="div__borde item__abrirSubMenu">
                         <label>
                             Minecraft
-                            <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
-                        <div class="borde-inferior"></div>
+                        <div class="borde__inferior"></div>
                     </div>
                     
                     <!-- Menu 2 -->
@@ -98,17 +98,17 @@ document.write(`
 
                         <!-- Enlace Mundos -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Mundos</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Texturas -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Texturas</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
@@ -120,12 +120,12 @@ document.write(`
                 <li>
 
                     <!-- Submenu 3DS -->
-                    <div class="div-borde item-abrir-sub-menu">
+                    <div class="div__borde item__abrirSubMenu">
                         <label>
                             3DS
-                            <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
-                        <div class="borde-inferior"></div>
+                        <div class="borde__inferior"></div>
                     </div>
 
                     <!-- Menu 2 -->
@@ -133,9 +133,9 @@ document.write(`
 
                         <!-- Enlace Cias -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Cias</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
@@ -143,12 +143,12 @@ document.write(`
                         <li>
 
                             <!-- Submenu Firmware R4 -->
-                            <div class="div-borde item-abrir-sub-menu">
+                            <div class="div__borde item__abrirSubMenu">
                                 <label>
                                     Firmware R4
-                                    <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                                    <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                                 </label>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
 
                             <!-- Menu 3 -->
@@ -156,17 +156,17 @@ document.write(`
 
                                 <!-- Enlace Firmware Original -->
                                 <li>
-                                    <div class="div-borde">
+                                    <div class="div__borde">
                                         <a href="#">Original</a>
-                                        <div class="borde-inferior"></div>
+                                        <div class="borde__inferior"></div>
                                     </div>
                                 </li>
 
                                 <!-- Enlace Firmware Generico -->
                                 <li>
-                                    <div class="div-borde">
+                                    <div class="div__borde">
                                         <a href="#">Generico</a>
-                                        <div class="borde-inferior"></div>
+                                        <div class="borde__inferior"></div>
                                     </div>
                                 </li>
 
@@ -178,12 +178,12 @@ document.write(`
                         <li>
 
                             <!-- Submenu Personalizar -->
-                            <div class="div-borde item-abrir-sub-menu">
+                            <div class="div__borde item__abrirSubMenu">
                                 <label>
                                     Personalizar
-                                    <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                                    <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                                 </label>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                             
                             <!-- Menu 3 -->
@@ -191,17 +191,17 @@ document.write(`
 
                                 <!-- Enlace Insignias -->
                                 <li>
-                                    <div class="div-borde">
+                                    <div class="div__borde">
                                         <a href="#">Insignias</a>
-                                        <div class="borde-inferior"></div>
+                                        <div class="borde__inferior"></div>
                                     </div>
                                 </li>
 
                                 <!-- Enlace Home Menu -->
                                 <li>
-                                    <div class="div-borde">
+                                    <div class="div__borde">
                                         <a href="#">Home Menu</a>
-                                        <div class="borde-inferior"></div>
+                                        <div class="borde__inferior"></div>
                                     </div>
                                 </li>
 
@@ -217,12 +217,12 @@ document.write(`
                 <li>
 
                     <!-- Submenu Etc -->
-                    <div class="div-borde item-abrir-sub-menu">
+                    <div class="div__borde item__abrirSubMenu">
                         <label>
                             Etc
-                            <ion-icon name="chevron-down-outline" class="icono-menu-desplegar"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
-                        <div class="borde-inferior"></div>
+                        <div class="borde__inferior"></div>
                     </div>
 
                     <!-- Menu 2 -->
@@ -230,25 +230,25 @@ document.write(`
 
                         <!-- Enlace Activar Windows -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="../activarWindows.html">Activar Windows</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Activar Office -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="#">Activar Office</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 
                         <!-- Enlace Desbloquear Minecraft -->
                         <li>
-                            <div class="div-borde">
+                            <div class="div__borde">
                                 <a href="desbloquearMc.html">Desbloquear Minecraft</a>
-                                <div class="borde-inferior"></div>
+                                <div class="borde__inferior"></div>
                             </div>
                         </li>
 

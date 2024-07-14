@@ -4,6 +4,7 @@
 * {
     text-decoration: none;
     font-family: "arial";
+    font-size: 2vh;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -32,7 +33,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 3px;
+    height: 0.3vh;
     transform: scaleX(0);
     transform-origin: left;
     animation: progreso-scroll-h;
@@ -45,17 +46,17 @@ body {
 }
 
 /* ========================== BORDE INFERIOR ========================= */
-.div-borde{
-    .borde-inferior {
+.div__borde{
+    .borde__inferior {
         background-color: var(--rosa);
-        height: 2px;
+        height: 0.2vh;
         /* clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); */
         clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
         transition: clip-path 0.3s;
     }
 
     &:hover {
-        .borde-inferior {
+        .borde__inferior {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
@@ -67,11 +68,12 @@ body {
     background-color: var(--grisOscuro);
     background-image: url("../imagenes/bola.png");
     background-repeat: round;
+    background-size: 3vh;
     display: flex;
     align-items: center;
 
     /* Titulo MyStuff */
-    .bienvenida-titulo {
+    .bienvenida__titulo {
         font-family: "Oswald";
         font-weight: 400;
         color: var(--rosa);
@@ -88,15 +90,16 @@ body {
 }
 .menu-1 a,
 .menu-1 label {
-    position: relative;
     text-wrap: nowrap;
+    font-size: 2vh;
     color: #fff;
+    position: relative;
     display: block;
-    padding: 0.8vh;
+    padding: 1.4vh;
     cursor: pointer;
     transition: 0.3s;
 
-    /* Hover o Click a un Elemento */
+    /* Hover o Click a un Elvhento */
     &:hover {
         background-color: var(--grisClaro);
         color: var(--rosa);
@@ -108,17 +111,16 @@ body {
 
     /* ========================== HEADER SUPERIOR ========================= */
     .bienvenida {
-        background-size: 1.7em;
         justify-content: space-around;
         height: 25vh;
         
         /* Titulo MyStuff */
-        .bienvenida-titulo {
+        .bienvenida__titulo {
             font-size: 6vh;
         }
 
         /* BOTONES MENU LATERAL */
-        .bienvenida-btns-menu {
+        .bienvenida__btns-menu {
             display: none;
         }
     }
@@ -129,7 +131,7 @@ body {
         justify-content: space-around;
         
         /* Centrar Textos Menu 1 */
-        & > li > .div-borde {
+        & > li > .div__borde {
             text-align: center;
         }
 
@@ -139,7 +141,7 @@ body {
         }
         ul {
             position: absolute;
-            min-width: 9em;
+            min-width: 16vh;
             opacity: 0;
             pointer-events: none;
             transition: 0.2s;
@@ -190,33 +192,32 @@ body {
     header {
         position: sticky;
         z-index: 100;
-        width: 100%;
         top: 0;
+        width: 100%;
 
         /* ========================== HEADER SUPERIOR ========================= */
         .bienvenida {
-            background-size: 1.5em;
             justify-content: space-between;
             position: relative;
             z-index: 100;
-            height: 12vh;
+            height: 10vh;
 
             /* Titulo MyStuff */
-            .bienvenida-titulo {
-                font-size: 8vh;
-                margin-left: 0.5em;
+            .bienvenida__titulo {
+                font-size: 5vh;
+                margin-left: 1.5vh;
             }
 
             /* BOTONES MENU LATERAL */
-            .bienvenida-btns-menu {
+            .bienvenida__btns-menu {
                 position: relative;
-                width: 4em;
-                height: 4em;
-                margin-right: 0.5em;
+                width: 7vh;
+                height: 7vh;
+                margin-right: 1.5vh;
 
                 /* Iconos Abrir y Cerrar Menu */
                 ion-icon {
-                    font-size: 3em;
+                    font-size: 7vh;
                     color: #fff;
                     position: absolute;
                     inset: 0;
@@ -226,7 +227,7 @@ body {
                 }
 
                 /* Boton Cerrar */
-                .bienvenida-btn-cerrar {
+                .bienvenida__btn-cerrar {
                     opacity: 0;
                 }
 
@@ -234,13 +235,13 @@ body {
                 &.cambiar-icono {
 
                     /* Boton Abrir */
-                    .bienvenida-btn-abrir {
+                    .bienvenida__btn-abrir {
                         opacity: 0;
                         transform: rotate(90deg);
                     }
 
                     /* Boton Cerrar */
-                    .bienvenida-btn-cerrar {
+                    .bienvenida__btn-cerrar {
                         opacity: 1;
                         transform: rotate(90deg);
                     }
@@ -252,7 +253,7 @@ body {
         nav {
             background-color: var(--grisOscuro);
             position: fixed;
-            top: 12vh;
+            top: 10vh;
             right: 0;
             bottom: 0;
             overflow-y: scroll;
@@ -268,11 +269,12 @@ body {
             /* Submenus */
             .menu-1 ul{
                 position: relative;
-                max-height: 0px;
-                margin-left: 1em;
+                max-height: 0;
+                margin-left: 3vh;
                 overflow: hidden;
                 transition: max-height 0.4s;
 
+                /* Mostrar SubMenu */
                 &.activo {
                     max-height: 100vh;
                 }
@@ -283,6 +285,7 @@ body {
                 float: right;
                 transition: transform 0.3s;
 
+                /* Rotar Iconos */
                 &.activo {
                     transform: rotate(-180deg);
                 }

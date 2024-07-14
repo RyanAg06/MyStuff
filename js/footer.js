@@ -1,14 +1,9 @@
-/* 
-Este es un componente que se reutiliza en cada pagina del sitio web
-el componente es un footer el cual tiene la información del sitio 
-asi como la información de los desarrolladores.
-*/
 document.write(`
 
     <footer>
        
         <!-- Enlaces Redes Sociales -->
-        <ul class="footer-encales">
+        <ul class="footer__encales">
 
             <!-- Facebook -->
             <li>
@@ -25,7 +20,7 @@ document.write(`
         </ul>
 			
         <!-- Creditos -->
-		<div class="footer-creditos">
+		<div class="footer__creditos">
             <b>Hecho por RyanAg ©</b>
 		</div>
 
