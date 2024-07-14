@@ -112,6 +112,18 @@
                 min-height: 6.5vh;
             }
 
+            /* Listas */
+            .tarjeta__lista {
+                font-size: 1.1em;
+                color: white;
+                margin-left: 1.5rem;
+
+                /* Items */
+                li {
+                    list-style: disc;
+                }
+            }
+
             /* Select e Inputs */
             .tarjeta__select {
                 background-color: var(--grisClaro);
@@ -202,9 +214,9 @@
     background-color: var(--grisClaro);
 	color: white;
 	border: none;
-    max-width: 10vh;
+    display: inline;
+    width: fit-content;
     padding: 0.7vh;
-	margin-top: 0.7vh;
 	transition: 0.3s;
 
     /* Hover al Boton Copiar */
@@ -219,6 +231,7 @@
 	color: white;
 	display: block;
 	padding: 0.7vh;
+    margin-bottom: 2vh;
 }
 
 /* ========================== FOOTER ========================= */

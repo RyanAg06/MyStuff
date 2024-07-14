@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./css/menuNav.css">
         <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
     
@@ -62,9 +63,10 @@
                         </select>
 
                         <a class="boton descargar" onclick="activarWindowsCodigo()">Generar Codigo</a>
-                        <button class="copiar" onclick="copiarPortapapeles('codigoCMD')">Copiar</button>
-                        <span class="codigo" id="codigoCMD">Elige tu version</span>
 
+                        <!-- Codigo -->
+                        <a class="copiar" onclick="copiarPortapapeles('codigoCMD')">Copiar</a>
+                        <span class="codigo" id="codigoCMD">Elige tu version</span>
                     </div>
 
                 </section>

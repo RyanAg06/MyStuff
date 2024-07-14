@@ -239,7 +239,7 @@ document.write(`
                         <!-- Enlace Activar Office -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Activar Office</a>
+                                <a href="activarOffice.html">Activar Office</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
