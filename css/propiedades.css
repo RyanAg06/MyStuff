@@ -35,7 +35,9 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: var(--maxWidth);
+    padding: 1.5em;
     margin: auto;
+    gap: 2em;
 
     /* TARJETA */
     .tarjeta {
@@ -46,7 +48,6 @@
         display: flex;
         flex-direction: column;
         width: 21em;
-        margin: 1em;
         overflow: hidden;
         transition: box-shadow 0.3s, transform 0.3s;
        
@@ -302,7 +303,6 @@ footer {
         /* Tarjeta */
         .tarjeta {
             width: 100%;
-            margin: 1.5em;
 
             /* Imagenes */
             .tarjeta__imagenes {

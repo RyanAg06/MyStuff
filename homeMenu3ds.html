@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,42 +19,51 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos-titulo">Home Menu 3DS</h1>
-                <h3 class="titulos-subtitulo">Nuevo y rediseñado Home Menu</h3>
+                <h1 class="titulos__titulo">Home Menu 3DS</h1>
+                <h2 class="titulos__subtitulo">Nuevo y rediseñado Home Menu</h2>
             </div>
 
             <!-- Contenido -->
-            <article class="publicaciones vertical">
+            <article class="tarjetas vertical">
 
-                <!-- Descripcion -->
+                <!-- Guia -->
                 <section class="tarjeta">
                     
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Informacion</h4>
-                        <p class="tarjeta-descripcion">
-                            Algo totalmente nuevo y diferente a lo acostumbrado que le hara sentir a tu consola 3DS un nuevo aire. <br><br>
-                            Si te gustaria tenerlo sigue los pasos, para esto ya debes tener tu consola liberada <b>OBLIGATORIAMENTE!!</b> <br><br>
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Información</h1>
+                        <p class="tarjeta__descripcion">
+                            Algo totalmente nuevo y diferente a lo acostumbrado que le hara sentir a tu consola 3DS un nuevo aire. <br>
+                            <br>
+                            Si te gustaria tenerlo sigue los pasos, para esto ya debes tener tu consola liberada <b>OBLIGATORIAMENTE!!</b> <br>
+                            <br>
                             Funciona en todas las versiones:
                         </p>
                         
-                        <ul class="tarjeta-lista">
+                        <!-- Lista -->
+                        <ul class="tarjeta__lista">
                             <li>Old Nintendo 3DS</li>
                             <li>Old Nintendo 2DS</li>
                             <li>New Nintendo 3DS</li>
                             <li>New Nintendo 2DS</li>
                         </ul>
-
                     </div>
 
                 </section>
 
                 <!-- Paso 1 -->
                 <section class="tarjeta">
-                    <img src="./imagenes/3ds/hm__paso1.jpg" alt="imagen" class="tarjeta-imagen">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 1</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/3ds/hm__paso1.jpg" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/3ds/hm__paso1.jpg" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Paso 1</h1>
+                        <p class="tarjeta__descripcion">
                             Verifica que tengas una version de Luma superior a 10.3, una vez compruebes esto; apaga tu consola, 
                             manten presionado SELECT mientras das un click a POWER y selecciona "enable game patching".
                         </p>
@@ -63,28 +74,44 @@
                 <!-- Paso 2 -->
                 <section class="tarjeta">
 
-                    <div class="tarjeta-slider">
-                        <img src="./imagenes/3ds/paso2.png" alt="imagen" class="tarjeta-imagen">
-                        <img src="./imagenes/3ds/paso2-1.png" alt="imagen" class="tarjeta-imagen">
+                    <!-- Slider -->
+                    <div class="tarjeta__slider">
+                        <img src="./imagenes/3ds/paso2.png" alt="imagen" class="tarjeta__imagen-slider">
+                        <img src="./imagenes/3ds/paso2-1.png" alt="imagen" class="tarjeta__imagen-slider">
                     </div>
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 2</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Paso 2</h1>
+                        <p class="tarjeta__descripcion">
                             Ahora descarga los archivos necesarion, y extrae.
                         </p>
-                        <a href="https://mega.nz/file/InAyXK4R#y2tSIOXozCACohYxsaERW4KskZbE1vg7DOY0tiYeYpI" target="_blank" class="boton descargar">Descargar Archivos</a>
+
+                        <!-- Boton Descaragar -->
+                        <div class="div__boton">
+                            <a href="https://mega.nz/file/InAyXK4R#y2tSIOXozCACohYxsaERW4KskZbE1vg7DOY0tiYeYpI" target="_blank" class="boton descargar">
+                                Descargar Archivos
+                                <ion-icon name="download-outline"></ion-icon>
+                            </a>
+                        </div>
+                        
                     </div>
 
                 </section>
 
                 <!-- Paso 3 -->
                 <section class="tarjeta">
-                    <img src="./imagenes/3ds/paso3.png" alt="imagen" class="tarjeta-imagen">
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Paso 3</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/3ds/paso3.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/3ds/paso3.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Paso 3</h1>
+                        <p class="tarjeta__descripcion">
                             Entra a la carpeta y coloca la carpeta "0004003000008f02" en la siguiente ruta: "/luma/titles/"
                         </p>
                     </div>
@@ -94,16 +121,18 @@
                 <!-- Demostracion -->
                 <section class="tarjeta">
 
-                    <div class="tarjeta-slider">
-                        <img src="./imagenes/3ds/preview1.png" alt="imagen" class="tarjeta-imagen">
-                        <img src="./imagenes/3ds/preview1-1.png" alt="imagen" class="tarjeta-imagen">
-                        <img src="./imagenes/3ds/preview1-2.png" alt="imagen" class="tarjeta-imagen">
-                        <img src="./imagenes/3ds/preview1-3.png" alt="imagen" class="tarjeta-imagen">
+                    <!-- Slider -->
+                    <div class="tarjeta__slider">
+                        <img src="./imagenes/3ds/preview1.png" alt="imagen" class="tarjeta__imagen-slider">
+                        <img src="./imagenes/3ds/preview1-1.png" alt="imagen" class="tarjeta__imagen-slider">
+                        <img src="./imagenes/3ds/preview1-2.png" alt="imagen" class="tarjeta__imagen-slider">
+                        <img src="./imagenes/3ds/preview1-3.png" alt="imagen" class="tarjeta__imagen-slider">
                     </div>
 
-                    <div class="tarjeta-informacion">
-                        <h4 class="tarjeta-titulo">Demostracion</h4>
-                        <p class="tarjeta-descripcion">
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Demostracion</h1>
+                        <p class="tarjeta__descripcion">
                             Asi es como terminaria quedando.
                         </p>
                     </div>
@@ -112,7 +141,14 @@
 
             </article>
 
-            <a href="#" class="boton regresar">Regresar</a>
+            <!-- Boton Subir -->
+            <div class="div__boton">
+                <a href="#" class="boton subir div__borde">
+                    Regresar
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                    <div class="borde__inferior"></div>
+                </a>
+            </div>
 
         </main>
 
