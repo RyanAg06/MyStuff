@@ -20,7 +20,7 @@
             <!-- Titulos -->
             <div class="titulos centro">
                 <h1 class="titulos__titulo">Guia de Activacion</h1>
-                <h3 class="titulos__subtitulo">Como activar Office</h3>
+                <h2 class="titulos__subtitulo">Como activar Office</h2>
             </div>
 
             <!-- Tarjetas -->
@@ -31,10 +31,12 @@
 
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 1</h4>
+                        <h1 class="tarjeta__titulo">Paso 1</h1>
                         <p class="tarjeta__descripcion">
-							Antes de comenzar, deberas <b>borrar</b> todas las aplicaciones relacionas a Office.
+							Antes de Comenzar, Deberas <b>BORRAR</b> Todas las Aplicaciones Relacionas a Office.
 						</p>
+
+                        <!-- Lista -->
                         <ul class="tarjeta__lista">
                             <li>Word</li>
                             <li>Power Point</li>
@@ -46,7 +48,6 @@
                             <li>Publisher</li>
                             <li>Etc..</li>
                         </ul>
-						
                     </div>
 
                 </section>
@@ -56,14 +57,17 @@
 
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 2</h4>
+                        <h1 class="tarjeta__titulo">Paso 2</h1>
                         <p class="tarjeta__descripcion">
-                            Una vez eliminado debes descargar los archivos necesarios para descargar Office 365.
+                            Una vez Eliminado Debes Descargar los Archivos Necesarios para Descargar Office 365.
                         </p>
 
                         <!-- Boton Descargar -->
                         <div class="div__boton">
-                            <a href="https://mega.nz/folder/06hByKaS#-mdIWn-nhr1krj0MIiPYtw" target="_blank" class="boton descargar">Descargar Archivos</a>
+                            <a href="https://mega.nz/folder/06hByKaS#-mdIWn-nhr1krj0MIiPYtw" target="_blank" class="boton descargar">
+                                Descargar Archivos
+                                <ion-icon name="download-outline"></ion-icon>
+                            </a>
                         </div>
                     </div>
 
@@ -72,16 +76,18 @@
                 <!-- Paso 3 -->
                 <section class="tarjeta">
 
+                    <!-- Slider -->
                     <div class="tarjeta__slider">
                         <img src="./imagenes/activarOffice/paso3.png" alt="imagen" class="tarjeta__imagen-slider">
                         <img src="./imagenes/activarOffice/paso3-1.png" alt="imagen" class="tarjeta__imagen-slider">
                         <img src="./imagenes/activarOffice/paso3-2.png" alt="imagen" class="tarjeta__imagen-slider">
                     </div>
 
+                    <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 3</h4>
+                        <h1 class="tarjeta__titulo">Paso 3</h1>
                         <p class="tarjeta__descripcion">
-                            Abrir la carpeta, dar CLICK en la ruta de la carpeta y escribir "cmd" y dar ENTER.
+                            Abrir la Carpeta, dar CLICK en la Ruta de la Carpeta y Escribir "cmd" y dar ENTER.
                         </p>
                     </div>
 
@@ -90,21 +96,28 @@
                 <!-- Paso 4 -->
                 <section class="tarjeta">
 
+                    <!-- Slider -->
                     <div class="tarjeta__slider">
                         <img src="./imagenes/activarOffice/paso4.png" alt="imagen" class="tarjeta__imagen-slider">
                         <img src="./imagenes/activarOffice/paso4-1.png" alt="imagen" class="tarjeta__imagen-slider">
                         <img src="./imagenes/activarOffice/paso4-2.png" alt="imagen" class="tarjeta__imagen-slider">
                     </div>
 
+                    <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 4</h4>
+                        <h1 class="tarjeta__titulo">Paso 4</h1>
                         <p class="tarjeta__descripcion">
-                            Escribir la siguiente linea en el CMD y esperar a que se instale Microsoft 365:
+                            Escribir la Siguiente Linea en el CMD y Esperar a que se Instale Microsoft 365:
                         </p>
 
                         <!-- Codigo -->
-                        <a class="copiar" onclick="copiarPortapapeles('codigo4')">Copiar</a>
-                        <span class="codigo" id="codigo4"><p>setup /configure configuration.xml</p></span>
+                        <a class="copiar" onclick="copiarPortapapeles('codigo4')">
+                            Copiar
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
+                        <span class="codigo" id="codigo4">
+                            <p>setup /configure configuration.xml</p>
+                        </span>
                     </div>
 
                 </section>
@@ -120,9 +133,9 @@
 
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 5</h4>
+                        <h1 class="tarjeta__titulo">Paso 5</h1>
                         <p class="tarjeta__descripcion">
-                            Ahora para activarlo, debes poner en el buscador de Windows: "cmd" y <b>ejecutar como administrador</b>.
+                            Ahora para Activarlo, Debes Poner en el Buscador de Windows: "cmd" y <b>Ejecutar como Administrador</b>.
                         </p>
                     </div>
 
@@ -139,16 +152,28 @@
 
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 6</h4>
+                        <h1 class="tarjeta__titulo">Paso 6</h1>
                         <p class="tarjeta__descripcion">
-                            Colocar el siguiente codigo <b>dependiendo</b> si tu sistema es de 32 o 64 bits.
+                            Colocar el Siguiente Codigo <b>DEPENDIENDO</b> si tu Sistema es de 32 o 64 Bits.
                         </p>
 
                         <!-- Codigo -->
-                        <a class="copiar" onclick="copiarPortapapeles('codigo6-32')">Copiar: <b>32 Bits</b></a>
-                        <span class="codigo" id="codigo6-32"><p>cd C:\Program Files (x86)\\Microsoft Office\Office16</p></span>
-                        <a class="copiar" onclick="copiarPortapapeles('codigo6-64')">Copiar: <b>64 Bits</b></a>
-                        <span class="codigo" id="codigo6-64"><p>cd C:\Program Files\Microsoft Office\Office16</p></span>
+                        <a class="copiar" onclick="copiarPortapapeles('codigo6-32')">
+                            Copiar: <b>32 Bits</b>
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
+                        <span class="codigo" id="codigo6-32">
+                            <p>cd C:\Program Files (x86)\\Microsoft Office\Office16</p>
+                        </span>
+
+                        <!-- Codigo -->
+                        <a class="copiar" onclick="copiarPortapapeles('codigo6-64')">
+                            Copiar: <b>64 Bits</b>
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
+                        <span class="codigo" id="codigo6-64">
+                            <p>cd C:\Program Files\Microsoft Office\Office16</p>
+                        </span>
                     </div>
 
                 </section>
@@ -164,13 +189,16 @@
 
                     <!-- Infomacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 7</h4>
+                        <h1 class="tarjeta__titulo">Paso 7</h1>
                         <p class="tarjeta__descripcion">
-                            Despues poner lo siguiente, dar ENTER y esperar a que termine.
+                            Despues Poner lo Siguiente, dar ENTER y Esperar a que Termine.
                         </p>
 
                         <!-- Codigo -->
-                        <a class="copiar" onclick="copiarPortapapeles('codigo7')">Copiar</a>
+                        <a class="copiar" onclick="copiarPortapapeles('codigo7')">
+                            Copiar
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
                         <span class="codigo" id="codigo7">
                             <p>for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"</p>
                         </span>
@@ -190,14 +218,16 @@
 
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Paso 8</h4>
+                        <h1 class="tarjeta__titulo">Paso 8</h1>
                         <p class="tarjeta__descripcion">
-                            Por ultimo colocar el ultimo codigo y esperar a que salga como en la imagen, despues dar ENTER y esperar a que termine.
+                            Por Ultimo Colocar el Ultimo Codigo yEesperar a que Salga como en la Imagen, Despues dar ENTER y Esperar a que Termine.
                         </p>
-                        <br>
 
-                        <!-- COdigo -->
-                        <a class="copiar" onclick="copiarPortapapeles('codigo8')">Copiar</a>
+                        <!-- Codigo -->
+                        <a class="copiar" onclick="copiarPortapapeles('codigo8')">
+                            Copiar
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
                         <span class="codigo" id="codigo8">
                             <p>cscript ospp.vbs /setprt:1688</p>
                             <p>cscript ospp.vbs /unpkey:6MWKP >nul</p>
@@ -205,7 +235,6 @@
                             <p>cscript ospp.vbs /sethst:e8.us.to</p>
                             <p>cscript ospp.vbs /act</p>
                         </span>
-                        
                     </div>
 
                 </section>
@@ -216,6 +245,7 @@
             <div class="div__boton">
                 <a href="#" class="boton subir div__borde">
                     Regresar
+                    <ion-icon name="arrow-up-outline"></ion-icon>
                     <div class="borde__inferior"></div>
                 </a>
             </div>

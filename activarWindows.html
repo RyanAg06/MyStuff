@@ -32,7 +32,7 @@
             <!-- Titulos -->
             <div class="titulos centro">
                 <h1 class="titulos__titulo">Activar Windows</h1>
-                <h3 class="titulos__subtitulo">Codigos de Activación</h3>
+                <h2 class="titulos__subtitulo">Codigos de Activación</h2>
             </div>
 
             <!-- Codigos de Windows -->
@@ -42,12 +42,13 @@
                     
 					<!-- Informacion -->
                     <div class="tarjeta__informacion">
-                        <h4 class="tarjeta__titulo">Instrucciones</h4>
+                        <h1 class="tarjeta__titulo">Instrucciones</h1>
                         <p class="tarjeta__descripcion">
-                            Para activar Windows elige tu version y se generara el codigo que debes pegar en el CMD. <br><br>
-                            Recuerda iniciar CMD como ADMINISTRADOR.
+                            Para Activar Windows Elige tu Version y se Generara el Codigo que Debes Pegar en el CMD. <br><br>
+                            Recuerda Iniciar CMD como <b>ADMINISTRADOR</b>.
                         </p>
 
+                        <!-- Menu de Opciones -->
                         <select id="versionWindows" class="tarjeta__select">
                             <option value="1">Windows Home</option>
                             <option value="2">Windows Home N</option>
@@ -65,12 +66,18 @@
 
                         <!-- Boton Descargar -->
 						<div class="div__boton">
-							<a class="boton descargar" onclick="activarWindowsCodigo()">Generar Codigo</a>
+							<a class="boton descargar" onclick="activarWindowsCodigo()">
+                                Generar Codigo
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                            </a>
 						</div>
 
                         <!-- Codigo -->
-                        <a class="copiar" onclick="copiarPortapapeles('codigoCMD')">Copiar</a>
-                        <span class="codigo" id="codigoCMD">Elige tu version</span>
+                        <a class="copiar" onclick="copiarPortapapeles('codigoCMD')">
+                            Copiar
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </a>
+                        <span class="codigo" id="codigoCMD">Elige tu Version</span>
                     </div>
 
                 </section>
