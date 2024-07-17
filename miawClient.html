@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,23 +19,26 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos-titulo">MiawClient</h1>
-                <h3 class="titulos-subtitulo">Mi propio cliente para Minecraft Bedrock</h3>
+                <h1 class="titulos__titulo">MiawClient</h1>
+                <h3 class="titulos__subtitulo">Mi propio cliente para Minecraft Bedrock</h3>
             </div>
 
             <!-- Tarjetas-->
-            <article class="publicaciones vertical">
+            <article class="tarjetas vertical">
 
                 <section class="tarjeta">
 
-                    <div class="tarjeta-informacion">
-                        <p class="tarjeta-descripcion">
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h3 class="tarjeta__subtitulo">Informacion</h3>
+
+                        <p class="tarjeta__descripcion">
                             Esta textura es un nuevo cliente sencillo pero que agrega muchas cosas para que sea mas facil,
                             tambien agrega muchas cosas pero se sigue conservando la experiencia Vanilla. <br><br>
                             Caracteristicas:
                         </p>
 
-                        <ul class="tarjeta-lista">
+                        <ul class="tarjeta__lista">
                             <li>Fuente de texto Personalizada</li>
                             <li>Ver Saturacion de Comida</li>
                             <li>Pinturas nuevas</li>
@@ -77,29 +82,41 @@
                         </ul>
 
                         <!-- Version con Shaders -->
-                        <div class="tarjeta-descripcion">
-                            <h3 class="tarjeta-titulo">Version con Shaders</h3>
-                            <p class="tarjeta-descripcion">Para usar los Shaders se necesita <b><a href="https://github.com/ddf8196/BetterRenderDragon" target="_blank" class="tarjeta-link">Better Render Dragon</a></b></p>
+                        <div class="tarjeta__descripcion">
+                            <h3 class="tarjeta__subtitulo">Version con Shaders</h3>
+                            <p class="tarjeta__descripcion">Para usar los Shaders se necesita <b><a href="https://github.com/ddf8196/BetterRenderDragon" target="_blank" class="tarjeta__link">Better Render Dragon</a></b></p>
 
-                            <img src="./imagenes/texturas/mc__sh__1.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__sh__2.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__sh__3.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__sh__4.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__sh__5.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
+                            <!-- Imagenes -->
+                            <div class="tarjeta__slider">
+                                <img src="./imagenes/texturas/mc__sh__1.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__sh__2.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__sh__3.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__sh__4.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__sh__5.png" alt="imagen" class="tarjeta__imagen-slider">
+                            </div>
+                        </div>
 
+                        <!-- Boton Descargar -->
+                        <div class="div__boton">
                             <a href="https://mega.nz/file/RyJz1JhC#PSpC0kXpolUzHgM13RLVgnvucL22RghgyIwAuDWk6PQ" target="_blank" class="boton descargar">Descargar Textura</a>
                         </div>
 
                         <!-- Version sin Shaders -->
-                        <div class="tarjeta-descripcion">
-                            <h3 class="tarjeta-titulo">Version sin Shaders</h3>
+                        <div class="tarjeta__descripcion">
+                            <h3 class="tarjeta__subtitulo">Version sin Shaders</h3>
 
-                            <img src="./imagenes/texturas/mc__lt__1.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__lt__2.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__lt__3.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__lt__4.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
-                            <img src="./imagenes/texturas/mc__lt__5.png" alt="imagen" class="tarjeta-imagen tarjeta-imagen-preview">
+                            <!-- Imagenes -->
+                            <div class="tarjeta__slider">
+                                <img src="./imagenes/texturas/mc__lt__1.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__lt__2.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__lt__3.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__lt__4.png" alt="imagen" class="tarjeta__imagen-slider">
+                                <img src="./imagenes/texturas/mc__lt__5.png" alt="imagen" class="tarjeta__imagen-slider">
+                            </div>
+                        </div>
 
+                        <!-- Boton Descargar -->
+                        <div class="div__boton">
                             <a href="https://mega.nz/file/BixkSSQC#dpO9Pw-O2SMgCin_zEeRJc_yXLFp8Zzi65IDFx2ngYw" target="_blank" class="boton descargar">Descargar Textura</a>
                         </div>
                         
@@ -109,7 +126,13 @@
 
             </article>
 
-            <a href="#" class="boton regresar">Regresar</a>
+            <!-- Boton Subir -->
+            <div class="div__boton">
+                <a href="#" class="boton subir div__borde">
+                    Regresar
+                    <div class="borde__inferior"></div>
+                </a>
+            </div>
 
         </main>
 

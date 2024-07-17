@@ -1,25 +1,25 @@
 /* ========================== EXTRAS ========================= */
 :root {
-    --maxWidth: 150vh;
+    --maxWidth: 70em;
 }
 
 /* ========================== TITULOS ========================= */
 .titulos {
     max-width: var(--maxWidth);
-    padding: 3vh 2vh;
+    padding: 1.5em;
     margin: auto;
 
     /* Textos */
     .titulos__titulo {
         background-color: var(--grisClaro);
-        border-bottom: 0.4vh var(--rosa) solid;
-        font-size: 4vh;
+        border-bottom: 0.1em var(--rosa) solid;
+        font-size: 2em;
         color: #fff;
-        padding: 1.5vh;
+        padding: 0.3em;
     }
     .titulos__subtitulo {
         color: var(--rosa);
-        margin-top: 0.7vh;
+        margin-top: 0.3em;
     }
 
     /* Textos Centrados */
@@ -41,24 +41,24 @@
     .tarjeta {
         box-shadow: 0.6vh 0.3vh 2vh black;
         background-color: var(--grisOscuro);
-        border-radius: 2vh;
+        border-radius: 1em;
         color: #fff;
         display: flex;
         flex-direction: column;
-        width: 45vh;
-        margin: 2vh;
+        width: 21em;
+        margin: 1em;
         overflow: hidden;
         transition: box-shadow 0.3s, transform 0.3s;
        
         /* Imagenes */
         .tarjeta__imagenes {
             position: relative;
-            max-height: 30vh;
+            max-height: 15em;
 
             /* Imagen Fondo */
             .tarjeta__imagen-fondo {
                 aspect-ratio: 16/9;
-                filter: blur(1vh);
+                filter: blur(0.5em);
                 width: 100%;
                 height: 100%;
             }
@@ -92,14 +92,19 @@
 
         /* INFORMACION TARJETA */
         .tarjeta__informacion {
-            display: flex;
-            flex-direction: column;
-            padding: 1vh;
+            padding: 0.6em;
     
             /* Titulo */
             .tarjeta__titulo {
-                border-bottom: 0.4vh var(--rosa) solid;
-                font-size: 3vh;
+                border-bottom: 0.1em var(--rosa) solid;
+                font-size: 1.5em;                
+            }
+
+            /* Subtitulo */
+            .tarjeta__subtitulo {
+                border-bottom: 0.1em solid var(--rosa);
+                font-size: 1.4em;
+                display: inline-block;
             }
 
             /* Fecha */
@@ -109,7 +114,13 @@
 
             /* Descripcion */
             .tarjeta__descripcion {
-                min-height: 6.5vh;
+                min-height: 3em;
+            }
+
+            /* Enlaces */
+            .tarjeta__link {
+                text-decoration: underline;
+                color: var(--rosa);
             }
 
             /* Listas */
@@ -129,8 +140,10 @@
                 background-color: var(--grisClaro);
                 border: none;
                 color: white;
+                display: block;
                 padding: 1vh;
                 margin-top: 0.4vh;
+                width: 100%;
             }
         }
 
@@ -162,61 +175,65 @@
 
 /* ========================== BOTONES ========================= */
 
-/* Boton Normal */
-.boton {
-    box-shadow: 0.6vh 0.3vh 1vh black;
-    border-top-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-    background-color: var(--grisOscuro);
-    color: white;
-    text-align: center;
-    display: block;
-    min-width: 18vh;
-    padding: 1.5vh;
-    margin: 1vh auto;
-    transition: 0.3s;
+/* Contenedor Boton */
+.div__boton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-    /* Boton Subir */
-    &.subir {
-        max-width: 20vh;
-        padding: 2vh;
-        margin: 5vh auto;
-    }
-
-    /* Hover al Boton */
-    &:hover {
-        box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
-        background-color: var(--grisClaro);
-        color: var(--rosa);
-    }
-}
-
-/* Boton Descargar */
-.descargar {
-    background-color: var(--verde);
-    border-radius: 0.7vh;
-    padding: 1.5vh;
-    cursor: pointer;
-
-    /* Hover al Boton Descargar */
-    &:hover {
-        background-color: var(--verde);
-        border: none;
+    .boton {
+        box-shadow: 0.6vh 0.3vh 1vh black;
+        border-top-left-radius: 3vh;
+        border-bottom-right-radius: 3vh;
+        background-color: var(--grisOscuro);
         color: white;
-        scale: 1.1;
+        text-align: center;
+        display: inline-block;
+        min-width: 18vh;
+        padding: 1.5vh;
+        margin: 1.5vh auto;
+        transition: 0.3s;
+    
+        /* Boton Subir */
+        &.subir {
+            min-width: 20vh;
+            padding: 2vh;
+            margin: 5vh auto;
+        }
+    
+        /* Boton Descargar */
+        &.descargar {
+            background-color: var(--verde);
+            border-radius: 0.7vh;
+            padding: 1.5vh;
+            cursor: pointer;
+    
+            /* Hover al Boton Descargar */
+            &:hover {
+                background-color: var(--verde);
+                border: none;
+                color: white;
+                scale: 1.1;
+            }
+        }
+
+        /* Hover al Boton */
+        &:hover {
+            box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
+            background-color: var(--grisClaro);
+            color: var(--rosa);
+        }
     }
 }
-
-/* ========================== CODIGO ========================= */
 
 /* Boton Copiar Codigo */
 .copiar {
     background-color: var(--grisClaro);
 	color: white;
 	border: none;
-    display: inline;
+    display: block;
     width: fit-content;
-    padding: 0.7vh;
+    padding: 1.2vh;
 	transition: 0.3s;
 
     /* Hover al Boton Copiar */
@@ -225,12 +242,12 @@
     }
 }
 
-/* Bloque de Codigo */
+/* ========================== BLOQUE DE CODIGO ========================= */
 .codigo {
     background-color: var(--grisClaro);
 	color: white;
 	display: block;
-	padding: 0.7vh;
+	padding: 1.2vh;
     margin-bottom: 2vh;
 }
 
@@ -267,7 +284,7 @@ footer {
 }
 
 /* ========================== Celular ========================= */
-@media (width < 701px ) or (height < 501px) {
+@media (width < 701px ) {
 
     /* ========================== Tarjetas ========================= */
     .tarjetas,
