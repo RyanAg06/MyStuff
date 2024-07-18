@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,40 +19,62 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos-titulo">Firmware R4 Original</h1>
-                <h3 class="titulos-subtitulo">El sistema para R4 originales</h3>
+                <h1 class="titulos__titulo">Firmware R4 Original</h1>
+                <h2 class="titulos__subtitulo">El sistema para R4 originales</h2>
             </div>
 
             <!-- Tarjeta -->
-            <article class="publicaciones vertical">
+            <article class="tarjetas vertical">
 
+                <!-- Informacion General -->
                 <section class="tarjeta">
 
-                    <div class="tarjeta-informacion">
-                        <p class="tarjeta-descripcion">
-                            Si necesitas el sistema haz lo siguiente: <br><br> descarga los archivos > descomprime > coloca en la raiz de la memoria. <br><br>
-                            En caso de que no sepas si tu Cartucho R4 es orignal verifica lo siguiente:
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Información</h1>
+                        <p class="tarjeta__descripcion">
+                            Si Tienes una Tarjeta R4 que no Muestre el Menu de Juegos o se te Borraron los Archivos de la Memoria o Simplemente Perdiste la Memoria
+                            no Pasa Nada ya que Aqui Estan los Archivos del Sistema para que Puedas Volver a Usar tu R4 de Nuevo, lo Unico que Tienes que Hacer es: <br>
+                            <br>
                         </p>
 
-                        <ul class="tarjeta-lista">
-                            <li>Que tu cartucho tenga pines color verde o amarillo.</li>
-                            <img src="./imagenes/firmwareR4/pinesVerdes.png" alt="imagen" class="tarjeta-imagen">
-                            <li>Verifica que tanto la parte delantera o la trasera tenga la pagina oficial <a href="http://www.r4i-sdhc.com/aboute.asp" target="_blank" class="tarjeta-link">r4isdhc.com</a></li>
-                            <img src="./imagenes/firmwareR4/paginaOficilal.png" alt="imagen" class="tarjeta-imagen">
-                            <img src="./imagenes/firmwareR4/paginaReverso.png" alt="imagen" class="tarjeta-imagen">
+                        <!-- Lista -->
+                        <ul class="tarjeta__lista">
+                            <li>Descargar los Archivos Necesarios</li>
+                            <li>Descompromir El Archivo</li>
+                            <li>Colocar el Contenido en la Raiz de la SD de tu R4</li>
                         </ul>
-                        
-                        <p class="tarjeta-descripcion">
-                            Cuando compruebes que tu Cartucho es original descarga los archivos.
+
+                        <!-- Boton Descargar -->
+                        <div class="div__boton">
+                            <a hre="https://mega.nz/file/RuZUHaKJ#jTvE1YqFpSXYpVmMCstm8tbZCVpt_uDmTCYgvClaDp4" target="_blank" class="boton descargar">
+                                Descargar Archivos
+                                <ion-icon name="download-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                        <h2 class="tarjeta__subtitulo">Verificar R4 Original</h2>
+                        <p class="tarjeta__descripcion">
+                            Si tienes alguna duda de si tu Tarjeta R4 es Original Verifica lo Siguiente Antes de Descargar los Archivos:
                         </p>
-                        <a href="https://mega.nz/file/RuZUHaKJ#jTvE1YqFpSXYpVmMCstm8tbZCVpt_uDmTCYgvClaDp4" target="_blank" class="boton descargar">Descargar Archivos</a>
+
+                        <!-- Lista -->
+                        <ul class="tarjeta__lista">
+                            <li>Mira si tu Tarjeta R4 Tenga Pines Color Verde o Amarillos, en Algunos Casos Pueden Ser Rojos pero por lo General Son de Esos dos Colores Principalmente.</li>
+                            <li>Verifica que la Parte Delantera o la Trasera Tenga la <b>Pagina Oficial</b> <a href="http://www.r4i-sdhc.com" target="_blank" class="tarjeta__link">r4isdhc.com</a>.</li>
+                        </ul>
+
+                        <!-- Slider -->
+                        <div class="tarjeta__slider">
+                            <img src="./imagenes/firmwareR4/pinesVerdes.png" alt="imagen" class="tarjeta__imagen-slider">
+                            <img src="./imagenes/firmwareR4/paginaOficilal.png" alt="imagen" class="tarjeta__imagen-slider">
+                            <img src="./imagenes/firmwareR4/paginaReverso.png" alt="imagen" class="tarjeta__imagen-slider">
+                        </div>
                     </div>
 
                 </section>
 
             </article>
-
-            <a href="#" class="boton regresar">Regresar</a>
 
         </main>
 

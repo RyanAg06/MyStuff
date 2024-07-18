@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/estiloGeneral.css">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
 
@@ -17,37 +19,62 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <h1 class="titulos-titulo">Firmware R4 Clon</h1>
-                <h3 class="titulos-subtitulo">El sistema para R4 genericas</h3>
+                <h1 class="titulos__titulo">Firmware R4 Clon</h1>
+                <h2 class="titulos__subtitulo">El sistema para R4 genericas</h2>
             </div>
 
             <!-- Tarjeta -->
-            <article class="publicaciones vertical">
+            <article class="tarjetas vertical">
 
+                <!-- Informacion General -->
                 <section class="tarjeta">
 
-                    <div class="tarjeta-informacion">
-                        <p class="tarjeta-descripcion">
-                            Para usar el firmware haz lo siguiente: <br><br> descarga loa archivos > extrae > coloca en la raiz de la memoria. <br><br>
-                            En caso de que no sepas si tu Cartucho R4 es generico puedes comprobarlo de las siguientes formas:
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <h1 class="tarjeta__titulo">Información</h1>
+                        <p class="tarjeta__descripcion">
+                            Las Tarjetas R4 Genericas Cuentan con un Firmware Diferente al de las Originales pero no por eso son Peores
+                            ya que las Genericas Cuentan con mas Temas Hechos por la Comunidad y son Mas Rapidas al Momento de Mostrar
+                            los Juegos en el Menu de Inicio a Comparacion de las Originales que Ironicamente son mas Lentas. <br> 
+                            <br>
+                            <b>Los Pasos para Descargar el Firmware son los Siguientes:</b>
                         </p>
-                        <ul class="tarjeta-lista">
-                            <li>Verificar que los pines traseros sean de color rojo.</li>
-                            <img src="./imagenes/firmwareR4/pinesRojos.png" alt="imagen" class="tarjeta-imagen">
-                            <li>Mira la etiqueta y verifica que la pagina que sale NO sea <a href="#1" class="tarjeta-link">r4i-sdhc.com</a> o <a href="#2" class="tarjeta-link">r4isdhc.com</a>.</li>
-                            <img src="./imagenes/firmwareR4/paginaOficilal.png" alt="imagen" class="tarjeta-imagen">
-                        </ul>
-                        <p class="tarjeta-descripcion">
-                            Si ya comprobaste que tu tarjeta es generica solo descarga loa archivos necesarios.
-                        </p>
-                        <a href="https://mega.nz/file/U7wm0KII#8VbeJJ81TmW76nsAdBjoZZp8WLvcQVyt-Ql_ZKQrr6w" target="_blank" class="boton descargar">Descargar Archivos</a>
-                    </div>
 
+                        <!-- Lista -->
+                        <ul class="tarjeta__lista">
+                            <li>Descargar los Archivos Necesarios</li>
+                            <li>Descompromir El Archivo</li>
+                            <li>Colocar el Contenido en la Raiz de la SD de tu R4</li>
+                        </ul>
+
+                        <!-- Boton Descargar -->
+                        <div class="div__boton">
+                            <a href="https://mega.nz/file/U7wm0KII#8VbeJJ81TmW76nsAdBjoZZp8WLvcQVyt-Ql_ZKQrr6w" target="_blank" class="boton descargar">
+                                Descargar Archivos
+                                <ion-icon name="download-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                        <h2 class="tarjeta__subtitulo">Verificar R4 Generica</h2>
+                        <p class="tarjeta__descriocion">
+                            Antes de Descargar los Archivos o si Tienes Duda si tu R4 es Generica Mira lo Siguiente Antes de Comenzar a Descargar Todo:
+                        </p>
+
+                        <!-- Lista -->
+                        <ul class="tarjeta__lista">
+                            <li>Verificar que los Pines Traseros Sean de Color Rojo.</li>
+                            <li>Mira la Etiqueta y Verifica que la Pagina que Sale <b>NO</b> sea <a href="#link" class="tarjeta__link">r4i-sdhc.com</a> o <a href="#link" class="tarjeta__link">r4isdhc.com</a>.</li>
+                        </ul>
+
+                        <!-- Slider -->
+                        <div class="tarjeta__slider">
+                            <img src="./imagenes/firmwareR4/pinesRojos.png" alt="imagen" class="tarjeta__imagen-slider">
+                            <img src="./imagenes/firmwareR4/paginaOficilal.png" alt="imagen" class="tarjeta__imagen-slider">
+                        </div>
+                    </div>
                 </section>
 
             </article>
-
-            <a href="#" class="boton regresar">Regresar</a>
 
         </main>
 
