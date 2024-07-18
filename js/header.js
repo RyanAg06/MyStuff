@@ -157,7 +157,7 @@ document.write(`
                                 <!-- Enlace Firmware Original -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="#">Original</a>
+                                        <a href="firmwareR4Original.html">Original</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
@@ -165,7 +165,7 @@ document.write(`
                                 <!-- Enlace Firmware Generico -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="#">Generico</a>
+                                        <a href="firmwareR4Clon.html">Generico</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
