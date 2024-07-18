@@ -2,10 +2,10 @@
 function activarWindowsCodigo() 
 {
     // Conecto Elementos
-    let version = document.getElementById("versionWindows").value;
-    const codigo = document.getElementById("codigoCMD");
+    let version = document.getElementById("versionWindows").value;  // Obtengo el Select que Selecciono el Usuario
+    const codigo = document.getElementById("codigoCMD");            // Selecciono el Bloque de Codigo
 
-    // Proceso Opcion
+    // Proceso Opcion y Regreso Codigo de Activacion Necesario
     switch(version)
     {
         case "1":

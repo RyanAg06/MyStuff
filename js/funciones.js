@@ -103,8 +103,8 @@ function copiarPortapapeles(ruta)                           // Funcion que recib
 // Obtener Color Dominante
 function colorDominante(imagen)
 {
-    let colorThief = new ColorThief();
-    let img = document.getElementById(`${imagen}`);
-    let color = colorThief.getColor(img);
-    console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);
+    let colorThief = new ColorThief();                      // Declaro Objeto que Contiene Metodo para Obtener Color Dominante
+    let img = document.getElementById(`${imagen}`);         // Selecciono la Imagen de Donde se Obtendra el Color Dominante
+    let color = colorThief.getColor(img);                   // Uso Metodo de Objeto y Obtengo Color Dominante
+    console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);       // Muestro en Consola el Color Dominante
 }
