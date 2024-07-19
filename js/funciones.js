@@ -107,4 +107,6 @@ function colorDominante(imagen)
     let img = document.getElementById(`${imagen}`);
     let color = colorThief.getColor(img);
     console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);
+    return color;
 }
+export {colorDominante};
