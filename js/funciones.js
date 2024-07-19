@@ -1,35 +1,27 @@
 /* ========================================= CODIGO ========================================= */
 
 // Cargar Codigo al Entrar a la Pagina
-// ! Estos solo funcionan al usar el sito en mobile
 window.onload = function codigoJS()
 {
     abrirMenuLateral();
     abrirSubMenus();
+    colorDominante("noticia1");
 }
-
-// Cargar Codigo al Redimensionar la Pagina
-window.addEventListener("resize", ()=>
-{
-    abrirSubMenus();
-    cerrarSubmenus();
-});
 
 /* ========================================= FUNCIONES ========================================= */
 
+// Funcion Abrir Menu Lateral
 function abrirMenuLateral()
 {
-    /*
-    agrega el evento para abrir y cerrar el menu lateral
-    */
-    const btnsMenu = document.querySelector(".bienvenida-btns-menu");
+    // Variables
+    const btnsMenu = document.querySelector(".bienvenida__btns-menu");
     const nav = document.querySelector("nav");
 
     btnsMenu.addEventListener("click", ()=>                     // Evento Cambiar Icono y Mostrar Menu
     {
         btnsMenu.classList.toggle("cambiar-icono");
         nav.classList.toggle("activo");
-        console.log(nav)
+
         if(nav.className == "activo")
         {
             document.body.style = `overflow-y:hidden;`;         // Desactivo Scroll al Abrir Menu Lateral
@@ -45,18 +37,17 @@ function abrirMenuLateral()
 // Funcion Abrir Submenus
 function abrirSubMenus()
 {
-    /*
-    agrega los eventos a los menus para poder abrirlos y cerrarlos
-    */
-    if(window.innerWidth < 1081)
+    if(window.innerWidth < 1081)                                            // Compruebo si la Ventana es Menor a 1081px
     {
-        const items = document.querySelectorAll(".item-abrir-sub-menu");
-        items.forEach(item =>
+        const items = document.querySelectorAll(".item__abrirSubMenu");     // Selecciono Todos los Elementos
+
+        items.forEach(item =>                                               // Itero los Elementos
         {
+            // Variables
             const submenu = item.nextElementSibling;
             const flecha = item.children[0].children[0];
 
-            item.addEventListener("click", ()=>
+            item.addEventListener("click", ()=>             // Agrego Evento al Item clickeado
             {
                 cerrarSubmenus();                           // Cierro los Submenus al dar Click
 
@@ -70,20 +61,18 @@ function abrirSubMenus()
     }
 }
 
+// Funcion Cerrar Submenus
 function cerrarSubmenus()
 {
-    /*
-    cierra las flechas de los menus y agrega los eventos para abrir y cerrar los sub menus y sub sub menus.
-    */
-    const flechas = document.querySelectorAll(".icono-menu-desplegar");
-    // cerrar las flechas
-    flechas.forEach(a=>
-        {
-            a.classList.remove("activo");           // Regreso las Flechas a su Estado Desactivado
-        })
-    // agregar los eventos de los sub menus    
-    const submenu3 = document.querySelectorAll(".menu-3");
+    const flechas = document.querySelectorAll(".icono__menu-desplegar");
     const submenu2 = document.querySelectorAll(".menu-2");
+    const submenu3 = document.querySelectorAll(".menu-3");
+
+    flechas.forEach(a=>
+    {
+        a.classList.remove("activo");           // Regreso las Flechas a su Estado Desactivado
+    })
+
     submenu2.forEach(a =>
     {
         a.classList.remove("activo");           // Cerrar Submenus 2
@@ -99,17 +88,23 @@ function cerrarSubmenus()
     })
 }
 
-function copiarPortapapeles(ruta)
+// Funcion Copiar al Portapapeles
+function copiarPortapapeles(ruta)                           // Funcion que recibe 1 parametro
 {
-    /*
-    @param ruta:String 
-    toma el id de una etiqueta y copia su contenido al portapapeles del usuario.
-    */
-	let aux = document.createElement("textarea");
-	aux.value = document.getElementById(ruta).innerText;
-	document.body.appendChild(aux);
-	aux.select();
-	document.execCommand("copy");
-	document.body.removeChild(aux);
-    alert("Copiado al Portapales");
+	let aux = document.createElement("textarea");           // Creo variable que guarda un "textarea"
+	aux.value = document.getElementById(ruta).innerText;    // Agrego el valor que quiero copiar al "textarea"
+	document.body.appendChild(aux);                         // Agrego el "textarea" al body
+	aux.select();                                           // Selecciono lo que tiene el "textarea"
+	document.execCommand("copy");                           // Ejecuto comando para copiar
+	document.body.removeChild(aux);                         // Elimino "textarea" del body
+    alert("Copiado al Portapales");                         // Muestro mensaje
+}
+
+// Obtener Color Dominante
+function colorDominante(imagen)
+{
+    let colorThief = new ColorThief();
+    let img = document.getElementById(`${imagen}`);
+    let color = colorThief.getColor(img);
+    console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);
 }
