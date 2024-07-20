@@ -129,7 +129,7 @@
             .tarjeta__lista {
                 font-size: 1.1em;
                 color: white;
-                margin: 1em;
+                margin-left: 1em;
 
                 /* Items */
                 li {
