@@ -50,11 +50,19 @@
                         </ul>
 
                         <!-- Slider -->
-                        <div class="tarjeta__slider">
-                            <img src="./imagenes/3ds/sm64/3ds/sm64-1.bmp" alt="imagen" class="tarjeta__imagen-slider">
-                            <img src="./imagenes/3ds/sm64/3ds/sm64-2.bmp" alt="imagen" class="tarjeta__imagen-slider">
-                            <img src="./imagenes/3ds/sm64/3ds/sm64-3.bmp" alt="imagen" class="tarjeta__imagen-slider">
-                            <img src="./imagenes/3ds/sm64/3ds/sm64-4.bmp" alt="imagen" class="tarjeta__imagen-slider">
+                        <div class="tarjeta__slider" id="slider1">
+                            <div class="slider">
+                                <div class="slider__imagenes">
+                                    <img src="./imagenes/3ds/sm64/3ds/sm64-1.bmp" alt="imagen" class="slider__imagen">
+                                    <img src="./imagenes/3ds/sm64/3ds/sm64-2.bmp" alt="imagen" class="slider__imagen">
+                                    <img src="./imagenes/3ds/sm64/3ds/sm64-3.bmp" alt="imagen" class="slider__imagen">
+                                    <img src="./imagenes/3ds/sm64/3ds/sm64-4.bmp" alt="imagen" class="slider__imagen">
+                                </div>
+                            </div>
+
+                            <!-- Botones Slider -->
+                            <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                            <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
                         </div>
 
                         <!-- Boton Descargar -->

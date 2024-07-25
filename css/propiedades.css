@@ -30,6 +30,7 @@
 }
 
 /* ========================== TARJETAS ========================= */
+
 .tarjetas {
     display: flex;
     flex-direction: row;
@@ -67,7 +68,7 @@
             }
 
             /* Imagen Principal */
-            .tarjeta__imagen{
+            .tarjeta__imagen {
                 object-fit: contain;
                 position: absolute;
                 inset: 0;
@@ -78,18 +79,48 @@
 
         /* Slider */
         .tarjeta__slider {
-            scroll-snap-type: x mandatory;
             position: relative;
-            display: flex;
-            overflow: scroll;            
+            transform: translateX(0);
 
             /* Imagenes Slider */
-            .tarjeta__imagen-slider {
-                scroll-snap-align: center;
-                position: sticky;
-                top: 0;
-                left: 0;
-                width: 100%;
+            .slider__imagenes {
+                display: flex;
+                transition: margin-left 0.3s;
+                
+                /* Imagen */
+                .slider__imagen {
+                    object-fit: contain;
+                }
+            }
+
+            /* Botones Slider */
+            .slider-boton {
+                background-color: var(--rosa);
+                border-radius: 1em;
+                position: absolute;
+                top: 50%;
+                width: 3em;
+                height: 3em;
+                opacity: 0.6;
+                scale: 0.9;
+                transform: translateY(-50%);
+                transition: opacity 0.3s, scale 0.3s;
+
+                /* Hover a Botones Slider  */
+                &:hover {
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+
+            /* Boton Izquierda */
+            .boton-izquierda {
+                left: 1em;
+            }
+
+            /* Boton Derecha */
+            .boton-derecha {
+                right: 1em;
             }
         }
 
@@ -161,7 +192,7 @@
 
         /* TARJETA */
         .tarjeta {
-            width: 45em;
+            width: 35em;
 
             /* Imagenes */
             .tarjeta__imagenes {

@@ -75,9 +75,17 @@
                 <section class="tarjeta">
 
                     <!-- Slider -->
-                    <div class="tarjeta__slider">
-                        <img src="./imagenes/3ds/homeMenu/paso2.png" alt="imagen" class="tarjeta__imagen-slider">
-                        <img src="./imagenes/3ds/homeMenu/paso2-1.png" alt="imagen" class="tarjeta__imagen-slider">
+                    <div class="tarjeta__slider" id="slider2">
+                        <div class="slider">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/3ds/homeMenu/paso2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/3ds/homeMenu/paso2-1.png" alt="imagen" class="slider__imagen">
+                            </div>
+                        </div>
+
+                        <!-- Botones Slider -->
+                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider2')"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider2')"></ion-icon>
                     </div>
 
                     <!-- informacion -->
@@ -122,11 +130,19 @@
                 <section class="tarjeta">
 
                     <!-- Slider -->
-                    <div class="tarjeta__slider">
-                        <img src="./imagenes/3ds/homeMenu/paso4.png" alt="imagen" class="tarjeta__imagen-slider">
-                        <img src="./imagenes/3ds/homeMenu/paso4-1.png" alt="imagen" class="tarjeta__imagen-slider">
-                        <img src="./imagenes/3ds/homeMenu/paso4-2.png" alt="imagen" class="tarjeta__imagen-slider">
-                        <img src="./imagenes/3ds/homeMenu/paso4-3.png" alt="imagen" class="tarjeta__imagen-slider">
+                    <div class="tarjeta__slider" id="slider4">
+                        <div class="slider">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/3ds/homeMenu/paso4.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/3ds/homeMenu/paso4-1.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/3ds/homeMenu/paso4-2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/3ds/homeMenu/paso4-3.png" alt="imagen" class="slider__imagen">
+                            </div>
+                        </div>
+
+                        <!-- Botones Slider -->
+                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider4')"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider4')"></ion-icon>
                     </div>
 
                     <!-- Informacion -->

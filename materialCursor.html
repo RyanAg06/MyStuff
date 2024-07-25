@@ -48,10 +48,18 @@
                         </ul>
 
                         <!-- Slider -->
-                        <div class="tarjeta__slider">
-                            <img src="./imagenes/etc/materialCursor/paso1.png" alt="imagen" class="tarjeta__imagen-slider">
-                            <img src="./imagenes/etc/materialCursor/paso2.png" alt="imagen" class="tarjeta__imagen-slider">
-                            <img src="./imagenes/etc/materialCursor/paso3.png" alt="imagen" class="tarjeta__imagen-slider">
+                        <div class="tarjeta__slider" id="slider1">
+                            <div class="slider">
+                                <div class="slider__imagenes">
+                                    <img src="./imagenes/etc/materialCursor/paso1.png" alt="imagen" class="slider__imagen">
+                                    <img src="./imagenes/etc/materialCursor/paso2.png" alt="imagen" class="slider__imagen">
+                                    <img src="./imagenes/etc/materialCursor/paso3.png" alt="imagen" class="slider__imagen">
+                                </div>
+                            </div>
+
+                            <!-- Botones Slider -->
+                            <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                            <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
                         </div>
 
                         <!-- Boton Descargar -->

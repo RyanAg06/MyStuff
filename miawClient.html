@@ -89,12 +89,20 @@
                             <p class="tarjeta__descripcion">Para usar los Shaders se Necesita <b><a href="https://github.com/ddf8196/BetterRenderDragon" target="_blank" class="tarjeta__link">Better Render Dragon</a></b>.</p>
 
                             <!-- Slider -->
-                            <div class="tarjeta__slider">
-                                <img src="./imagenes/texturas/lite-1.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/lite-2.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/lite-3.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/lite-4.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/lite-5.png" alt="imagen" class="tarjeta__imagen-slider">
+                            <div class="tarjeta__slider" id="slider1">
+                                <div class="slider">
+                                    <div class="slider__imagenes">
+                                        <img src="./imagenes/texturas/lite-1.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/lite-2.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/lite-3.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/lite-4.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/lite-5.png" alt="imagen" class="slider__imagen">
+                                    </div>
+                                </div>
+
+                                <!-- Botones Slider -->
+                                <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                                <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
                             </div>
                         </div>
 
@@ -114,12 +122,20 @@
                             </p>
 
                             <!-- Slider -->
-                            <div class="tarjeta__slider">
-                                <img src="./imagenes/texturas/shader-1.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/shader-2.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/shader-3.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/shader-4.png" alt="imagen" class="tarjeta__imagen-slider">
-                                <img src="./imagenes/texturas/shader-5.png" alt="imagen" class="tarjeta__imagen-slider">
+                            <div class="tarjeta__slider" id="slider2">
+                                <div class="slider">
+                                    <div class="slider__imagenes">
+                                        <img src="./imagenes/texturas/shader-1.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/shader-2.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/shader-3.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/shader-4.png" alt="imagen" class="slider__imagen">
+                                        <img src="./imagenes/texturas/shader-5.png" alt="imagen" class="slider__imagen">
+                                    </div>
+                                </div>
+
+                                <!-- Botones Slider -->
+                                <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider2')"></ion-icon>
+                                <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider2')"></ion-icon>
                             </div>
                         </div>
 
