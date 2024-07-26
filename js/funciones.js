@@ -108,6 +108,24 @@ function colorDominante(imagen)
     console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);       // Muestro en Consola el Color Dominante
 }
 
+// Codigo Mostrar Boton Subir
+const botonSubir = document.querySelector(".boton-subir");                   // Selecciono el Boton
+let bienvenida = document.querySelector(".bienvenida");
+let bienvenidaEstilo = getComputedStyle(bienvenida);
+
+window.addEventListener("scroll", () =>                                     // Agrego Evento al Scrolear Ventana
+{
+    let scroll = document.documentElement.scrollTop;                        // Obtengo Scroll Actual
+    
+    if(scroll > parseInt(bienvenidaEstilo.getPropertyValue("height").replace("px", "")))        // Verifico si Se Bajo del Header
+    {
+        botonSubir.style = "transform: translateX(0)";                                               // Muestro el Boton
+    }
+    else                                                                                        // Si Aun no Baja lo Oculto
+    {
+        botonSubir.style = "transform: translateX(5em)";                                             // Oculto el Boton
+    }
+});
 
 // ====================================== SLIDER ==========================================
 
