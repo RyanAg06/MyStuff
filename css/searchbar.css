@@ -6,6 +6,7 @@
     margin: 2.5vh 0;
     display: flex;
     justify-content: center;
+    z-index: 200;
 }
 
 .input{
@@ -14,19 +15,19 @@
     min-height: 3vh;
     background-color:var(--grisClaro);
     border: 0;
-    box-shadow: 0 0 0vh .2vh var(--grisOscuro), 0 0 0vh .2vh var(--rosa);
+    box-shadow: 0 0 0vh .2vh var(--grisVerde), 0 0 0vh .2vh var(--rosa);
     transition: .15s;
     z-index: 10;
     color: #d0d0d0;
     padding: 1vh;
 }
 .input:hover{
-    box-shadow: .5vh .5vh 0vh .2vh var(--grisOscuro), -.5vh -.5vh 0vh .2vh var(--rosa);
+    box-shadow: .5vh .5vh 0vh .2vh var(--verde), -.5vh -.5vh 0vh .2vh var(--rosa);
 }
 .input:focus{
     background-color:rgb(101, 111, 113) ;
     outline: none;
-    box-shadow: .5vh .5vh 0vh .2vh var(--grisOscuro), -.5vh -.5vh 0vh .2vh var(--rosa);
+    box-shadow: .5vh .5vh 0vh .2vh var(--verde), -.5vh -.5vh 0vh .2vh var(--rosa);
 
 }
 
@@ -34,4 +35,7 @@
     width:min(90%,60vh);
     height: 100%;
     font-size: 3vh;
+    background-color: #eee;
+    border-radius: .5vh;
+    color: var(--grisClaro);
 }

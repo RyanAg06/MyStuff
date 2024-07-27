@@ -2,8 +2,17 @@ class ModalTarjetas{
     constructor(){
         this.contenedor = this.#makeContainer()
         this.is_hidden = true;
+        this.elements = [];
+        this.positioned_elements = [];
         document.body.appendChild(this.contenedor)
         this.#load_all();
+        console.log(this.elements);
+    }
+    #makeId() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
     }
     #makeContainer(){
         const new_container = document.createElement('section');
@@ -28,8 +37,14 @@ class ModalTarjetas{
     #load_all(){
         const tarjetas = [...document.getElementsByClassName("tarjeta")];
         this.contenedor.innerHTML = ''
+        this.elements = [];
         tarjetas.forEach(element => {
-            this.contenedor.innerHTML += `<section class="tarjeta">${element.innerHTML}</section>`
+            const id = this.#makeId();
+            this.elements.push({
+                id:id,
+                title:element.getElementsByClassName('tarjeta__titulo')[0].textContent,
+                raw_content:`<section id="${id}" class="tarjeta">${element.innerHTML}</section>`
+            });
         });
         // ! hay que mover esto no esta bien...
         const button_close = document.createElement('button');
@@ -38,6 +53,43 @@ class ModalTarjetas{
         button_close.onclick = ()=>this.handle_show()
         this.contenedor.appendChild(button_close);
     }
+    /*
+    1. Buscar en la bd by keyword
+    2. Si hay coincidencias se hace un array
+    3. Por cada elemento en el array se verifica si...
+        * Si no esta posicionado se agrega
+        * Si esta posicionado no hace nada
+    4. Si hay elementos ya posicionados que no estan en las coincidencias se crea otro array con ellos.
+    5. Por cada elemento del array...
+        * Se quita del posicionamiento
+    */
+   #add_element(element){
+    this.contenedor.innerHTML += element.raw_content;
+    this.positioned_elements.push(element);
+   }
+   #remove_element(element){
+        document.getElementById(element.id).remove();
+        this.positioned_elements = this.positioned_elements.filter(function(valor) {
+            return valor !== element;
+        });
+   }
+   search_by(keyword){
+    const matching_elements = this.elements.filter((element)=>{
+        return element.title.toLowerCase().includes(keyword)
+    })
+    matching_elements.forEach((element)=>{
+        if (!this.positioned_elements.includes(element)){
+            this.#add_element(element)
+        }
+    })
+    const not_matching_elements = this.positioned_elements.filter((element)=>{
+        return !(matching_elements.includes(element))
+    })
+    not_matching_elements.forEach((element)=>{
+        this.#remove_element(element);
+    })
+   }
+
 }
 
 export {ModalTarjetas};
