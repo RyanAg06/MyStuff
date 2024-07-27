@@ -204,7 +204,7 @@ ion-icon {
             /* Titulo MyStuff */
             .bienvenida__titulo {
                 font-size: 2em;
-                margin-left: 0.7em;
+                margin-left: 0.5em;
             }
 
             /* BOTONES MENU LATERAL */
@@ -212,7 +212,7 @@ ion-icon {
                 position: relative;
                 width: 4em;
                 height: 4em;
-                margin-right: 0.7em;
+                margin-right: 0.5em;
 
                 /* Iconos Abrir y Cerrar Menu */
                 ion-icon {

@@ -14,11 +14,13 @@
         background-color: var(--grisClaro);
         border-bottom: 0.1em var(--rosa) solid;
         font-size: 2em;
+        font-weight: bold;
         color: #fff;
         padding: 0.3em;
     }
     .titulos__subtitulo {
         font-size: 1.3em;
+        font-weight: bold;
         color: var(--rosa);
         margin-top: 0.3em;
     }
@@ -130,13 +132,15 @@
             /* Titulo */
             .tarjeta__titulo {
                 border-bottom: 0.1em var(--rosa) solid;
-                font-size: 1.5em;                
+                font-size: 1.5em;   
+                font-weight: bold;
             }
 
             /* Subtitulo */
             .tarjeta__subtitulo {
                 border-bottom: 0.1em solid var(--rosa);
                 font-size: 1.4em;
+                font-weight: bold;
                 display: inline-block;
             }
 
@@ -361,6 +365,34 @@ footer {
                     aspect-ratio: 0;
                 }
             }
+        }
+    }
+
+    /* Boton Subir */
+    .boton-subir {
+        box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
+        background-color: var(--rosa);
+        border-radius: 50%;
+        position: fixed;
+        right: 1.5em;
+        bottom: 1.5em;
+        width: 2em;
+        height: 2em;
+        transform: translateX(5em);
+        transition: transform 0.3s ease-in-out, scale 0.3s;
+
+        /* Icono Flecha */
+        ion-icon {
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            transform: translateY(0);
+            transition: 0.3s;
+        }
+
+        /* Hover al Boton */
+        &:hover {
+            scale: 1.1;
         }
     }
 }
