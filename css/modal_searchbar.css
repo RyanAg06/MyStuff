@@ -16,3 +16,22 @@
     transform: translateY(100%);
     opacity: 0;
 }
+#modal_search__button_close{
+    background-color: var(--rosa);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 4vh;
+    border: 0;
+    box-shadow: .5vh .5vh 0vh .1vh var(--grisOscuro);
+    /* temporal en lo que se encuentra un icono que no sea la letra 'x' */
+    color: #eee;
+    font-weight: bold;
+    transition: .3s opacity;
+}
+#modal_search__button_close:hover{
+    opacity: .8;
+}

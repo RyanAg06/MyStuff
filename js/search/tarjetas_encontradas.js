@@ -9,7 +9,8 @@ class ModalTarjetas{
         new_container.id = "modal_search";
         new_container.className = "hidden";
         const button_close = document.createElement('button');
-        button_close.textContent = "Close";
+        button_close.id = 'modal_search__button_close';
+        button_close.textContent = "X";
         button_close.onclick = ()=>this.handle_show()
         new_container.appendChild(button_close);
         return new_container;
