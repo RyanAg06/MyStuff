@@ -6,7 +6,6 @@ class ModalTarjetas{
         this.positioned_elements = [];
         document.body.appendChild(this.contenedor)
         this.#load_all();
-        console.log(this.elements);
     }
     #makeId() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -37,6 +36,7 @@ class ModalTarjetas{
         this.button_close.className = this.is_hidden ? "" : "hidden";
         this.is_hidden = !this.is_hidden;
         document.body.style.overflowY = this.is_hidden ? "auto" : "hidden";
+        window.scrollTo(0, 0);
     }
     #load_all(){
         const tarjetas = [...document.getElementsByClassName("tarjeta")];

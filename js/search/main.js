@@ -8,6 +8,3 @@ search_bar_field.tag.addEventListener('keydown', e=>{
         search_bar_field.search_by_current(modal_tarjetas)
     };
 })
-
-
-console.log(search_bar_field)
