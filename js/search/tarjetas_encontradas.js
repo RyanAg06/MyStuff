@@ -20,9 +20,11 @@ class ModalTarjetas{
         new_container.className = "hidden";
         const button_close = document.createElement('button');
         button_close.id = 'modal_search__button_close';
+        button_close.className = "hidden";
         button_close.textContent = "X";
         button_close.onclick = ()=>this.handle_show()
-        new_container.appendChild(button_close);
+        document.body.appendChild(button_close);
+        this.button_close = button_close;
         return new_container;
     }
     handle_show(){
@@ -32,6 +34,7 @@ class ModalTarjetas{
         */
 
         this.contenedor.className = this.is_hidden ? "" : "hidden";
+        this.button_close.className = this.is_hidden ? "" : "hidden";
         this.is_hidden = !this.is_hidden;
     }
     #load_all(){
@@ -46,12 +49,6 @@ class ModalTarjetas{
                 raw_content:`<section id="${id}" class="tarjeta">${element.innerHTML}</section>`
             });
         });
-        // ! hay que mover esto no esta bien...
-        const button_close = document.createElement('button');
-        button_close.id = 'modal_search__button_close';
-        button_close.textContent = "X";
-        button_close.onclick = ()=>this.handle_show()
-        this.contenedor.appendChild(button_close);
     }
     /*
     1. Buscar en la bd by keyword

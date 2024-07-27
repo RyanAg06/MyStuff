@@ -25,7 +25,7 @@
 #modal_search__button_close{
     background-color: var(--rosa);
     position: fixed;
-    top: 1px;
+    top: 40vh;
     left: 0;
     margin: 2vh;
     width: 4vh;
@@ -37,11 +37,15 @@
     color: #eee;
     font-weight: bold;
     transition: .3s opacity;
-    z-index: 20;
+    z-index: 150;
+    transition: .2s;
 }
 #modal_search__button_close:hover{
-    opacity: .8;
+    transform: scale(1.1);
 }
 #modal_search__button_close:active{
     transform: scale(1.1);
+}
+#modal_search__button_close.hidden{
+    opacity: 0;
 }
