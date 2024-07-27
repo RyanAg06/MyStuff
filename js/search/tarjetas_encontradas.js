@@ -36,6 +36,7 @@ class ModalTarjetas{
         this.contenedor.className = this.is_hidden ? "" : "hidden";
         this.button_close.className = this.is_hidden ? "" : "hidden";
         this.is_hidden = !this.is_hidden;
+        document.body.style.overflowY = this.is_hidden ? "auto" : "hidden";
     }
     #load_all(){
         const tarjetas = [...document.getElementsByClassName("tarjeta")];
