@@ -6,7 +6,7 @@
     height: 60vh;
     background-color:var(--grisOscuroTransparente);
     backdrop-filter: blur(5px);
-    width: 100vw;
+    min-width: 100vw;
     opacity: 1;
     transform: translateY(0%);
     transition: .4s;
@@ -31,7 +31,11 @@
     color: #eee;
     font-weight: bold;
     transition: .3s opacity;
+    z-index: 20;
 }
 #modal_search__button_close:hover{
     opacity: .8;
+}
+#modal_search__button_close:active{
+    transform: scale(1.1);
 }
