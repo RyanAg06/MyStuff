@@ -16,6 +16,7 @@
     --grisOscuro: rgb(56, 65, 67);
     --grisClaro: rgb(73, 82, 85);
     --modoOscuro: rgb(60, 70, 75);
+    --grisOscuroTransparente:rgba(56, 65, 67, 0.711);
 }
 body {
     background-color: var(--modoOscuro);
