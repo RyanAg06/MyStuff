@@ -31,7 +31,7 @@
 
 /* ========================== TARJETAS ========================= */
 
-.tarjetas {
+.tarjetas,#modal_search {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
