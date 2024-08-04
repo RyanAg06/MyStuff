@@ -61,7 +61,9 @@ body {
         }
     }
 }
-
+header{
+    z-index: 250 !important;
+}
 /* ========================== HEADER SUPERIOR ========================= */
 .bienvenida {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
@@ -190,6 +192,10 @@ ion-icon {
     /* ========================== HEADER ========================= */
     header {
         position: sticky;
+        /* al inicio del documento se coloca el z-index en 250
+        y se uso !important, pero no quise quitar este z-index aunque
+        ya no se use.
+        */
         z-index: 100;
         top: 0;
         width: 100%;
