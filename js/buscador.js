@@ -89,5 +89,20 @@ class ModalTarjetas{
    }
 
 }
+const modal_tarjetas = new ModalTarjetas()
+const search_bar_field = {
+    tag:document.getElementById('searchbar__field'),
+    search_by_current(modal_tarjetas){
+        modal_tarjetas.search_by(this.tag.value.toLowerCase());
+    }
+}
 
-export {ModalTarjetas};
+search_bar_field.tag.addEventListener('keyup', e=>
+{
+    modal_tarjetas.is_hidden?modal_tarjetas.handle_show():undefined;
+    // if (e.key==='Enter') {
+    //     search_bar_field.search_by_current(modal_tarjetas)
+    // };
+
+    search_bar_field.search_by_current(modal_tarjetas)
+})

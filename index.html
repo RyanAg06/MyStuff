@@ -7,8 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./css/menuNav.css">
         <link rel="stylesheet" href="./css/propiedades.css">
-        <link rel="stylesheet" href="./css/searchbar.css">
-        <link rel="stylesheet" href="./css/modal_searchbar.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
@@ -18,11 +16,12 @@
 
         <!-- Header -->
         <script src="./js/header.js"></script>
-        <aside id="searchbar">
-            <input type="search" id="searchbar__field" class="input" placeholder="busca aquí tus noticias:">
-            <!-- <div class="inputsubmask"></div> -->
-        </aside>
-        <script type="module" src="./js/search/main.js"></script>
+
+        <!-- Buscador -->
+        <div id="buscador">
+            <input type="search" id="searchbar__field" placeholder="Buscador de Noticias:">
+        </div>
+
         <!-- Contenido -->
         <main>
 
@@ -297,6 +296,7 @@
 
         <!-- Footer -->
         <script src="./js/footer.js"></script>
+        <script src="./js/buscador.js"></script>
 
         <!--
 
