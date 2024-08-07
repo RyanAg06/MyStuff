@@ -42,6 +42,7 @@ document.write(`
 
         <!-- Codigo JS -->
         <script src="./js/funciones.js"></script>
+        <script src="./js/slider.js"></script>
 
     </footer>
 
