@@ -7,6 +7,7 @@
 .titulos {
     max-width: var(--maxWidth);
     padding: 1.5em;
+    padding-top: 0;
     margin: auto;
 
     /* Textos */
@@ -32,7 +33,6 @@
 }
 
 /* ========================== BUSCADOR ========================= */
-
 #buscador {
     position: relative;
     display: flex;
@@ -54,6 +54,7 @@
         padding: 0.3em;
         transition: box-shadow 0.3s ease-in-out;
     
+        /* Hover al Input */
         &:hover {
             box-shadow: .5vh .5vh 0vh .2vh var(--verde), -.5vh -.5vh 0vh .2vh var(--rosa);
         }
@@ -71,8 +72,6 @@
 }
 
 /* ========================== TARJETAS ENCONTRADAS ========================= */
-
-/* Tarjetas Encontradas */
 #modal_search{
     align-self: center;
     position: fixed;
@@ -85,6 +84,7 @@
     transition: 0.4s;
     overflow-y: auto;
     padding-top: 3em !important;
+    mask-image:  linear-gradient( transparent, black 10%);
 
     /* Tarjetas Encontradas Ocultas */
     &.hidden {
@@ -109,12 +109,16 @@
     font-weight: bold;
     transition: 0.3s opacity;
     z-index: 150;
+    pointer-events: all;
     transition: .2s;
 
+    /* Boton Ocultar Tarjetas Mostradas */
     &.hidden {
         opacity: 0;
+        pointer-events: none;
     }
 
+    /* Hover al Boton Ocultar Tarjetas Encontradas */
     &:hover {
         transform: scale(1.1);
     }
