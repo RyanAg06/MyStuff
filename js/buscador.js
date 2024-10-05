@@ -100,9 +100,5 @@ const search_bar_field = {
 search_bar_field.tag.addEventListener('keyup', e=>
 {
     modal_tarjetas.is_hidden?modal_tarjetas.handle_show():undefined;
-    // if (e.key==='Enter') {
-    //     search_bar_field.search_by_current(modal_tarjetas)
-    // };
-
     search_bar_field.search_by_current(modal_tarjetas)
 })

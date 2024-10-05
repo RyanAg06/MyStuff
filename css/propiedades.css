@@ -8,7 +8,7 @@
     max-width: var(--maxWidth);
     padding: 1.5em;
     padding-top: 0;
-    margin: auto;
+    margin: 1.5em auto 0;
 
     /* Textos */
     .titulos__titulo {
