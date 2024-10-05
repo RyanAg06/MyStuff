@@ -70,13 +70,13 @@ body {
     background-size: 1.5em;
     display: flex;
     align-items: center;
+}
 
-    /* Titulo MyStuff */
-    .bienvenida__titulo {
-        font-family: "Oswald";
-        font-weight: 400;
-        color: var(--rosa);
-    }
+/* Titulo MyStuff */
+.bienvenida .bienvenida__titulo {
+    font-family: "Oswald";
+    font-weight: 400;
+    color: var(--rosa);
 }
 
 /* ========================== ESTILOS MENUS ========================= */
@@ -97,12 +97,13 @@ body {
     padding: 0.7em;
     cursor: pointer;
     transition: 0.3s;
+}
 
-    /* Hover o Click a un Elemento */
-    &:hover {
-        background-color: var(--grisClaro);
-        color: var(--rosa);
-    }
+/* Hover o Click a un Elemento */
+.menu-1 a:hover,
+.menu-1 label:hover {
+    background-color: var(--grisClaro);
+    color: var(--rosa);
 }
 
 /* Iconos */
@@ -117,69 +118,69 @@ ion-icon {
     .bienvenida {
         justify-content: space-around;
         height: 13em;
-        
-        /* Titulo MyStuff */
-        .bienvenida__titulo {
-            font-size: 3em;
-        }
+    }
 
-        /* BOTONES MENU LATERAL */
-        .bienvenida__btns-menu {
-            display: none;
-        }
+    /* Titulo MyStuff */
+    .bienvenida .bienvenida__titulo {
+        font-size: 3em;
+    }
+
+    /* BOTONES MENU LATERAL */
+    .bienvenida .bienvenida__btns-menu {
+        display: none;
     }
 
     /* ========================== MENU NAVEGACION ========================= */
     .menu-1 {
         display: flex;
         justify-content: space-around;
-        
-        /* Centrar Textos Menu 1 */
-        & > li > .div__borde {
-            text-align: center;
-        }
+    }
 
-        /* Submenus */
-        ion-icon {
-            display: none;
-        }
-        ul {
-            position: absolute;
-            min-width: 8em;
-            opacity: 0;
-            pointer-events: none;
-            transition: 0.2s;
-        }
-        li {
-            position: relative;
-            width: 100%;
-        }
+    /* Centrar Textos Menu 1 */
+    .menu-1 > li > .div__borde {
+        text-align: center;
+    }
 
-        /* Mostrar Menu 2 */
-        li:hover .menu-2 {
-            top: 100%;
-            opacity: 1;
-            pointer-events: initial;
-        }
+    /* Submenus */
+    .menu-1 ion-icon {
+        display: none;
+    }
+    .menu-1 ul {
+        position: absolute;
+        min-width: 8em;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s;
+    }
+    .menu-1 li {
+        position: relative;
+        width: 100%;
+    }
 
-        /* MENU 2 */
-        .menu-2 {
-            top: 200%;
+    /* Mostrar Menu 2 */
+    .menu-1 li:hover .menu-2 {
+        top: 100%;
+        opacity: 1;
+        pointer-events: initial;
+    }
 
-            /* Mostrar Menu 3 */
-            li:hover .menu-3 {
-                top: 0;
-                left: 100%;
-                opacity: 1;
-                pointer-events: initial;
-            }
-            
-            /* MENU 3 */
-            .menu-3 {
-                top: 100%;
-                left: 100%;
-            }
-        }
+    /* MENU 2 */
+    .menu-2 {
+        top: 200%;
+    }
+
+    /* Mostrar Menu 3 */
+    .menu-2 li:hover .menu-3 {
+        top: 0;
+        left: 100%;
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    /* MENU 3 */
+    .menu-3 {
+        top: 100%;
+        left: 100%;
     }
 }
 
@@ -192,104 +193,100 @@ ion-icon {
         z-index: 100;
         top: 0;
         width: 100%;
+    }
 
-        /* ========================== HEADER SUPERIOR ========================= */
-        .bienvenida {
-            justify-content: space-between;
-            position: relative;
-            z-index: 100;
-            height: 4.5em;
+    /* ========================== HEADER SUPERIOR ========================= */
+    .bienvenida {
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+        height: 4.5em;
+    }
 
-            /* Titulo MyStuff */
-            .bienvenida__titulo {
-                font-size: 2em;
-                margin-left: 0.5em;
-            }
+    /* Titulo MyStuff */
+    .bienvenida .bienvenida__titulo {
+        font-size: 2em;
+        margin-left: 0.5em;
+    }
 
-            /* BOTONES MENU LATERAL */
-            .bienvenida__btns-menu {
-                position: relative;
-                width: 4em;
-                height: 4em;
-                margin-right: 0.5em;
+    /* BOTONES MENU LATERAL */
+    .bienvenida .bienvenida__btns-menu {
+        position: relative;
+        width: 4em;
+        height: 4em;
+        margin-right: 0.5em;
+    }
 
-                /* Iconos Abrir y Cerrar Menu */
-                ion-icon {
-                    font-size: 4em;
-                    color: #fff;
-                    position: absolute;
-                    inset: 0;
-                    width: 100%;
-                    margin: auto;
-                    transform: none;
-                    transition: opacity 0.1s ,transform 0.4s;
-                }
+    /* Iconos Abrir y Cerrar Menu */
+    .bienvenida .bienvenida__btns-menu ion-icon {
+        font-size: 4em;
+        color: #fff;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        margin: auto;
+        transform: none;
+        transition: opacity 0.1s ,transform 0.4s;
+    }
 
-                /* Boton Cerrar */
-                .bienvenida__btn-cerrar {
-                    opacity: 0;
-                }
+    /* Boton Cerrar Desactivado */
+    .bienvenida .bienvenida__btns-menu .bienvenida__btn-cerrar {
+        opacity: 0;
+    }
 
-                /* Menu Lateral Activo */
-                &.cambiar-icono {
+    /* Boton Abrir Activado */
+    .bienvenida .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-abrir {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
 
-                    /* Boton Abrir */
-                    .bienvenida__btn-abrir {
-                        opacity: 0;
-                        transform: rotate(90deg);
-                    }
+    /* Boton Cerrar Activado */
+    .bienvenida .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-cerrar {
+        opacity: 1;
+        transform: rotate(90deg);
+    }
 
-                    /* Boton Cerrar */
-                    .bienvenida__btn-cerrar {
-                        opacity: 1;
-                        transform: rotate(90deg);
-                    }
-                }
-            }
-        }
+    /* ========================== MENU NAVEGACION ========================= */
+    nav {
+        background-color: var(--grisOscuro);
+        position: fixed;
+        top: 4.5em;
+        right: 0;
+        bottom: 0;
+        overflow-y: scroll;
+        transform: translateX(100%);
+        transition: box-shadow 0.5s, transform 0.3s;
+    }
 
-        /* ========================== MENU NAVEGACION ========================= */
-        nav {
-            background-color: var(--grisOscuro);
-            position: fixed;
-            top: 4.5em;
-            right: 0;
-            bottom: 0;
-            overflow-y: scroll;
-            transform: translateX(100%);
-            transition: box-shadow 0.5s, transform 0.3s;
+    /* Menu Lateral Activo */
+    nav.activo {
+        box-shadow: 0 0 0 100dvw rgba(0, 0, 0, .5);
+        transform: translateX(0);
+    }
 
-            /* Mostrar Menu Lateral */
-            &.activo {
-                box-shadow: 0 0 0 100dvw rgba(0, 0, 0, .5);
-                transform: translateX(0);
-            }
+    /* Iconos Flechas */
+    nav .menu-1 ion-icon {
+        float: right;
+        transition: transform 0.3s;
+    }
 
-            /* Submenus */
-            .menu-1 ul{
-                position: relative;
-                max-height: 0;
-                margin-left: 1em;
-                overflow: hidden;
-                transition: max-height 0.4s;
+    /* Iconos Flechas Activos */
+    nav .menu-1 ion-icon.activo {
+        transform: rotate(-180deg);
+    }
 
-                /* Mostrar SubMenu */
-                &.activo {
-                    max-height: 100vh;
-                }
-            }
+    /* Submenus */
+    .menu-1 ul{
+        position: relative;
+        max-height: 0;
+        margin-left: 1em;
+        overflow: hidden;
+        transition: max-height 0.4s;
+    }
 
-            /* Iconos Flechas */
-            .menu-1 ion-icon {
-                float: right;
-                transition: transform 0.3s;
-
-                /* Rotar Iconos */
-                &.activo {
-                    transform: rotate(-180deg);
-                }
-            }
-        }
+    /* SubMenu Activos */
+    .menu-1 ul.activo {
+        max-height: 100vh;
     }
 }
 
