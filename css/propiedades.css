@@ -429,7 +429,7 @@ footer .footer__creditos {
 }
 
 /* ========================== Computadora ========================= */
-@media (width > 1080px) {
+@media (min-width: 1080px) {
 
     /* Hover a la Tarjeta (SOLO PARA PC) */
     .tarjeta:hover {
@@ -438,7 +438,7 @@ footer .footer__creditos {
 }
 
 /* ========================== Celular ========================= */
-@media (width < 701px ) {
+@media (max-width: 701px ) {
 
     /* ========================== Tarjetas ========================= */
 
