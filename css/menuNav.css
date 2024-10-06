@@ -46,21 +46,19 @@ body {
 }
 
 /* ========================== BORDE INFERIOR ========================= */
-.div__borde{
-    .borde__inferior {
-        background-color: var(--rosa);
-        height: 0.1em;
-        /* clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); */
-        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-        transition: clip-path 0.3s;
-    }
-
-    &:hover {
-        .borde__inferior {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-    }
+.div__borde .borde__inferior {
+    background-color: var(--rosa);
+    height: 0.1em;
+    /* clip-path: polygon(0 100%, 0 100%, 0 0, 0 0); */
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    transition: clip-path 0.3s;
 }
+
+/* Efecto Hover el */
+.div__borde:hover .borde__inferior {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 /* ========================== HEADER SUPERIOR ========================= */
 .bienvenida {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
@@ -210,7 +208,7 @@ ion-icon {
     }
 
     /* BOTONES MENU LATERAL */
-    .bienvenida .bienvenida__btns-menu {
+    .bienvenida__btns-menu {
         position: relative;
         width: 4em;
         height: 4em;
@@ -218,7 +216,7 @@ ion-icon {
     }
 
     /* Iconos Abrir y Cerrar Menu */
-    .bienvenida .bienvenida__btns-menu ion-icon {
+    .bienvenida__btns-menu ion-icon {
         font-size: 4em;
         color: #fff;
         position: absolute;
@@ -230,18 +228,18 @@ ion-icon {
     }
 
     /* Boton Cerrar Desactivado */
-    .bienvenida .bienvenida__btns-menu .bienvenida__btn-cerrar {
+    .bienvenida__btns-menu .bienvenida__btn-cerrar {
         opacity: 0;
     }
 
     /* Boton Abrir Activado */
-    .bienvenida .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-abrir {
+    .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-abrir {
         opacity: 0;
         transform: rotate(90deg);
     }
 
     /* Boton Cerrar Activado */
-    .bienvenida .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-cerrar {
+    .bienvenida__btns-menu.cambiar-icono .bienvenida__btn-cerrar {
         opacity: 1;
         transform: rotate(90deg);
     }
