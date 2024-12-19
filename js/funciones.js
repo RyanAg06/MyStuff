@@ -1,7 +1,7 @@
 /* ========================================= CODIGO ========================================= */
 
 // Cargar Codigo al Entrar a la Pagina
-window.onload = function codigoJS()
+window.onload = function()
 {
     abrirMenuLateral();
     abrirSubMenus();
@@ -18,8 +18,8 @@ function abrirMenuLateral()
 
     btnsMenu.addEventListener("click", ()=>                     // Evento Cambiar Icono y Mostrar Menu
     {
-        btnsMenu.classList.toggle("cambiar-icono");
-        nav.classList.toggle("activo");
+        btnsMenu.classList.toggle("cambiar-icono");             // Cambio Icono Mostrar Menu
+        nav.classList.toggle("activo");                         // Muestro Menu
 
         if(nav.className == "activo")
         {
@@ -99,7 +99,7 @@ function copiarPortapapeles(ruta)                           // Funcion que recib
     alert("Copiado al Portapales");                         // Muestro mensaje
 }
 
-// Obtener Color Dominante
+// Funcion Obtener Color Dominante
 function colorDominante(imagen)
 {
     let colorThief = new ColorThief();                      // Declaro Objeto que Contiene Metodo para Obtener Color Dominante
@@ -108,14 +108,13 @@ function colorDominante(imagen)
     console.log(`El color dominante de la ${imagen} es: rgb(${color[0]}, ${color[1]}, ${color[2]})`);       // Muestro en Consola el Color Dominante
 }
 
-// Codigo Mostrar Boton Subir
-const botonSubir = document.querySelector(".boton-subir");                   // Selecciono el Boton
-let bienvenida = document.querySelector(".bienvenida");
-let bienvenidaEstilo = getComputedStyle(bienvenida);
-
-window.addEventListener("scroll", () =>                                     // Agrego Evento al Scrolear Ventana
+// Funcion Mostrar Boton Subir
+window.addEventListener("scroll", () =>                                         // Agrego Evento al Scrolear Ventana
 {
-    let scroll = document.documentElement.scrollTop;                        // Obtengo Scroll Actual
+    const botonSubir = document.querySelector(".boton-subir");                  // Selecciono el Boton
+    let bienvenida = document.querySelector(".bienvenida");                     // Selecciono Header
+    let bienvenidaEstilo = getComputedStyle(bienvenida);                        // Obtengo el Estilo del Header
+    let scroll = document.documentElement.scrollTop;                            // Obtengo Scroll Actual
     
     if(scroll > parseInt(bienvenidaEstilo.getPropertyValue("height").replace("px", "")))             // Verifico si Se Bajo del Header
     {
@@ -125,4 +124,13 @@ window.addEventListener("scroll", () =>                                     // A
     {
         botonSubir.style = "transform: translateX(5em)";                                             // Oculto el Boton
     }
+});
+
+// Funcion Scroll Progress Bar
+window.addEventListener("scroll", ()=>
+{
+    let winScroll = document.documentElement.scrollTop;                                             // Obtengo Tamaño Scroll de Ventana
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;     // Obtengo Tamano de Ventana y Pantalla Usuario
+    let scrolled = (winScroll / height) * 100;                                                      // Calculo Width de Scroll
+    document.querySelector(".scroll-h").style.width = scrolled + "%";                               // Cambio Width de Scroll-H
 });

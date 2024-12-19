@@ -23,14 +23,16 @@ document.write(`
             <ul class="menu-1">
 
                 <!-- Enlace Noticias -->
+                <!-- MARK: Noticias -->
                 <li>
                     <div class="div__borde">
-                        <a href="./index.html">Noticias</a>
+                        <a href="../index.html">Noticias</a>
                         <div class="borde__inferior"></div>
                     </div>
                 </li>
 
                 <!-- Seccion Proyectos -->
+                <!-- MARK: Proyectos -->
                 <li>
 
                     <!-- Submenu Proyectos -->
@@ -82,6 +84,7 @@ document.write(`
                 </li>
 
                 <!-- Seccion Minecraft -->
+                <!-- MARK: Minecraft -->
                 <li>
 
                     <!-- Submenu Minceraft -->
@@ -107,7 +110,7 @@ document.write(`
                         <!-- Enlace Texturas -->
                         <li>
                             <div class="div__borde">
-                                <a href="texturas.html">Texturas</a>
+                                <a href="../texturas.html">Texturas</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -117,6 +120,7 @@ document.write(`
                 </li>
 
                 <!-- Seccion 3DS -->
+                <!-- MARK: 3DS -->
                 <li>
 
                     <!-- Submenu 3DS -->
@@ -134,7 +138,7 @@ document.write(`
                         <!-- Enlace Cias -->
                         <li>
                             <div class="div__borde">
-                                <a href="cias.html">Cias</a>
+                                <a href="../cias.html">Cias</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -157,7 +161,7 @@ document.write(`
                                 <!-- Enlace Firmware Original -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="firmwareR4Original.html">Original</a>
+                                        <a href="../firmwareR4Original.html">Original</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
@@ -165,7 +169,7 @@ document.write(`
                                 <!-- Enlace Firmware Generico -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="firmwareR4Clon.html">Generico</a>
+                                        <a href="../firmwareR4Clon.html">Clon</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
@@ -200,7 +204,7 @@ document.write(`
                                 <!-- Enlace Home Menu -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="homeMenu3ds.html">Home Menu</a>
+                                        <a href="../homeMenu3ds.html">Home Menu</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
@@ -214,6 +218,7 @@ document.write(`
                 </li>
 
                 <!-- Seccion Etc -->
+                <!-- MARK: Etcetera -->
                 <li>
 
                     <!-- Submenu Etc -->
@@ -239,7 +244,7 @@ document.write(`
                         <!-- Enlace Activar Office -->
                         <li>
                             <div class="div__borde">
-                                <a href="activarOffice.html">Activar Office</a>
+                                <a href="../activarOffice.html">Activar Office</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -247,7 +252,7 @@ document.write(`
                         <!-- Enlace Desbloquear Minecraft -->
                         <li>
                             <div class="div__borde">
-                                <a href="desbloquearMc.html">Desbloquear Minecraft</a>
+                                <a href="../desbloquearMc.html">Desbloquear Minecraft</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -255,7 +260,23 @@ document.write(`
                         <!-- Material Dark Cursor -->
                         <li>
                             <div class="div__borde">
-                                <a href="materialCursor.html">Material Dark Cursor</a>
+                                <a href="../materialCursor.html">Material Dark Cursor</a>
+                                <div class="borde__inferior"></div>
+                            </div>
+                        </li>
+
+                        <!-- Menu Contextual -->
+                        <li>
+                            <div class="div__borde">
+                                <a href="../menuContextual.html">Menu Contextual</a>
+                                <div class="borde__inferior"></div>
+                            </div>
+                        </li>
+
+                        <!-- DolbyAtmos PC -->
+                        <li>
+                            <div class="div__borde">
+                                <a href="../dolbyAtmosPC.html">Dolby Atmos PC</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>

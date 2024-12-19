@@ -1,9 +1,5 @@
-/* ========================== EXTRAS ========================= */
-:root {
-    --maxWidth: 70em;
-}
-
 /* ========================== TITULOS ========================= */
+/* MARK: Titulos */
 .titulos {
     max-width: var(--maxWidth);
     padding: 1.5em;
@@ -32,104 +28,11 @@
     margin-top: 0.3em;
 }
 
-/* ========================== BUSCADOR ========================= */
-#buscador {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: 50;
-    max-width: var(--maxWidth);
-    width: 100%;
-    margin: 2.5vh auto 0;
-}
-
-/* Linea Rosa */
-#buscador::before {
-    content: "";
-    background-color:var(--rosa);
-    position: absolute;
-    top: 50%;
-    width: calc(100% - 3em);
-    height: 0.2em;
-}
-
-/* Input */
-#buscador input {
-    background-color:var(--grisClaro);
-    border: 0;
-    border-radius: 0.3em;
-    font-size: 1.5em;
-    color: #fff;
-    position: relative;
-    width:min(90%, 60vh);
-    padding: 0.3em;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Hover al Input */
-#buscador input:hover {
-    box-shadow: .5vh .5vh 0vh .2vh var(--verde), -.5vh -.5vh 0vh .2vh var(--rosa);
-}
-
-/* ========================== TARJETAS ENCONTRADAS ========================= */
-#modal_search{
-    align-self: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 40;
-    height: 65vh;
-    backdrop-filter: blur(5px);
-    opacity: 1;
-    transform: translateX(0%);
-    transition: 0.4s;
-    overflow-y: auto;
-    padding-top: 3em !important;
-    mask-image:  linear-gradient( transparent, black 10%);
-}
-
-/* Tarjetas Encontradas Ocultas */
-#modal_search.hidden {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-/* Boton Cerrar Menu Tarjetas Encontradas */
-#modal_search__button_close {
-    background-color: var(--rosa);
-    position: fixed;
-    top: 40vh;
-    left: 0;
-    margin: 2vh;
-    width: 4vh;
-    height: 4vh;
-    border-radius: 4vh;
-    border: 0;
-    box-shadow: .5vh .5vh 0vh .1vh var(--grisOscuro);
-    color: #eee;
-    font-weight: bold;
-    transition: 0.3s opacity;
-    z-index: 150;
-    pointer-events: all;
-    transition: .2s;
-}
-
-/* Boton Ocultar Tarjetas Mostradas */
-#modal_search__button_close.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Hover al Boton Ocultar Tarjetas Encontradas */
-#modal_search__button_close:hover {
-    transform: scale(1.1);
-}
-
 /* ========================== TARJETAS ========================= */
-.tarjetas,
-#modal_search {
+/* MARK: Tarjetas */
+.tarjetas {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     justify-content: center;
     max-width: var(--maxWidth);
     padding: 1.5em;
@@ -138,18 +41,34 @@
 }
 
 /* Tarjeta Modo Vertical */
-.tarjetas.vertical .tarjeta,
-#modal_search.vertical .tarjeta {
+.tarjetas.vertical .tarjeta {
     width: 35em;
 }
 
-/* Imagenes */
-.tarjetas.vertical .tarjeta__imagenes,
-#modal_search.vertical .tarjeta__imagenes {
+/* Etiqueta */
+.etiqueta {
+    background-color: var(--rosa);
+    border-top-right-radius: 0.7em;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 0.5em;
+    margin-right: -1.6em;
+    min-width: 5em;
+    opacity: 0.6;
+}
+.etiqueta p {
+    text-align: center;
+}
+
+/* Tarjeta Imagenes */
+.tarjetas.vertical .tarjeta__imagenes {
     max-height: none;
 }
 
-/* Imagen Fondo */
+/* Tarjeta Imagenes Fondo */
 .tarjetas.vertical .tarjeta__imagen-fondo {
     aspect-ratio: 0;
 }
@@ -160,35 +79,38 @@
     background-color: var(--grisOscuro);
     border-radius: 1em;
     color: #fff;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 21em;
     overflow: hidden;
     transition: box-shadow 0.3s, transform 0.3s;
 }
-
-/* Hover a la Tarjeta */
+.tarjeta .tarjeta__imagenes {
+    overflow: hidden;
+}
 .tarjeta:hover {
     box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
 }
 
-/* SLIDER */
+/* Slider */
 .tarjeta__slider {
+    margin-top: 1em;
     position: relative;
 }
 
-/* Imagenes */
+/* Slider Imagenes */
 .slider__imagenes {
+    background: rgba(0, 0, 0, 0.1);
     display: flex;
+    overflow: hidden;
     transition: margin-left 0.3s;
 }
-
-/* Imagen Pricipal */
 .slider__imagenes .slider__imagen {
     object-fit: contain;
 }
 
-/* Botones Slider */
+/* Slider Botones */
 .slider-boton {
     background-color: var(--rosa);
     border-radius: 1em;
@@ -201,31 +123,23 @@
     transform: translateY(-50%);
     transition: opacity 0.3s, scale 0.3s;
 }
-
-/* Hover a Botones Slider  */
 .slider-boton:hover {
     opacity: 1;
     scale: 1;
 }
-
-/* Boton Izquierda */
 .tarjeta__slider .boton-izquierda {
     left: 1em;
 }
-
-/* Boton Derecha */
 .tarjeta__slider .boton-derecha {
     right: 1em;
 }
 
-/* IMAGENES */
+/* Tarjeta Imagenes */
 .tarjeta__imagenes {
     position: relative;
     max-height: 15em;
     overflow: hidden;
 }
-
-/* Imagen Principal */
 .tarjeta__imagenes .tarjeta__imagen {
     object-fit: contain;
     position: absolute;
@@ -233,8 +147,6 @@
     width: 100%;
     height: 100%;
 }
-
-/* Imagen Fondo */
 .tarjeta__imagenes .tarjeta__imagen-fondo {
     aspect-ratio: 16/9;
     filter: blur(0.5em);
@@ -242,55 +154,40 @@
     height: 100%;
 }
 
-/* INFORMACION TARJETA */
-.tarjeta__informacion {
+/* Tarjeta Informacion */
+.tarjeta__informacion { 
     padding: 0.6em;
 }
-
-/* Titulo */
 .tarjeta__titulo {
     border-bottom: 0.1em var(--rosa) solid;
     font-size: 1.5em;   
     font-weight: bold;
 }
-
-/* Subtitulo */
 .tarjeta__subtitulo {
     border-bottom: 0.1em solid var(--rosa);
     font-size: 1.4em;
     font-weight: bold;
     display: inline-block;
 }
-
-/* Fecha */
 .tarjeta__fecha {
     color: var(--rosa);
 }
-
-/* Descripcion */
 .tarjeta__descripcion {
     min-height: 3em;
 }
-
-/* Enlaces */
 .tarjeta__link {
     text-decoration: underline;
     color: var(--rosa);
 }
-
-/* Listas */
 .tarjeta__lista {
     font-size: 1.1em;
     color: white;
-    margin-left: 1em;
+    margin: 1em 0;
 }
-
-/* Items */
 .tarjeta__lista li {
-    list-style: disc;
+    margin-left: 1em;
+    list-style: initial;
 }
-
-/* Select e Inputs */
 .tarjeta__select {
     background-color: var(--grisClaro);
     border: none;
@@ -302,6 +199,7 @@
 }
 
 /* ========================== BOTONES ========================= */
+/* MARK: Botones */
 
 /* Contenedor Boton */
 .div__boton {
@@ -312,7 +210,7 @@
     padding: 1.5em;
 }
 
-/* Boton Padre */
+/* Boton Base */
 .div__boton .boton {
     box-shadow: 2px 2px 10px #000;
     border-top-left-radius: 2em;
@@ -326,8 +224,6 @@
     margin: 0.7em auto;
     transition: 0.3s;
 }
-
-/* Hover al Boton */
 .div__boton .boton:hover {
     box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
     background-color: var(--grisClaro);
@@ -341,8 +237,6 @@
     padding: 0.9em;
     cursor: pointer;
 }
-
-/* Hover al Boton Descargar */
 .div__boton .boton.descargar:hover {
     background-color: var(--verde);
     border: none;
@@ -360,8 +254,6 @@
     padding: 0.7em;
 	transition: 0.3s;
 }
-
-/* Hover al Boton Copiar */
 .copiar:hover {
     background-color: var(--rosa);
 }
@@ -379,8 +271,6 @@
     transform: translateX(5em);
     transition: transform 0.3s ease-in-out, scale 0.3s;
 }
-
-/* Hover al Boton */
 .boton-subir:hover {
     scale: 1.1;
 }
@@ -395,6 +285,7 @@
 }
 
 /* ========================== BLOQUE DE CODIGO ========================= */
+/* MARK: Codigo */
 .codigo {
     background-color: var(--grisClaro);
 	color: white;
@@ -404,6 +295,7 @@
 }
 
 /* ========================== FOOTER ========================= */
+/* MARK: Footer */
 footer {
     background-color: var(--grisOscuro);
     margin-top: auto;
@@ -415,9 +307,8 @@ footer .footer__encales {
     gap: 1em;
     padding: 1em 1em 0;
 }
-
 footer .footer__encales li,
-.footer__encales a {
+footer .footer__encales a {
     color: var(--rosa);
 }
 
@@ -429,6 +320,7 @@ footer .footer__creditos {
 }
 
 /* ========================== Computadora ========================= */
+/* MARK: Computadora */
 @media (min-width: 1080px) {
 
     /* Hover a la Tarjeta (SOLO PARA PC) */
@@ -438,50 +330,28 @@ footer .footer__creditos {
 }
 
 /* ========================== Celular ========================= */
+/* MARK: Celular */
 @media (max-width: 701px ) {
 
     /* ========================== Tarjetas ========================= */
-
     /* Tarjeta */
     .tarjeta {
         width: 100%;
     }
 
-    /* Imagenes */
+    /* Tarjeta Imagenes */
     .tarjeta__imagenes {
         max-height: none;
     }
-
-    /* Imagen Fondo */
     .tarjeta__imagen-fondo {
         aspect-ratio: 0;
     }
 
     /* Boton Subir */
     .boton-subir {
-        box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
-        background-color: var(--rosa);
-        border-radius: 50%;
-        position: fixed;
-        right: 1.5em;
-        bottom: 1.5em;
+        right: 1em;
+        bottom: 1em;
         width: 2em;
         height: 2em;
-        transform: translateX(5em);
-        transition: transform 0.3s ease-in-out, scale 0.3s;
-    }
-
-    /* Hover al Boton */
-    .boton-subir:hover {
-        scale: 1.1;
-    }
-
-    /* Icono Flecha Boton Subir*/
-    .boton-subir ion-icon {
-        color: #fff;
-        width: 100%;
-        height: 100%;
-        transform: translateY(0);
-        transition: 0.3s;
     }
 }

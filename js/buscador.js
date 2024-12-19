@@ -1,11 +1,25 @@
-class ModalTarjetas{
-    constructor(){
+class ModalTarjetas
+{
+    constructor()
+    {
         this.contenedor = this.#makeContainer()
         this.is_hidden = true;
         this.elements = [];
         this.positioned_elements = [];
-        document.body.appendChild(this.contenedor)
         this.#load_all();
+    }
+    #load_all(){
+        const tarjetas = [...document.getElementsByClassName("tarjeta")];
+        this.contenedor.innerHTML = ''
+        this.elements = [];
+        tarjetas.forEach(element => {
+            const id = this.#makeId();
+            this.elements.push({
+                id:id,
+                title:element.getElementsByClassName('tarjeta__titulo')[0].textContent,
+                raw_content:`<section id="${id}" class="tarjeta">${element.innerHTML}</section>`
+            });
+        });
     }
     #makeId() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -14,7 +28,8 @@ class ModalTarjetas{
         });
     }
     #makeContainer(){
-        const new_container = document.createElement('section');
+        // const new_container = document.createElement('section');
+        const new_container = document.getElementById("modal_search");
         new_container.id = "modal_search";
         new_container.className = "hidden";
         const button_close = document.createElement('button');
@@ -37,19 +52,6 @@ class ModalTarjetas{
         this.is_hidden = !this.is_hidden;
         document.body.style.overflowY = this.is_hidden ? "auto" : "hidden";
         window.scrollTo(0, 0);
-    }
-    #load_all(){
-        const tarjetas = [...document.getElementsByClassName("tarjeta")];
-        this.contenedor.innerHTML = ''
-        this.elements = [];
-        tarjetas.forEach(element => {
-            const id = this.#makeId();
-            this.elements.push({
-                id:id,
-                title:element.getElementsByClassName('tarjeta__titulo')[0].textContent,
-                raw_content:`<section id="${id}" class="tarjeta">${element.innerHTML}</section>`
-            });
-        });
     }
     /*
     1. Buscar en la bd by keyword

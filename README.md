@@ -11,7 +11,7 @@ Esta Pagina Ofrece las Siguientes Herramientas:
 
 #### -El Conocimiento es Poder y debe Compartirse.
 Aqui Puedes Ver el Proyecto en Produccion <3
-https://mystuff-ag.netlify.app/
+https://mystuff-ag.vercel.app/
 ~~~
 \____/\
 /\  /\

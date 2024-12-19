@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MyStuff</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./imagenes/bola.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./css/menuNav.css">
+        <link rel="stylesheet" href="./css/propiedades.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    </head>
+    <body>
+    
+        <!-- Scroll Horizontal -->
+        <div class="scroll-h"></div>
+
+        <!-- Header -->
+        <script src="./js/header.js"></script>
+
+        <!-- Contenido -->
+        <main>
+
+            <!-- Titulos -->
+            <div class="titulos centro">
+                <p class="titulos__titulo">Dolby Atmos PC</p>
+                <p class="titulos__subtitulo">Ecualizador de Sonido para Windows</p>
+            </div>
+
+            <!-- Tarjetas -->
+            <article class="tarjetas vertical">
+
+                <!-- Tarjeta -->
+                <section class="tarjeta">
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <p class="tarjeta__titulo">Información</p>
+                        <p class="tarjeta__descripcion">
+                            Dolby Atmos es un Ecualizador de Sonido Envolvente que Mejora el Sonido de tu PC Haciendolo Mas Inmersivo y Personalizable, Cuenta con 4 Modos y 1 para tu Gusto.
+                        </p>
+
+                        <!-- Lista Modos -->
+                        <ul class="tarjeta__lista">
+                            <b></b>
+                            <li>    Dinamico.           </li>
+                            <li>    Pelicula.           </li>
+                            <li>    Musica.             </li>
+                            <li>    Juego.              </li>
+                            <li>    Voz.                </li>
+                            <li>    Personalizable.     </li>
+                        </ul>
+
+                    </div>
+                    
+                </section>
+
+                <!-- Paso 1 -->
+                <section class="tarjeta">
+
+                    <!-- Imagenes -->
+                    <div class="tarjeta__imagenes">
+                        <img src="./imagenes/etc/dolbyAtmosPC/modoDev.png" alt="imagen" class="tarjeta__imagen-fondo">
+                        <img src="./imagenes/etc/dolbyAtmosPC/modoDev.png" alt="imagen" class="tarjeta__imagen">
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <p class="tarjeta__titulo">Paso 1</p>
+                        <p class="tarjeta__descripcion">
+                            Antes de Comenzar a Instalar el Dolby Atmos Tenemos que Activar el Modo Desarrolladores para Instalar
+                            el Driver, ya que no esta Firmado y sera Necesario para su Instalacion.
+                        </p>
+
+                        <!-- Lista Pasos -->
+                        <ul class="tarjeta__lista">
+                            <b>Activar Modo para Desarrolladores:</b>
+                            <li>    Entrar a Configuracion.                 </li>
+                            <li>    Ir a la Seccion de "Sistema".           </li>
+                            <li>    Ir a la Opcion de "Para Programadores". </li>
+                            <li>    Activar "Modo para Desarrolladores".    </li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!-- Paso 2 -->
+                <section class="tarjeta">
+
+                    <!-- Slider -->
+                    <div class="tarjeta__slider" id="slider1">
+                        <div class="slider">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/etc/dolbyAtmosPC/reiniciar.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/menu1.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/menu2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/menu3.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/menu4.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/menu5.png" alt="imagen" class="slider__imagen">
+                            </div>
+                        </div>
+
+                        <!-- Botones Slider -->
+                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <p class="tarjeta__titulo">Paso 2</p>
+                        <p class="tarjeta__descripcion">
+                            Una vez Activado el Modo para Desarrolladores Tenemos que Entrar al Modo Seguro para Instalar el Controlador sin Errores.
+                        </p>
+
+                        <!-- Lista Pasos -->
+                        <ul class="tarjeta__lista">
+                            <b>Entrar al Modo Seguro:</b>
+                            <li>    Reiniciar Manteniendo Shift Pulsado.                        </li>
+                            <li>    Solucionador de Problemas.                                  </li>
+                            <li>    Opciones Avanzadas.                                         </li>
+                            <li>    Configuracion de Inicio.                                    </li>
+                            <li>    Reiniciar.                                                  </li>
+                            <li>    <b>F7:</b> Deshabilitar el Uso de Controladores Firmados.   </li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!-- Paso 3 -->
+                <section class="tarjeta">
+
+                    <!-- Slider -->
+                    <div class="tarjeta__slider" id="slider2">
+                        <div class="slider">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/etc/dolbyAtmosPC/adminDispositivos.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar1.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar3.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar4.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar5.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar6.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizar7.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/actualizado.png" alt="imagen" class="slider__imagen">
+                            </div>
+                        </div>
+
+                        <!-- Botones Slider -->
+                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider2')"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider2')"></ion-icon>
+                    </div>
+
+                    <!-- Informacion -->
+                    <div class="tarjeta__informacion">
+                        <p class="tarjeta__titulo">Paso 3</p>
+                        <p class="tarjeta__descripcion">
+                            Ahora Estando Dentro del Modo Seguro Entraremos al Administrador de Dispositivos e Instalaremos el Controlador.
+                            En Caso que No te Guste el Dolby Atmos y Quieras <b>Regresar</b> a tu Antiguo Controlador Puedes Hacerlo desde aqui Mismo.
+                        </p>
+
+                        <!-- Lista Pasos -->
+                        <ul class="tarjeta__lista">
+                            <b>Instalar Driver:</b>
+                            <li>    Abrir Administrador de Dispositivos.                            </li>
+                            <li>    Controladoras de Sonido y Video y Dispositivo de Juego.         </li>
+                            <li>    Click Derecho en Driver de Sonido.                              </li>
+                            <li>    Actualizar Controlador.                                         </li>
+                            <li>    Examinar mi PC en Busca de Controladores.                       </li>
+                            <li>    Elegir en una Lista de Controladores Disponibles en el Equipo.  </li>
+                            <li>    Usar Disco.                                                     </li>
+                            <li>    Click en Examinar y Buscar en "Dolby Driver" el "hdaudio.inf".  </li>
+                            <li>    Aceptar Todas las Advertencias.                                 </li>
+                            <li>    Instalar este Software de Controlador de Todas Formas.          </li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!-- Paso 4 -->
+                <section class="tarjeta">
+
+                    <!-- Slider -->
+                    <div class="tarjeta__slider" id="slider3">
+                        <div class="slider">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/etc/dolbyAtmosPC/app1.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/dolbyAtmosPC/app2.png" alt="imagen" class="slider__imagen">
+                            </div>
+                        </div>
+
+                        <!-- Botones Slider -->
+                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider3')"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider3')"></ion-icon>
+                    </div>
+
+                    <!-- Infomacion -->
+                    <div class="tarjeta__informacion">
+                        <p class="tarjeta__titulo">Paso 4</p>
+                        <p class="tarjeta__descripcion">
+                            Una Vez Instalado el Controlador Necesitamos ya Solo la Aplicacion para Controlar el Ecualizador a tu Gusto.
+                        </p>
+
+                        <!-- Lista Pasos -->
+                        <ul class="tarjeta__lista">
+                            <b>Instalar Dolby Atmos APP:</b>
+                            <li>    Entrar a la Carpeta "Dolby APP" e Instalar "Dolby Atmos APP".   </li>
+                            <li>    Reiniciar Para Aplicar Cambios y Salir de Modo Seguro.          </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </article>
+
+            <!-- Boton Subir -->
+            <a href="#" class="boton-subir">
+                <ion-icon name="arrow-up-outline"></ion-icon>
+            </a>
+
+        </main>
+
+        <!-- Footer -->
+        <script src="./js/footer.js"></script>
+
+        <!--
+
+			\____/\
+			/\  /\
+
+        -->
+        
+    </body>
+</html>

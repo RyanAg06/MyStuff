@@ -1,4 +1,5 @@
 /* ========================== EXTRAS ========================= */
+/* MARK: Extras */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* Fuente Oswald */
 
 * {
@@ -10,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
 }
 :root {
     --verde: #008849;
@@ -17,6 +19,7 @@
     --grisOscuro: rgb(56, 65, 67);
     --grisClaro: rgb(73, 82, 85);
     --modoOscuro: rgb(60, 70, 75);
+    --maxWidth: 70em;
 }
 body {
     background-color: var(--modoOscuro);
@@ -26,26 +29,19 @@ body {
 }
 
 /* ========================== SCROLL HORIZONTAL ========================= */
+/* MARK: Scroll H */
 .scroll-h {
     background-color: var(--rosa);
     position: fixed;
     z-index: 100;
     left: 0;
     bottom: 0;
-    width: 100%;
     height: 0.2em;
-    transform: scaleX(0);
     transform-origin: left;
-    animation: progreso-scroll-h;
-    animation-timeline: scroll();
-}
-
-/* Oculto el Scroll */
-::-webkit-scrollbar {
-    display: none;
 }
 
 /* ========================== BORDE INFERIOR ========================= */
+/* MARK: Borde Inferior */
 .div__borde .borde__inferior {
     background-color: var(--rosa);
     height: 0.1em;
@@ -60,6 +56,7 @@ body {
 }
 
 /* ========================== HEADER SUPERIOR ========================= */
+/* MARK: Header Superior */
 .bienvenida {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
     background-color: var(--grisOscuro);
@@ -78,6 +75,7 @@ body {
 }
 
 /* ========================== ESTILOS MENUS ========================= */
+/* MARK: Estilo Menus */
 .menu-1 ul {
     box-shadow: 2px 2px 10px #000;
     z-index: 100;
@@ -110,9 +108,11 @@ ion-icon {
 }
 
 /* ========================== Computadora ========================= */
+/* MARK: Computadora */
 @media (min-width: 1080px) {
 
     /* ========================== HEADER SUPERIOR ========================= */
+    /* MARK: Header */
     .bienvenida {
         justify-content: space-around;
         height: 13em;
@@ -129,6 +129,7 @@ ion-icon {
     }
 
     /* ========================== MENU NAVEGACION ========================= */
+    /* MARK: Menu Navegacion */
     .menu-1 {
         display: flex;
         justify-content: space-around;
@@ -183,9 +184,11 @@ ion-icon {
 }
 
 /* ========================== Tablet y Celular ========================= */
+/* MARK: Tablet y Celular */
 @media (max-width: 1081px) {
 
-    /* ========================== HEADER ========================= */
+    /* ========================== HEADER SUPERIOR ========================= */
+    /* MARK: Header */
     header {
         position: sticky;
         z-index: 100;
@@ -193,7 +196,7 @@ ion-icon {
         width: 100%;
     }
 
-    /* ========================== HEADER SUPERIOR ========================= */
+    /* Bienvenida */
     .bienvenida {
         justify-content: space-between;
         position: relative;
@@ -245,6 +248,7 @@ ion-icon {
     }
 
     /* ========================== MENU NAVEGACION ========================= */
+    /* MARK: Menu Navegacion */
     nav {
         background-color: var(--grisOscuro);
         position: fixed;
@@ -276,6 +280,7 @@ ion-icon {
     /* Submenus */
     .menu-1 ul{
         position: relative;
+        min-height: 0;
         max-height: 0;
         margin-left: 1em;
         overflow: hidden;
@@ -284,15 +289,6 @@ ion-icon {
 
     /* SubMenu Activos */
     .menu-1 ul.activo {
-        max-height: 100vh;
-    }
-}
-
-/* ========================== Animaciones ========================= */
-
-/* Animacion Scroll Horiontal */
-@keyframes progreso-scroll-h {
-    100% {
-        transform: scaleX(1);
+        max-height: 100em;
     }
 }
