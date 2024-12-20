@@ -1,0 +1,43 @@
+/* ========================== SLIDER ========================= */
+/* Slider */
+.slider {
+    margin-top: 1em;
+    position: relative;
+}
+
+/* Contenedor Imagenes */
+.slider__imagenes {
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: margin-left 0.3s;
+}
+
+/* Imagen */
+.slider__imagen {
+    object-fit: contain;
+}
+
+/* Botones */
+.slider-boton {
+    background-color: var(--rosa);
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    opacity: 0.6;
+    scale: 0.8;
+    transform: translateY(-50%);
+    transition: opacity 0.3s, scale 0.3s;
+}
+.slider-boton:hover {
+    opacity: 1;
+    scale: 1;
+}
+.slider .boton-izquierda {
+    left: 1em;
+}
+.slider .boton-derecha {
+    right: 1em;
+}

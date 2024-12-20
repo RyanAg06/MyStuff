@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/menuNav.css">
-        <link rel="stylesheet" href="./css/propiedades.css">
+        <link rel="stylesheet" href="./css/estilos.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
@@ -40,7 +39,7 @@
                             Tambien Agrega Muchas Cosas pero se Sigue Conservando la Experiencia Vanilla.
                         </p>
 
-                        <!-- Lista -->
+                        <!-- Lista Novedades -->
                         <ul class="tarjeta__lista">
                             <b>Caracteristicas:</b>
                             <li>    Fuente de Texto Personalizada.      </li>
@@ -86,25 +85,21 @@
                         </ul>
 
                         <!-- Version con Shaders -->
-                        <div class="tarjeta__informacion">
-                            <p class="tarjeta__subtitulo">Version con Shaders</p>
-                            <p class="tarjeta__descripcion">Para usar los Shaders se Necesita <b><a href="https://github.com/ddf8196/BetterRenderDragon" target="_blank" class="tarjeta__link">Better Render Dragon</a></b>.</p>
+                        <p class="tarjeta__subtitulo">Version con Shaders</p>
+                        <p class="tarjeta__descripcion">Para usar los Shaders se Necesita <b><a href="https://github.com/ddf8196/BetterRenderDragon" target="_blank" class="tarjeta__link">Better Render Dragon</a></b>.</p>
 
-                            <!-- Slider -->
-                            <div class="tarjeta__slider" id="slider1">
-                                <div class="slider">
-                                    <div class="slider__imagenes">
-                                        <img src="./imagenes/texturas/shader-2.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/shader-3.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/shader-4.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/shader-5.png" alt="imagen" class="slider__imagen">
-                                    </div>
-                                </div>
-
-                                <!-- Botones Slider -->
-                                <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
-                                <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
+                        <!-- Slider -->
+                        <div class="slider" id="slider1">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/texturas/shader-2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/shader-3.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/shader-4.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/shader-5.png" alt="imagen" class="slider__imagen">
                             </div>
+
+                            <!-- Botones Slider -->
+                            <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                            <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
                         </div>
 
                         <!-- Boton Descargar -->
@@ -116,29 +111,25 @@
                         </div>
 
                         <!-- Version sin Shaders -->
-                        <div class="tarjeta__informacion">
-                            <p class="tarjeta__subtitulo">Version sin Shaders</p>
-                            <p class="tarjeta__descripcion">
-                                Esta el la Version sin Shaders para Dispositivos con Menos Potencia.
-                            </p>
+                        <p class="tarjeta__subtitulo">Version sin Shaders</p>
+                        <p class="tarjeta__descripcion">
+                            Esta el la Version sin Shaders para Dispositivos con Menos Potencia.
+                        </p>
 
-                            <!-- Slider -->
-                            <div class="tarjeta__slider" id="slider2">
-                                <div class="slider">
-                                    <div class="slider__imagenes">
-                                        <img src="./imagenes/texturas/lite-1.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/lite-2.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/lite-3.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/lite-4.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/lite-5.png" alt="imagen" class="slider__imagen">
-                                        <img src="./imagenes/texturas/shader-1.png" alt="imagen" class="slider__imagen">
-                                    </div>
-                                </div>
-
-                                <!-- Botones Slider -->
-                                <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider2')"></ion-icon>
-                                <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider2')"></ion-icon>
+                        <!-- Slider -->
+                        <div class="slider" id="slider2">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/texturas/lite-1.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/lite-2.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/lite-3.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/lite-4.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/lite-5.png" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/texturas/shader-1.png" alt="imagen" class="slider__imagen">
                             </div>
+
+                            <!-- Botones Slider -->
+                            <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider2')"></ion-icon>
+                            <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider2')"></ion-icon>
                         </div>
 
                         <!-- Boton Descargar -->
@@ -148,6 +139,7 @@
                                 <ion-icon name="download-outline"></ion-icon>
                             </a>
                         </div>
+                        
                     </div>
                     
                 </section>

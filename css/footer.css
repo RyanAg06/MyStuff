@@ -1,0 +1,24 @@
+/* ========================== FOOTER ========================= */
+/* MARK: Footer */
+footer {
+    background-color: var(--grisOscuro);
+    margin-top: auto;
+}
+
+/* Enlaces Redes Sociales */
+footer .footer__encales {
+    display: flex;
+    gap: 1em;
+    padding: 1em 1em 0;
+}
+footer .footer__encales li,
+footer .footer__encales a {
+    color: var(--rosa);
+}
+
+/* Texto Inferior */
+footer .footer__creditos {
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+}

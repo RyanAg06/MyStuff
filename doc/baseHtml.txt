@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <link rel="icon" href="./imagenes/bola.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="./css/menuNav.css">
-        <link rel="stylesheet" href="./css/propiedades.css">
+        <link rel="stylesheet" href="./css/estilos.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     </head>
     <body>
@@ -35,7 +34,7 @@
                     <!-- Informacion -->
                     <div class="tarjeta__informacion">
                         <p class="tarjeta__titulo"></p>
-                        <p class="tarjeta__subtitulo"></p>
+                        <p class="tarjeta__descripcion"></p>
                     </div>
                     
                 </section>

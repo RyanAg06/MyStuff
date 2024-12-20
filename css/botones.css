@@ -1,0 +1,108 @@
+/* ========================== BOTONES ========================= */
+/* MARK: Botones */
+
+/* Contenedor Boton */
+.div__boton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5em;
+}
+
+/* Boton Base */
+.boton {
+    box-shadow: 2px 2px 10px #000;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color: var(--grisOscuro);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    min-width: 10em;
+    padding: 0.8em;
+    margin: 0.7em auto;
+    transition: 0.3s;
+}
+.boton:hover {
+    box-shadow: 2vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
+    background-color: var(--grisClaro);
+    color: var(--rosa);
+}
+
+/* Boton Descargar */
+.descargar {
+    background-color: var(--verde);
+    border-radius: 0.4em;
+    padding: 0.9em;
+    cursor: pointer;
+}
+.descargar:hover {
+    background-color: var(--verde);
+    border: none;
+    color: white;
+    scale: 1.1;
+}
+
+/* Boton Subir */
+.boton-subir {
+    box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.5);
+    background-color: var(--rosa);
+    border-radius: 50%;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    width: 3em;
+    height: 3em;
+    transform: translateX(5em);
+    transition: transform 0.3s ease-in-out, scale 0.3s;
+}
+.boton-subir:hover {
+    scale: 1.1;
+}
+.boton-subir ion-icon {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+/* ========================== CODIGO ========================= */
+/* MARK: Codigo */
+
+/* Boton Copiar Codigo */
+.copiar {
+    background-color: var(--grisClaro);
+	color: white;
+	border: none;
+    display: block;
+    width: fit-content;
+    padding: 0.7em;
+	transition: 0.3s;
+}
+.copiar:hover {
+    background-color: var(--rosa);
+}
+
+/* Bloque de Codigo */
+.codigo {
+    background-color: var(--grisClaro);
+	color: white;
+	display: block;
+	padding: 0.7em;
+    margin-bottom: 1em;
+}
+
+/* ========================== CELULAR ========================= */
+/* MARK: Celular */
+@media (max-width: 701px ) {
+
+    /* Boton Subir */
+    .boton-subir {
+        right: 1em;
+        bottom: 1em;
+        width: 2em;
+        height: 2em;
+    }
+}
