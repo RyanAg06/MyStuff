@@ -23,3 +23,7 @@
 # Se Elimino: Herramienta
 ## 18-Diciembre-2024
 - Se Elimino el Buscador para Proxima Mejora
+
+# Se Agrego: Seccion
+## 19-Diciembre-2024
+- Se Agrego la Seccion de "Juego de Dados"

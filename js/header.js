@@ -50,7 +50,7 @@ document.write(`
                         <!-- Encale Juego dados -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Juego de Dados</a>
+                                <a href="juegoDados.html">Juego de Dados</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
