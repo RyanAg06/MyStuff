@@ -27,3 +27,7 @@
 # Se Agrego: Seccion
 ## 19-Diciembre-2024
 - Se Agrego la Seccion de "Juego de Dados"
+
+# Se Agrego: Seccion
+## 31-Diciembre-2024
+- Se Agrego la Seccion de "Actions & Stuff"

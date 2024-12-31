@@ -12,16 +12,21 @@
 :root {}
 
 /* ========================== Computadora ========================= */
+/* MARK: Computadora */
 @media (width > 1080px) {}
 
 /* ========================== Computadora y Tablet ========================= */
+/* MARK: PC y Tablet */
 @media (width > 700px) {}
 
 /* ========================== Tablet ========================= */
+/* MARK: Tablet */
 @media (width > 700px) and (width < 1081px) {}
 
 /* ========================== Tablet y Celular ========================= */
+/* MARK: Tablet y Celular */
 @media (width < 1081px) {}
 
 /* ========================== Celular ========================= */
+/* MARK: Celular */
 @media (width < 701px) {}

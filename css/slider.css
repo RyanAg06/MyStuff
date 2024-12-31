@@ -1,4 +1,6 @@
 /* ========================== SLIDER ========================= */
+/* MARK: Slider */
+
 /* Slider */
 .slider {
     margin-top: 1em;
@@ -40,4 +42,53 @@
 }
 .slider .boton-derecha {
     right: 1em;
+}
+
+/* ========================== SLIDER INFINITO ========================= */
+/* MARK: INFINITO */
+
+/* Slider */
+.slider-infinito {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.slider-infinito:hover .slider__imagenes-infinito {
+    animation-play-state: paused;
+}
+
+/* Contenedor Imagenes */
+.slider__imagenes-infinito {
+    display: inline-block;
+    animation: infinito 11s infinite linear;
+}
+
+/* Imagen */
+.slider__imagen-infinito {
+    height: 15em;
+}
+
+/* Animacion */
+@keyframes infinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ========================== Tablet y Celular ========================= */
+/* MARK: Tablet y Celular */
+@media (width < 1081px) {
+    /* Slider */
+    .slider-infinito {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    /* Contenedor Imagenes */
+    .slider__imagenes-infinito {
+        animation-play-state: paused;
+    }
 }

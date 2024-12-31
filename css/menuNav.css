@@ -49,7 +49,7 @@ body {
     transition: clip-path 0.3s;
 }
 
-/* Efecto Hover el */
+/* Efecto Hover */
 .div__borde:hover .borde__inferior {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }

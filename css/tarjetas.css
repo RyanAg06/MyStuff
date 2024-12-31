@@ -184,5 +184,6 @@
     }
     .tarjeta__imagen-fondo {
         aspect-ratio: 0;
+        filter: blur(0);
     }
 }
