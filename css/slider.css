@@ -91,4 +91,8 @@
     .slider__imagenes-infinito {
         animation-play-state: paused;
     }
+
+    .slider-infinito :nth-child(2) {
+        display: none;
+    }
 }

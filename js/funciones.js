@@ -7,6 +7,12 @@ window.onload = function()
     abrirSubMenus();
 }
 
+// Recargar Pagina Al Redimensionar, *Esto para Recargar el Menu de Navegacion*
+window.addEventListener("resize", ()=>
+{
+    window.location.reload()
+})
+
 /* ========================================= FUNCIONES ========================================= */
 
 // Funcion Abrir Menu Lateral
