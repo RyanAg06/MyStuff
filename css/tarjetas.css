@@ -137,6 +137,7 @@
     min-height: 3em;
 }
 .tarjeta__link {
+    font-weight: bold;
     text-decoration: underline;
     color: var(--rosa);
 }
