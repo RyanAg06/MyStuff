@@ -32,6 +32,10 @@
 ## 31-Diciembre-2024
 - Se Agrego la Seccion de "Actions & Stuff"
 
+# Se Agrego: Seccion
+## 11-Febrero-2025
+- Se Agrego la Seccion de "Mundos"
+
 # Se Actualizo: Seccion
 ## 28-Febrero-2025
 - Se Actualizo el Link de Actions & Stuff 1.2
