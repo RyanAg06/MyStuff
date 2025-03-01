@@ -35,252 +35,41 @@
                     <div class="tarjeta__informacion">
                         <p class="tarjeta__titulo">Información</p>
                         <p class="tarjeta__descripcion">
-                            Antes de Comenzar es Necesario Aclarar unos Puntos para Evitar Dudas o Problemas.
+                            Con este Metodo Convertiras la Version de Prueba en el Juego Completo, y Poder Disfrutar
+                            del Modo Creativo, Servidores, Realms, etc...
                         </p>
 
-                        <!-- Lista Informacion -->
+                        <!-- Lista Pasos -->
                         <ul class="tarjeta__lista">
-                            <b>Puntos Importantes para Aclarar:</b>
-                            <li> <b>Esto es Temporal:</b> En Algunos Casos Es Permanente, si Llega a Pasar solo Repite el Proceso y Funcionara de Nuevo desde el Paso 3.</li>
-                            <li> <b>Es Seguro:</b> Los Siguientes Archivos no Dañaran tu Equipo, solo NO Borres Ningun Otro Archivo Fuera de la Guia.</li>
-                            <li> Si en Algun Punto Compras el Juego Todo tu Progreso Hecho Se Quedara Intacto. </li>
+                            <b>Pasos a Seguir:</b>
+                            <li>Primero Necesitas Descargar la Version de Prueba desde la Microsoft Store.</li>
+                            <li>Descarga los Archivos Necesarios y Extraelos.</li>
+                            <li>Una vez Estraido, Ejecuta "Activar Minecraft.exe" como Administrador y Listo.</li>
                         </ul>
 
-                    </div>
+                        <!-- Slider -->
+                        <div class="slider" id="slider1">
+                            <div class="slider__imagenes">
+                                <img src="./imagenes/etc/desbloquearMc/paso1.jpeg" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/desbloquearMc/paso2.jpeg" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/desbloquearMc/paso3.jpeg" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/desbloquearMc/paso4.jpeg" alt="imagen" class="slider__imagen">
+                                <img src="./imagenes/etc/desbloquearMc/paso5.jpeg" alt="imagen" class="slider__imagen">
+                            </div>
 
-                </section>
-
-                <!-- Paso 1 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso1.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso1.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 1</p>
-                        <p class="tarjeta__descripcion">
-                            Descargar la Version de Prueba de Minecraft Desde la Microsoft Store y los Archivos Necesarios.
-                        </p>
+                            <!-- Botones Slider -->
+                            <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider1')"></ion-icon>
+                            <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider1')"></ion-icon>
+                        </div>
 
                         <!-- Boton Descargar -->
                         <div class="div__boton">
-                            <a href="https://mega.nz/file/cnpjWIxQ#zMv2QyS9-W_PdC93woWmsMH4dOixRRxtlGXYcSxhtXA" target="_blank" class="boton descargar">
+                            <a href="https://mega.nz/file/J3wjAZpI#7V5lzZxgGM_R7G-jHAzeJhZ4ZAOMtzKRFUIO8xvS_XQ" target="_blank" class="boton descargar">
                                 Archivos Necesarios
                                 <ion-icon name="download-outline"></ion-icon>
                             </a>
                         </div>
 
-                    </div>
-
-                </section>
-
-                <!-- Paso 2 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso2.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso2.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 2</p>
-                        <p class="tarjeta__descripcion">
-							Instalar la Aplicacion "IObit_setup".
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 3 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso3.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso3.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 3</p>
-                        <p class="tarjeta__descripcion">
-							Entrar a la Carpeta de "Reemplazar Archivos" > "System32" y <b>COPIAR</b> el Nombre del Archivo que esta Dentro.
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 4 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso4.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso4.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 4</p>
-                        <p class="tarjeta__descripcion">
-							Entrar a "Este Equipo" > "Windows (C:)" > "Windows" > "System 32" y en el Apartado 
-                            de <b>"Buscar en System32"</b> Pegar el Nombre del Archivo que Copiamos Anteriormente.
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 5 -->
-                <section class="tarjeta">
-
-                    <!-- Slider -->
-                    <div class="slider" id="slider5">
-                        <div class="slider__imagenes">
-                            <img src="./imagenes/etc/desbloquearMc/paso5.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso5-1.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso5-2.png" alt="imagen" class="slider__imagen">
-                        </div>
-
-                        <!-- Botones Slider -->
-                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider5')"></ion-icon>
-                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider5')"></ion-icon>
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 5</p>
-                        <p class="tarjeta__descripcion">
-							Una vez Encontrado el Archivo, dar <b>CLICK DERECHO</b> y dar CLICK en "IObit Unlocker", 
-                            Despues Tocar el Boton de Triangulo Hacia Abajo y "Desbloquear & Eliminar".
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 6 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso6.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso6.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 6</p>
-                        <p class="tarjeta__descripcion">
-							Una vez Eliminado el Archivo, Regresamos a "Reemplazar archivos" > "System32" y <b>COPIAMOS</b> 
-                            el Archivo al que Copiamos el Nombre Anteriormente.
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 7 -->
-                <section class="tarjeta">
-
-                    <!-- Slider -->
-                    <div class="slider" id="slider7">
-                        <div class="slider__imagenes">
-                            <img src="./imagenes/etc/desbloquearMc/paso7.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso7-1.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso7-2.png" alt="imagen" class="slider__imagen">
-                        </div>
-
-                        <!-- Botones Slider -->
-                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider7')"></ion-icon>
-                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider7')"></ion-icon>
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 7</p>
-                        <p class="tarjeta__descripcion">
-							Volvemos a Entrar a "Este Equipo" > "Windows (C:)" > "Windows" > "System 32" y Pegamos el
-                            Archivo con <b>Control + V</b> o <b>CLICK DERECHO y PEGAR</b>.
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 8 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso8.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso8.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 8</p>
-                        <p class="tarjeta__descripcion">
-							<b>REPETIR</b> lo Mismo con la Carpeta "SysWOW64".
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 9 -->
-                <section class="tarjeta">
-
-                    <!-- Imagenes -->
-                    <div class="tarjeta__imagenes">
-                        <img src="./imagenes/etc/desbloquearMc/paso9.png" alt="imagen" class="tarjeta__imagen-fondo">
-                        <img src="./imagenes/etc/desbloquearMc/paso9.png" alt="imagen" class="tarjeta__imagen">
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 9</p>
-                        <p class="tarjeta__descripcion">
-							Despues de <b>REEMPLAZAR AMBOS ARCHIVOS</b>, vamos a la carpeta "Activar Servicios Xbox" y 
-                            Ejecutamos el Programa de "eso.exe".
-						</p>
-                    </div>
-
-                </section>
-
-                <!-- Paso 10 -->
-                <section class="tarjeta">
-
-                    <!-- Slider -->
-                    <div class="slider" id="slider10">
-                        <div class="slider__imagenes">
-                            <img src="./imagenes/etc/desbloquearMc/paso10.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso10-1.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/paso10-2.png" alt="imagen" class="slider__imagen">
-                            <img src="./imagenes/etc/desbloquearMc/preview.png" alt="imagen" class="slider__imagen">
-                        </div>
-
-                        <!-- Botones Slider -->
-                        <ion-icon name="chevron-back-outline" class="slider-boton boton-izquierda" onclick="moverIzquierda('slider10')"></ion-icon>
-                        <ion-icon name="chevron-forward-outline" class="slider-boton boton-derecha" onclick="moverDerecha('slider10')"></ion-icon>
-                    </div>
-
-                    <!-- Informacion -->
-                    <div class="tarjeta__informacion">
-                        <p class="tarjeta__titulo">Paso 10</p>
-
-                        <!-- Lista Servicios -->
-                        <ul class="tarjeta__lista">
-                            Buscamos los Servicios de <b>Color Rojo</b>.
-                            <li>XblGameSave</li>
-                            <li>XboxNetApiSvc</li>
-                        </ul>
-
-                        <p class="tarjeta__descripcion">
-                            Una vez Encontrados, Damos <b>CLICK DERECHO</b>, "Start service" y <b>Verificamos que Estan en Color Verde</b>.
-						</p>
-                        
                     </div>
 
                 </section>
