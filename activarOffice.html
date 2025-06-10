@@ -21,8 +21,8 @@
 
             <!-- Titulos -->
             <div class="titulos centro">
-                <p class="titulos__titulo">Guia de Activacion</p>
-                <p class="titulos__subtitulo">Como Activar Office</p>
+                <p class="titulos__titulo">Guia de Office 365</p>
+                <p class="titulos__subtitulo">Como Descargar y Activar Office</p>
             </div>
 
             <!-- Tarjetas -->
@@ -57,22 +57,9 @@
                     <div class="tarjeta__informacion">
                         <p class="tarjeta__titulo">Paso 1</p>
                         <p class="tarjeta__descripcion">
-							Antes de Comenzar, Deberas <b>Eliminar</b> Todas las Aplicaciones Relacionas a Office.
+							Antes de Comenzar, Deberas <b>Eliminar</b> Todas las Aplicaciones Relacionas a Office para Evitar Cualquier Problema que
+                            Pudiera Llegar a Surgir, o Exista Algun Problema de Versiones.
 						</p>
-
-                        <!-- Lista -->
-                        <ul class="tarjeta__lista">
-                            <b>Eliminar Programas de Office:</b>
-                            <li>    Word.                   </li>
-                            <li>    Power Point.            </li>
-                            <li>    Excel.                  </li>
-                            <li>    Access.                 </li>
-                            <li>    Project.                </li>
-                            <li>    OneNote.                </li>
-                            <li>    Outlook.                </li>
-                            <li>    Publisher.              </li>
-                            <li>    Etc..                   </li>
-                        </ul>
 
                     </div>
 
@@ -85,12 +72,45 @@
                     <div class="tarjeta__informacion">
                         <p class="tarjeta__titulo">Paso 2</p>
                         <p class="tarjeta__descripcion">
-                            Una vez Eliminado Debes Descargar los Archivos Necesarios para Descargar Office 365.
+                            Una vez <b>Eliminado</b> Debes Descargar los Archivos Necesarios para Descargar Office 365, selecciona una Version:
                         </p>
+
+                        <!-- Liste -->
+                        <ul class="tarjeta__lista">
+                            <b>Versiones: </b>
+                            <li>
+                                <label>Full</label>
+                                <ul>
+                                    <li>Word</li>
+                                    <li>Excel</li>
+                                    <li>PowerPoint</li>
+                                    <li>OneDrive</li>
+                                    <li>Publisher</li>
+                                    <li>Acces</li>
+                                    <li>Outlook</li>
+                                    <li>OneNote</li>
+                                    <li>Project</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label>Lite</label>
+                                <ul>
+                                    <li>Word</li>
+                                    <li>Excel</li>
+                                    <li>PowerPoint</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Menu Opciones -->
+                        <select id="versionOffice" class="tarjeta__select">
+                            <option value="1" selected>Version Full  </option>
+                            <option value="2">Version Lite  </option>
+                        </select>
 
                         <!-- Boton Descargar -->
                         <div class="div__boton">
-                            <a href="https://mega.nz/file/pzpAAZjR#KG_3fAHur4RZIy7yyY8Pe3TZiQ2QHcFo4FzvSrCY-m8" target="_blank" class="boton descargar">
+                            <a href="https://mega.nz/file/pzpAAZjR#KG_3fAHur4RZIy7yyY8Pe3TZiQ2QHcFo4FzvSrCY-m8" target="_blank" class="boton descargar" id="descargarVersionOffice">
                                 Descargar Archivos
                                 <ion-icon name="download-outline"></ion-icon>
                             </a>
@@ -299,6 +319,25 @@
 
         <!-- Footer -->
         <script src="./js/footer.js"></script>
+
+        <script>
+            // Funcion Cambiar Version Office 365
+            let selectOffice = document.getElementById("versionOffice");
+            let descargarOffice = document.getElementById("descargarVersionOffice");
+            selectOffice.addEventListener("change", () =>       // Verifico si Cambio Select
+            {
+                let select = selectOffice.value;                // Obtengo Valor Seleccionado
+
+                if (select == 1)                                // Evaluo Valor y Retorno Enlace
+                {
+                    descargarOffice.setAttribute("href", "https://mega.nz/file/pzpAAZjR#KG_3fAHur4RZIy7yyY8Pe3TZiQ2QHcFo4FzvSrCY-m8");
+                }
+                else if (select == 2)
+                {
+                    descargarOffice.setAttribute("href", "https://mega.nz/file/RqpBwRAK#r5OSGScvaPRwuvQtX6U3Mr74XJgam6CO-V9XuOOJ46M");
+                }
+            })
+        </script>
 
         <!--
 

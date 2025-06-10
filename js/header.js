@@ -47,34 +47,42 @@ document.write(`
                     <!-- Menu 2 -->
                     <ul class="menu-2">
 
-                        <!-- Encale Juego dados -->
+                        <!-- Encale Java -->
                         <li>
                             <div class="div__borde">
-                                <a href="juegoDados.html">Juego de Dados</a>
+                                <a href="#">Java</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
 
-                        <!-- Enlace Virtual Fishing -->
+                        <!-- Enlace Python -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Virtual Fishing</a>
+                                <a href="#">Python</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
 
-                        <!-- Enlace Proyecto Enfermeria -->
+                        <!-- Enlace Web -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Proyecto Enfermeria</a>
+                                <a href="#">Web</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
 
-                        <!-- Enlace Gan-Man -->
+                        <!-- Enlace Batch -->
                         <li class="ultimo">
                             <div class="div__borde">
-                                <a href="#">Gan-Man</a>
+                                <a href="#">Batch</a>
+                                <div class="borde__inferior"></div>
+                            </div>
+                        </li>
+
+                        <!-- Enlace Android -->
+                        <li>
+                            <div class="div__borde">
+                                <a href="#">Android</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -83,14 +91,14 @@ document.write(`
 
                 </li>
 
-                <!-- Seccion Minecraft -->
-                <!-- MARK: Minecraft -->
+                <!-- Seccion Categorias -->
+                <!-- MARK: Categorias -->
                 <li>
 
-                    <!-- Submenu Minceraft -->
+                    <!-- Submenu Archivos -->
                     <div class="div__borde item__abrirSubMenu">
                         <label>
-                            Minecraft
+                            Categorias
                             <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
                         <div class="borde__inferior"></div>
@@ -99,18 +107,26 @@ document.write(`
                     <!-- Menu 2 -->
                     <ul class="menu-2">
 
-                        <!-- Enlace Mundos -->
+                        <!-- Enlace Archivos -->
                         <li>
                             <div class="div__borde">
-                                <a href="#">Mundos</a>
+                                <a href="#">Archivos</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
 
-                        <!-- Enlace Texturas -->
+                        <!-- Enlace Aplicaciones -->
                         <li>
                             <div class="div__borde">
-                                <a href="../texturas.html">Texturas</a>
+                                <a href="#">Aplicaciones</a>
+                                <div class="borde__inferior"></div>
+                            </div>
+                        </li>
+
+                        <!-- Enlace Herramientas -->
+                        <li>
+                            <div class="div__borde">
+                                <a href="#">Herramientas</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
@@ -169,7 +185,7 @@ document.write(`
                                 <!-- Enlace Firmware Generico -->
                                 <li>
                                     <div class="div__borde">
-                                        <a href="../firmwareR4Clon.html">Clon</a>
+                                        <a href="../firmwareR4Generico.html">Generico</a>
                                         <div class="borde__inferior"></div>
                                     </div>
                                 </li>
@@ -178,13 +194,13 @@ document.write(`
 
                         </li>
 
-                        <!-- Seccion Personalizar -->
+                        <!-- Seccion Personalizacion -->
                         <li>
 
-                            <!-- Submenu Personalizar -->
+                            <!-- Submenu Personalizacion -->
                             <div class="div__borde item__abrirSubMenu">
                                 <label>
-                                    Personalizar
+                                    Personalizacion
                                     <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                                 </label>
                                 <div class="borde__inferior"></div>
@@ -217,14 +233,14 @@ document.write(`
 
                 </li>
 
-                <!-- Seccion Etc -->
-                <!-- MARK: Etcetera -->
+                <!-- Seccion Minecraft -->
+                <!-- MARK: Minecraft -->
                 <li>
 
-                    <!-- Submenu Etc -->
+                    <!-- Submenu Minecraft -->
                     <div class="div__borde item__abrirSubMenu">
                         <label>
-                            Etc
+                            Minecraft
                             <ion-icon name="chevron-down-outline" class="icono__menu-desplegar"></ion-icon>
                         </label>
                         <div class="borde__inferior"></div>
@@ -233,50 +249,18 @@ document.write(`
                     <!-- Menu 2 -->
                     <ul class="menu-2">
 
-                        <!-- Enlace Activar Windows -->
+                        <!-- Enlace Mundos -->
                         <li>
                             <div class="div__borde">
-                                <a href="../activarWindows.html">Activar Windows</a>
+                                <a href="../mundosMinecraft.html">Mundos</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>
 
-                        <!-- Enlace Activar Office -->
+                        <!-- Enlace Texturas -->
                         <li>
                             <div class="div__borde">
-                                <a href="../activarOffice.html">Activar Office</a>
-                                <div class="borde__inferior"></div>
-                            </div>
-                        </li>
-
-                        <!-- Enlace Desbloquear Minecraft -->
-                        <li>
-                            <div class="div__borde">
-                                <a href="../desbloquearMc.html">Desbloquear Minecraft</a>
-                                <div class="borde__inferior"></div>
-                            </div>
-                        </li>
-
-                        <!-- Material Dark Cursor -->
-                        <li>
-                            <div class="div__borde">
-                                <a href="../materialCursor.html">Material Dark Cursor</a>
-                                <div class="borde__inferior"></div>
-                            </div>
-                        </li>
-
-                        <!-- Menu Contextual -->
-                        <li>
-                            <div class="div__borde">
-                                <a href="../menuContextual.html">Menu Contextual</a>
-                                <div class="borde__inferior"></div>
-                            </div>
-                        </li>
-
-                        <!-- DolbyAtmos PC -->
-                        <li>
-                            <div class="div__borde">
-                                <a href="../dolbyAtmosPC.html">Dolby Atmos PC</a>
+                                <a href="../texturas.html">Texturas</a>
                                 <div class="borde__inferior"></div>
                             </div>
                         </li>

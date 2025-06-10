@@ -8,7 +8,7 @@ document.write(`
             <!-- Facebook -->
             <li>
                 <ion-icon name="logo-facebook" class="icono-footer"></ion-icon>
-                <a href="https://www.facebook.com/profile.php?id=100082157757979" target="_blank">Facebook</a>
+                <a href="https://www.facebook.com/herrera.brian.2025" target="_blank">Facebook</a>
             </li>
 
             <!-- Discord -->

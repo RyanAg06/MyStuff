@@ -40,3 +40,15 @@
 ## 28-Febrero-2025
 - Se Actualizo el Link de Actions & Stuff 1.2
 - Se Mejoro Metodo de Activacion de Minecraft Windows 10
+
+# Se Agrego: Seccion
+## 6-Junio-2025
+- Actualizacion de BadCatClient
+- Se Agrego Seccion Yumme Nikki
+- Se Agrego Seccion CamScanner Premium
+- Se Agrego Seccion Photomath Plus
+- Se Agrego Seccion Corpse Party 3DS
+- Cambios en Header
+- Links Actualizados
+- Nueva Distrubucion de Contenido
+- Imagenes Optimizadas

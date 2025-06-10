@@ -1,5 +1,4 @@
 /* ========================================= CODIGO ========================================= */
-
 // Cargar Codigo al Entrar a la Pagina
 window.onload = function()
 {
@@ -127,7 +126,7 @@ window.addEventListener("scroll", () =>                                         
 });
 
 // Funcion Scroll Progress Bar
-window.addEventListener("scroll", ()=>
+window.addEventListener("scroll", () =>
 {
     let winScroll = document.documentElement.scrollTop;                                             // Obtengo Tamaño Scroll de Ventana
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;     // Obtengo Tamano de Ventana y Pantalla Usuario

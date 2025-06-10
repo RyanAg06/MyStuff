@@ -10,11 +10,22 @@ contenedores.forEach(contenedor =>
     cantidad = imagenes.length;                                                     // Obtengo Numero de Imagenes
     contenedor.style.width = `${100 * cantidad}%`;                                  // Redimensiono Contenedor por Cada Imagen
     contenedor.style.marginLeft = `0%`;                                             // Voy a la Ultima Imagen
+    botones = document.querySelectorAll(`.slider-boton`);                           // Selecciono Todos los Botones
+
+    botones.forEach(boton =>
+    {
+        if(cantidad == 1)
+        {
+            boton.style.display = "none";                                           // Si solo hay 1 Imagen Elimino Botones
+        }
+    })
 
     imagenes.forEach(imagen =>
     {
         imagen.style.width = `${100 / cantidad}%`;                                  // Redimensiono Cada Imagen del Contenedor
     });
+
+
 });
 
 // Funcion Mover Derecha Slider
